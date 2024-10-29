@@ -25,6 +25,7 @@ const Hero = () => {
           <Image
             src={CONFERENCE.heroBannerUrl}
             alt={CONFERENCE.title}
+            placeholder='blur'
             width={1920}
             height={1280}
             style={{
