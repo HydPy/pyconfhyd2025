@@ -10,16 +10,17 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "react-icons": "^5.3.0",
-    "sass": "^1.80.4"
+    "react-icons": "^5.3.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "eslint": "^8",
     "eslint-config-next": "15.0.1",
-    "prettier": "^3.3.3"
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14"
   }
 }

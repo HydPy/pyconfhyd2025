@@ -1,28 +1,28 @@
 import Link from 'next/link';
 import React from 'react';
 
-import IconComponent from '@/components/Icon';
+import Icon from '@/components/Icon';
 import { CONFERENCE, SOCIALS } from '@/details';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-gradient text-light px-3">
-      <div className="container-fluid">
-        <div className="row justify-content-between align-items-center">
-          <ul className="nav col-md-6 col-12 py-2">
+    <footer className="bg-gradient-to-r from-primary-light-800 to-secondary-light-800 text-gray-50 p-4">
+      <div className="mx-auto w-full max-w-screen-xl">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <div className="flex sm:justify-center ">
             {SOCIALS.map((item, index) => (
               <Link
                 key={index}
-                className="mx-1"
+                className="text-gray-300 hover:text-gray-50 mr-2"
                 href={item.url}
                 target="_blank"
                 aria-label={item.ariaLabel}
               >
-                <IconComponent name={item.name} className="text-light" />
+                <Icon name={item.name} />
               </Link>
             ))}
-          </ul>
-          <div className="col-md-6 col-12 d-flex justify-content-md-end justify-content-center py-2">
+          </div>
+          <div className="text-sm mt-3 sm:mt-0 text-center">
             {CONFERENCE.copyrightTitle}
           </div>
         </div>

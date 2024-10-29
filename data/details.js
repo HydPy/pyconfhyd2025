@@ -10,6 +10,13 @@ export const CONFERENCE = {
   heroBannerAriaLabel: 'PyConf Hyderabad 2022 volunteers picture',
 };
 
+export const NAV_ITEMS = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+];
+
 export const SOCIALS = [
   {
     name: 'LinkedIn',

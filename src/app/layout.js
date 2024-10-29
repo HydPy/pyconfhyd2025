@@ -1,8 +1,6 @@
-import './globals.scss';
-
+import './globals.css';
 import { CONFERENCE } from '@/details';
 import Header from '@/components/Header';
-import BootstrapJs from '@/components/BootstrapJs';
 import Footer from '@/components/Footer';
 
 export const metadata = {
@@ -17,7 +15,6 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <BootstrapJs />
       </body>
     </html>
   );
