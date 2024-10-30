@@ -7,7 +7,7 @@ import { CONFERENCE, SOCIALS } from '@/details';
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-primary-light-800 to-secondary-light-800 text-gray-50 p-4">
-      <div className="mx-auto w-full max-w-screen-xl">
+      <div className="mx-auto w-full">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex sm:justify-center ">
             {SOCIALS.map((item, index) => (

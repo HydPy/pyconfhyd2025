@@ -25,7 +25,7 @@ const Header = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
-              PyConf 2025
+              PyConf Hyderabad 2025
             </span>
           </Link>
           <button

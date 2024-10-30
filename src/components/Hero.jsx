@@ -6,7 +6,7 @@ import Icon from '@/components/Icon';
 const Hero = () => {
   return (
     <section className="bg-background-light-100 px-4 py-8">
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 w-full">
         <div className="place-self-center col-span-12 lg:col-span-7">
           <h1 className="mb-4 text-3xl font-bold tracking-tight leading-none md:text-4xl lg:text-5xl">
             {CONFERENCE.title}
@@ -25,7 +25,7 @@ const Hero = () => {
           <Image
             src={CONFERENCE.heroBannerUrl}
             alt={CONFERENCE.title}
-            placeholder='blur'
+            priority={true}
             width={1920}
             height={1280}
             style={{
