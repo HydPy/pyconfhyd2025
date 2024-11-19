@@ -6,6 +6,7 @@ export const CONFERENCE = {
     'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
   volunteerFormUrl: 'https://forms.gle/aceBohpaYLWef4eU9',
+  cfpUrl: 'https://www.papercall.io/pyconfhyd2025',
   heroBannerUrl: '/images/hero-banner.webp',
   heroBannerAriaLabel: 'PyConf Hyderabad 2022 volunteers picture',
 };
