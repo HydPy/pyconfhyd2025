@@ -1,5 +1,5 @@
 # Website for [PyConf Hyderabad 2025](http://2025.pyconfhyd.org/)
-This is the repo for PyConf Hyderabad 2025's website. The 5th edition of the regional Python conference in India, taking place in the vibrant city of Hyderabad from **22 February to 23 February 2025**.
+This is the repo for PyConf Hyderabad 2025's website. The 5th edition of the regional Python conference in India, taking place in the vibrant city of Hyderabad.
 
 ## Local Development / Setup Instructions
 
