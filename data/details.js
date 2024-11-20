@@ -5,10 +5,15 @@ export const CONFERENCE = {
   announcement:
     'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
+  logoUrl: '/images/logo.png',
+  logoAlt: 'PyConf Hyderabad 2025 Logo',
+};
+
+export const HERO_BANNER = {
+  imageUrl: '/images/hero-banner.webp',
+  imageAlt: 'PyConf Hyderabad 2025 volunteers picture',
   volunteerFormUrl: 'https://forms.gle/aceBohpaYLWef4eU9',
   cfpUrl: 'https://www.papercall.io/pyconfhyd2025',
-  heroBannerUrl: '/images/hero-banner.webp',
-  heroBannerAriaLabel: 'PyConf Hyderabad 2022 volunteers picture',
 };
 
 export const NAV_ITEMS = [

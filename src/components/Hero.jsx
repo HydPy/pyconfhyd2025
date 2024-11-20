@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { CONFERENCE } from '@/details';
+import { CONFERENCE, HERO_BANNER } from '@/details';
 import Icon from '@/components/Icon';
 
 const Hero = () => {
@@ -14,15 +14,14 @@ const Hero = () => {
           <p className="mb-6 text-gray-600 md:text-lg lg:text-1xl">
             {CONFERENCE.announcement}
           </p>
-
-          <Link href={CONFERENCE.volunteerFormUrl} target="_blank">
-            <button className="inline-flex items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg mr-4">
+          <Link href={HERO_BANNER.volunteerFormUrl} target="_blank">
+            <button className="inline-flex mt-1 items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg mr-4">
               <Icon name="VolunteerActivism" size={20} />
               <span className="ml-2">BECOME A VOLUNTEER</span>
             </button>
           </Link>
-          <Link href={CONFERENCE.cfpUrl} target="_blank">
-            <button className="inline-flex items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg">
+          <Link href={HERO_BANNER.cfpUrl} target="_blank">
+            <button className="inline-flex mt-1 items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg">
               <Icon name="MdCampaign" size={20} />
               <span className="ml-2">SUBMIT YOUR PROPOSAL</span>
             </button>
@@ -30,8 +29,8 @@ const Hero = () => {
         </div>
         <div className="col-span-12 lg:col-span-5 mt-4 lg:mt-0">
           <Image
-            src={CONFERENCE.heroBannerUrl}
-            alt={CONFERENCE.title}
+            src={HERO_BANNER.imageUrl}
+            alt={HERO_BANNER.imageAlt}
             priority={true}
             width={1920}
             height={1280}
@@ -39,7 +38,6 @@ const Hero = () => {
               maxWidth: '100%',
               height: 'auto',
             }}
-            aria-label={CONFERENCE.heroBannerAriaLabel}
           />
         </div>
       </div>
