@@ -14,16 +14,17 @@ const Hero = () => {
           <p className="mb-6 text-gray-600 md:text-lg lg:text-1xl">
             {CONFERENCE.announcement}
           </p>
+
           <Link href={CONFERENCE.volunteerFormUrl} target="_blank">
-            <button className="inline-flex items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg">
-              BECOME A VOLUNTEER
-              <Icon name="VolunteerActivism" className="ms-2" size={20} />
+            <button className="inline-flex items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg mr-4">
+              <Icon name="VolunteerActivism" size={20} />
+              <span className="ml-2">BECOME A VOLUNTEER</span>
             </button>
           </Link>
           <Link href={CONFERENCE.cfpUrl} target="_blank">
             <button className="inline-flex items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg">
-              SUBMIT YOUR PROPOSAL
-              <Icon name="MdCampaign" className="ms-2" size={20} />
+              <Icon name="MdCampaign" size={20} />
+              <span className="ml-2">SUBMIT YOUR PROPOSAL</span>
             </button>
           </Link>
         </div>
