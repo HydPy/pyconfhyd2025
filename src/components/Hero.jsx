@@ -22,7 +22,7 @@ const Hero = () => {
           </Link>
           <Link href={CONFERENCE.cfpUrl} target="_blank">
             <button className="inline-flex items-center justify-center bg-accent-light-600 px-5 py-3 font-medium hover:bg-accent-light-700 text-center text-gray-50 border rounded-lg">
-              CALL FOR PROPOSAL
+              SUBMIT YOUR PROPOSAL
               <Icon name="MdCampaign" className="ms-2" size={20} />
             </button>
           </Link>
