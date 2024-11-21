@@ -21,23 +21,15 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-gradient-to-r from-primary-light-800 to-secondary-light-800 border-light-200 text-gray-50">
+      <nav className="bg-gradient-to-r from-primary-light-800 to-secondary-light-800 border-light-200 text-gray-50 p-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between">
           <Link
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <Image
-              src={CONFERENCE.logoUrl}
-              alt={CONFERENCE.logoAlt}
-              priority={true}
-              width={80}
-              height={80}
-              style={{
-                maxWidth: '100%',
-                height: 'auto',
-              }}
-            />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap">
+              PyConf Hyderabad 2025
+            </span>
           </Link>
           <button
             data-collapse-toggle="navbar-dropdown"
