@@ -4,11 +4,13 @@ import {
   FaInstagram,
   FaLinkedin,
   FaXTwitter,
+  FaEnvelope,
 } from 'react-icons/fa6';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdVolunteerActivism, MdCampaign } from 'react-icons/md';
 
 const icons = {
+  Envelope: FaEnvelope,
   Facebook: FaFacebook,
   GitHub: FaGithub,
   Instagram: FaInstagram,

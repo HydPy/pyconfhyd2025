@@ -61,6 +61,11 @@ export const PAST_EDITIONS = [
 
 export const SOCIALS = [
   {
+    name: 'Envelope',
+    url: 'mailto:contact@hydpy.org',
+    ariaLabel: "Hyperlink to HydPy's email.",
+  },
+  {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/company/pyconf-hyderabad',
     ariaLabel: "Hyperlink to PyConf Hyderabad's LinkedIn page.",

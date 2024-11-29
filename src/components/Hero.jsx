@@ -14,7 +14,7 @@ const Hero = () => {
           alt={ASSETS.logoAlt}
           priority={true}
           width={600}
-          height={56.4}
+          height={204.4}
         />
         <p className="my-6 text-gray-600 md:text-lg lg:text-1xl">
           {CONFERENCE.announcement}
