@@ -2,11 +2,10 @@
 
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
-  darkMode: 'selector',
+  darkMode: 'selector', // Already correct
   theme: {
     extend: {
       colors: {
-        // The main brand color that defines the website’s identity. Headers, logos, and active navigation links.
         primary: {
           light: {
             50: '#ffefdc',
@@ -21,8 +20,20 @@ module.exports = {
             900: '#261906',
             950: '#120b03',
           },
+          dark: {
+            50: '#261906',
+            100: '#5b310d',
+            200: '#904e15',
+            300: '#c56a1c',
+            400: '#fa8624', // Base color
+            500: '#ff9e51',
+            600: '#ffb274',
+            700: '#ffc797',
+            800: '#ffdbba',
+            900: '#ffefdc',
+            950: '#fffaf0',
+          },
         },
-        // Complements the primary color and provides contrast. Buttons, section backgrounds, and icons for variation.
         secondary: {
           light: {
             50: '#d9fffe',
@@ -37,8 +48,20 @@ module.exports = {
             900: '#001817',
             950: '#000c0c',
           },
+          dark: {
+            50: '#001817',
+            100: '#013433',
+            200: '#01514f',
+            300: '#016e6b',
+            400: '#018b87', // Base color
+            500: '#40cecd',
+            600: '#67d9d8',
+            700: '#8de3e2',
+            800: '#b3eeed',
+            900: '#d9fffe',
+            950: '#eaffff',
+          },
         },
-        // Draws immediate attention to important elements. Call-to-action (CTA) buttons, alerts, or promotional banners.
         accent: {
           light: {
             50: '#faf5ff',
@@ -53,8 +76,20 @@ module.exports = {
             900: '#581c87',
             950: '#3b0764',
           },
+          dark: {
+            50: '#3b0764',
+            100: '#581c87',
+            200: '#6b21a8',
+            300: '#7e22ce',
+            400: '#9333ea',
+            500: '#a855f7',
+            600: '#c084fc',
+            700: '#d8b4fe',
+            800: '#e9d5ff',
+            900: '#f3e8ff',
+            950: '#faf5ff',
+          },
         },
-        // The base color, creating a clean backdrop for content. Page background and alternating section colors for layout contrast
         background: {
           light: {
             50: '#fefce8',
@@ -68,6 +103,19 @@ module.exports = {
             800: '#854d0e',
             900: '#713f12',
             950: '#422006',
+          },
+          dark: {
+            50: '#422006',
+            100: '#713f12',
+            200: '#854d0e',
+            300: '#a16207',
+            400: '#ca8a04',
+            500: '#eab308',
+            600: '#facc15',
+            700: '#fde047',
+            800: '#fef08a',
+            900: '#fef9c3',
+            950: '#fffde8',
           },
         },
       },

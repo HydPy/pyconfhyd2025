@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Icon from '@/components/Icon';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 import { CONFERENCE, NAV_ITEMS, ASSETS } from '@/details';
 
@@ -20,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-50 p-4 shadow-lg">
+    <header className="bg-gray-50 dark:bg-gray-900 p-4 shadow-lg">
       <nav className="flex flex-wrap items-center justify-between sm:w-11/12 mx-auto">
         <Link
           href="#"
@@ -34,21 +35,22 @@ const Header = () => {
             height={50}
           />
         </Link>
-        <button
-          data-collapse-toggle="navbar-dropdown"
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-light-100 text-gray-950"
-          aria-controls="navbar-dropdown"
-          aria-expanded={isMenuOpen}
-          onClick={toggleMenu}
-        >
-          <span className="sr-only">Open main menu</span>
-          <Icon name="HamburgerMenu" />
-        </button>
+        <div className="flex items-center">
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-light-100 text-gray-950 dark:text-gray-50"
+            aria-controls="navbar-dropdown"
+            aria-expanded={isMenuOpen}
+            onClick={toggleMenu}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Icon name="HamburgerMenu" />
+          </button>
+        </div>
         <div
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } w-full md:block md:w-auto`}
+          className={`${isMenuOpen ? 'block' : 'hidden'
+            } w-full md:block md:w-auto`}
           id="navbar-dropdown"
         >
           <ul className="flex flex-col text-lg p-4 md:p-0 mt-4 md:mt-0 md:flex-row">
@@ -56,11 +58,10 @@ const Header = () => {
               <li key={index}>
                 <Link
                   href={item.path}
-                  className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${
-                    activePage === item.path
-                      ? 'text-primary-light-700'
-                      : 'text-gray-950'
-                  }`}
+                  className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${activePage === item.path
+                    ? 'text-primary-light-700 dark:text-primary-dark-700'
+                    : 'text-gray-950 dark:text-gray-50'
+                    }`}
                   aria-current={activePage === item.path ? 'page' : undefined}
                   onClick={() => handleNavItemClick(item)}
                   target={item.target}
@@ -69,6 +70,9 @@ const Header = () => {
                 </Link>
               </li>
             ))}
+            <li>
+              <ThemeToggle />
+            </li>
           </ul>
         </div>
       </nav>
