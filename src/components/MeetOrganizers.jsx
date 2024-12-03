@@ -16,9 +16,9 @@ export default function MeetOrganizers() {
         <Image
           src={ABOUT_HYDPY.hydPyLogoUrl}
           alt="Event Design"
-          className="rounded-lg shadow-lg"
-          width={300}
-          height={300}
+          className="rounded-lg"
+          width={400}
+          height={400}
         />
         <p className="text-lg md:text-xl mb-8">
           <a
