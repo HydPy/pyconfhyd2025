@@ -16,7 +16,7 @@ const Hero = () => {
           width={600}
           height={204.4}
         />
-        <p className="my-6 text-gray-600 dark:text-gray-400 md:text-lg lg:text-1xl">
+        <p className="my-6 text-gray-600 dark:text-gray-400 text-lg md:text-xl">
           {CONFERENCE.announcement}
         </p>
         <div className="flex flex-col sm:flex-row">
