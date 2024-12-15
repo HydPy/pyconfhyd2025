@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function MeetOrganizers() {
   return (
     <div className="flex flex-col items-center mx-6 my-8">
-      <h2 className="text-4xl font-bold text-center dark:text-gray-50 mb-8">
+      <h2 className="text-4xl font-bold text-center text-gray-950 dark:text-gray-50 mb-8">
         {ABOUT_HYDPY.title}
       </h2>
       <div className="flex flex-col lg:flex-row-reverse gap-3 lg:gap-0">
@@ -19,7 +19,7 @@ export default function MeetOrganizers() {
           />
           <p className="text-lg md:text-xl">
             <Link
-              className="dark:text-gray-50 underline"
+              className="text-gray-950 dark:text-gray-50 underline"
               href={ABOUT_HYDPY.hydPyUrl}
               target="_blank"
             >
@@ -27,7 +27,7 @@ export default function MeetOrganizers() {
             </Link>
           </p>
         </div>
-        <p className="text-lg md:text-xl max-w-2xl text-gray-600 dark:text-gray-400">
+        <p className="text-lg md:text-xl max-w-2xl  text-gray-600 dark:text-gray-400">
           {ABOUT_HYDPY.description}
         </p>
       </div>

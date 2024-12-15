@@ -5,7 +5,7 @@ import Icon from '@/components/Icon';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col px-8 py-12 items-center justify-center">
+    <section className="flex flex-col mx-8 my-6 items-center justify-center h-[400px] sm:h-[500px]">
       {/*  For SEO */}
       <h1 className="hidden">{CONFERENCE.title}</h1>
       <Image
