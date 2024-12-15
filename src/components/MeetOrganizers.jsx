@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export default function MeetOrganizers() {
   return (
-    <div className="flex flex-col lg:flex-col md:flex-start justify-center items-center p-6 pt-24 pb-12">
-      <h2 className="text-4xl font-bold text-primary dark:text-gray-50 mb-4 text-center">
-          {ABOUT_HYDPY.title}
+    <div className="flex flex-col items-center mx-6 my-8">
+      <h2 className="text-4xl font-bold text-center dark:text-gray-50 mb-8">
+        {ABOUT_HYDPY.title}
       </h2>
-      <div className="flex flex-col lg:flex-row-reverse md:flex-col gap-6">
-        <div className="flex flex-col justify-center items-center gap-3">
+      <div className="flex flex-col lg:flex-row-reverse gap-3 lg:gap-0">
+        <div className="flex flex-col items-center gap-3">
           <Image
             src={ABOUT_HYDPY.hydPyLogoUrl}
             alt={ABOUT_HYDPY.hydPyLogoAlt}
@@ -17,16 +17,17 @@ export default function MeetOrganizers() {
             width={400}
             height={400}
           />
-          <p className="text-lg md:text-xl mb-8">
+          <p className="text-lg md:text-xl">
             <Link
-              className="text-primary dark:text-white underline"
+              className="dark:text-gray-50 underline"
               href={ABOUT_HYDPY.hydPyUrl}
+              target="_blank"
             >
               {ABOUT_HYDPY.hydPyLinkText}
             </Link>
           </p>
         </div>
-        <p className="text-lg md:text-xl max-w-2xl text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-lg md:text-xl max-w-2xl text-gray-600 dark:text-gray-400">
           {ABOUT_HYDPY.description}
         </p>
       </div>

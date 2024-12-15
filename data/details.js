@@ -30,7 +30,7 @@ export const ABOUT_HYDPY = {
   hydPyLogoUrl: '/images/hydpyLogo.svg',
   hydPyLogoAlt: 'HydPy Logo',
   hydPyUrl: 'https://www.hydpy.org/',
-  hydPyLinkText: 'Learn more about HydPy',
+  hydPyLinkText: 'Dive Into HydPy',
 };
 
 export const NAV_ITEMS = [
