@@ -3,11 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Icon from '@/components/Icon';
-import { ThemeToggle } from '@/components/ThemeToggle';
 
-import { CONFERENCE, NAV_ITEMS, ASSETS } from '@/details';
+import { NAV_ITEMS, ASSETS } from '@/details';
 
-const Header = () => {
+const Header = ({ themeToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activePage, setActivePage] = useState('/');
 
@@ -35,7 +34,8 @@ const Header = () => {
             height={50}
           />
         </Link>
-        <div className="flex items-center">
+        <div className="flex items-center gap-1">
+          <div className="md:hidden">{themeToggle}</div>
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
@@ -49,8 +49,9 @@ const Header = () => {
           </button>
         </div>
         <div
-          className={`${isMenuOpen ? 'block' : 'hidden'
-            } w-full md:block md:w-auto`}
+          className={`${
+            isMenuOpen ? 'block' : 'hidden'
+          } w-full md:block md:w-auto`}
           id="navbar-dropdown"
         >
           <ul className="flex flex-col text-lg p-4 md:p-0 mt-4 md:mt-0 md:flex-row">
@@ -58,10 +59,11 @@ const Header = () => {
               <li key={index}>
                 <Link
                   href={item.path}
-                  className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${activePage === item.path
-                    ? 'text-primary-light-700 dark:text-primary-dark-700'
-                    : 'text-gray-950 dark:text-gray-50'
-                    }`}
+                  className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${
+                    activePage === item.path
+                      ? 'text-primary-light-700 dark:text-primary-dark-700'
+                      : 'text-gray-950 dark:text-gray-50'
+                  }`}
                   aria-current={activePage === item.path ? 'page' : undefined}
                   onClick={() => handleNavItemClick(item)}
                   target={item.target}
@@ -70,9 +72,7 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <ThemeToggle />
-            </li>
+            <li className="hidden md:flex">{themeToggle}</li>
           </ul>
         </div>
       </nav>
