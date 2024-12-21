@@ -39,12 +39,6 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-            <Link href="#" target="_blank">
-              <button className="inline-flex mt-2 bg-primary-light-700 px-3 py-2 font-medium hover:bg-primary-light-800 text-gray-50 border rounded-xl">
-                <Icon name="HandHoldingHeart" size={20} />
-                <span className="ml-2">INTERESTED IN SPONSORING</span>
-              </button>
-            </Link>
           </div>
           <div className="flex flex-col my-2">
             <div className="col font-medium text-gray-50">Past Editions</div>

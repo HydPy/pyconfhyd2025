@@ -39,6 +39,12 @@ const Hero = () => {
           </button>
         </Link>
       </div>
+      <Link href="https://forms.gle/d5cg5WpayP9mEfAm9" target="_blank">
+        <button className="inline-flex mt-2 bg-primary-light-700 px-5 py-3 font-medium hover:bg-primary-light-800 text-gray-50 border rounded-lg">
+          <Icon name="HandHoldingHeart" size={20} />
+          <span className="ml-2">INTERESTED IN SPONSORING</span>
+        </button>
+      </Link>
     </section>
   );
 };
