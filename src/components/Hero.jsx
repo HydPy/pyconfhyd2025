@@ -18,6 +18,9 @@ const Hero = () => {
       <p className="my-6 text-center text-gray-600 dark:text-gray-400 text-lg md:text-xl">
         {CONFERENCE.announcement}
       </p>
+      <p className="text-2xl font-bold text-center text-gray-950 dark:text-gray-50 mb-8">
+        {CONFERENCE.dates}
+      </p>
       <div className="flex flex-col sm:flex-row">
         <Link
           href={HERO_BANNER.volunteerFormUrl}

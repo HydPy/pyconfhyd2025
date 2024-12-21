@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaXTwitter,
   FaEnvelope,
+  FaHandHoldingHeart,
 } from 'react-icons/fa6';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -22,6 +23,7 @@ const icons = {
   MdCampaign: MdCampaign,
   Sun: MdLightMode,
   Moon: MdDarkMode,
+  HandHoldingHeart: FaHandHoldingHeart,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {

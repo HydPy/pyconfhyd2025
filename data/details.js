@@ -5,6 +5,7 @@ export const CONFERENCE = {
   announcement:
     'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
+  dates: '22 Feb - 23 Feb',
 };
 
 export const ASSETS = {
