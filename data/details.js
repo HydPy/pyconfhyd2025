@@ -13,15 +13,9 @@ export const ASSETS = {
   navbarLogoAlt: 'PyConf Hyderabad 2025 Python Logo',
   logoUrl: '/images/logo.svg',
   logoAlt: 'PyConf Hyderabad 2025 Logo',
-  monumentsUrl: '/images/monuments.svg',
   monumentsSketchUrl: '/images/monumentsSketch.svg',
   monumentsSketchAlt:
     'Illustration showcasing various iconic monuments of Hyderabad.',
-};
-
-export const HERO_BANNER = {
-  volunteerFormUrl: 'https://forms.gle/aceBohpaYLWef4eU9',
-  cfpUrl: 'https://www.papercall.io/pyconfhyd2025',
 };
 
 export const ABOUT_HYDPY = {
@@ -32,6 +26,12 @@ export const ABOUT_HYDPY = {
   hydPyLogoAlt: 'HydPy Logo',
   hydPyUrl: 'https://www.hydpy.org/',
   hydPyLinkText: 'Dive Into HydPy',
+};
+
+export const KEY_LINKS = {
+  volunteerFormUrl: 'https://forms.gle/aceBohpaYLWef4eU9',
+  cfpUrl: 'https://www.papercall.io/pyconfhyd2025',
+  interestedInSponsoringUrl: 'https://forms.gle/d5cg5WpayP9mEfAm9',
 };
 
 export const NAV_ITEMS = [
@@ -95,5 +95,10 @@ export const SOCIALS = [
     name: 'Instagram',
     url: 'https://www.instagram.com/pyconfhyd',
     ariaLabel: "Hyperlink to PyConf Hyderabad's Instagram page.",
+  },
+  {
+    name: 'Discord',
+    url: 'https://discord.com/invite/C3pnRHMyWJ',
+    ariaLabel: "Hyperlink to PyConf Hyderabad's Discord server.",
   },
 ];

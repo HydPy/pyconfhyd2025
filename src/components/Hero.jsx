@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { CONFERENCE, HERO_BANNER, ASSETS } from '@/details';
+import { CONFERENCE, KEY_LINKS, ASSETS } from '@/details';
 import Icon from '@/components/Icon';
 
 const Hero = () => {
@@ -23,7 +23,7 @@ const Hero = () => {
       </p>
       <div className="flex flex-col sm:flex-row">
         <Link
-          href={HERO_BANNER.volunteerFormUrl}
+          href={KEY_LINKS.volunteerFormUrl}
           target="_blank"
           className="flex justify-center"
         >
@@ -32,14 +32,14 @@ const Hero = () => {
             <span className="ml-2">BECOME A VOLUNTEER</span>
           </button>
         </Link>
-        <Link href={HERO_BANNER.cfpUrl} target="_blank">
+        <Link href={KEY_LINKS.cfpUrl} target="_blank">
           <button className="inline-flex mt-2 bg-primary-light-700 px-5 py-3 font-medium hover:bg-primary-light-800 text-gray-50 border rounded-lg">
             <Icon name="MdCampaign" size={20} />
             <span className="ml-2">SUBMIT YOUR PROPOSAL</span>
           </button>
         </Link>
       </div>
-      <Link href="https://forms.gle/d5cg5WpayP9mEfAm9" target="_blank">
+      <Link href={KEY_LINKS.interestedInSponsoringUrl} target="_blank">
         <button className="inline-flex mt-2 bg-primary-light-700 px-5 py-3 font-medium hover:bg-primary-light-800 text-gray-50 border rounded-lg">
           <Icon name="HandHoldingHeart" size={20} />
           <span className="ml-2">INTERESTED IN SPONSORING</span>
