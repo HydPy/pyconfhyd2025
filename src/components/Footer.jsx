@@ -6,7 +6,7 @@ import {
   CONFERENCE,
   SOCIALS,
   PAST_EDITIONS,
-  PYCON_INDIA_HYDPY_EDITIONS,
+  PYCON_INDIA_HYDPY_PAST_EDITIONS,
   ASSETS,
 } from '@/details';
 
@@ -23,10 +23,10 @@ const Footer = () => {
         }}
       ></div>
       <div className="bg-gradient-to-r from-secondary-light-700 to-secondary-light-800 p-4">
-        <div className="sm:w-4/6 flex flex-wrap justify-between mx-auto">
-          <div className="flex flex-col flex-wrap">
+        <div className="sm:w-4/6 flex flex-row flex-wrap justify-between mx-auto gap-3">
+          <div className="flex flex-col flex-wrap mt-2">
             <div className="font-medium text-gray-50">Contact Us On</div>
-            <div className="flex flex-row my-2">
+            <div className="flex flex-row flex-wrap mt-2">
               {SOCIALS.map((item, index) => (
                 <Link
                   key={index}
@@ -40,11 +40,29 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col my-2">
-            <div className="col font-medium text-gray-50">Past Editions</div>
-            {PAST_EDITIONS.map((item, index) => (
+          <div className="flex flex-col mt-2">
+            <div className="font-medium text-gray-50">
+              {PAST_EDITIONS.sectionTitle}
+            </div>
+            {PAST_EDITIONS.editions.map((item, index) => (
               <Link
-                className="col text-gray-300 hover:text-gray-50 mt-1"
+                className="text-gray-300 hover:text-gray-50 mt-1"
+                key={index}
+                href={item.url}
+                target="_blank"
+                aria-label={item.ariaLabel}
+              >
+                {item.year}
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-col mt-2">
+            <div className="font-medium text-gray-50">
+              {PYCON_INDIA_HYDPY_PAST_EDITIONS.sectionTitle}
+            </div>
+            {PYCON_INDIA_HYDPY_PAST_EDITIONS.editions.map((item, index) => (
+              <Link
+                className="text-gray-300 hover:text-gray-50 mt-1"
                 key={index}
                 href={item.url}
                 target="_blank"
