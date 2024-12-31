@@ -4,7 +4,26 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Icon from '@/components/Icon';
 
+import { Span } from '@/components/Typography';
 import { NAV_ITEMS, ASSETS } from '@/details';
+
+const NavItem = ({ item, activePage, handleNavItemClick }) => {
+  return (
+    <Link
+      href={item.path}
+      className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${
+        activePage === item.path
+          ? 'text-primary-700 dark:text-primary-700'
+          : 'text-gray-950 dark:text-gray-50'
+      }`}
+      aria-current={activePage === item.path ? 'page' : undefined}
+      onClick={() => handleNavItemClick(item)}
+      target={item.target}
+    >
+      <Span>{item.name}</Span>
+    </Link>
+  );
+};
 
 const Header = ({ themeToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +48,6 @@ const Header = ({ themeToggle }) => {
           <Image
             src={ASSETS.navbarLogoUrl}
             alt={ASSETS.navbarLogoAlt}
-            priority={true}
             width={50}
             height={50}
           />
@@ -39,12 +57,12 @@ const Header = ({ themeToggle }) => {
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-light-100 text-gray-950 dark:text-gray-50"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-light-100 text-gray-950 dark:text-gray-50"
             aria-controls="navbar-dropdown"
             aria-expanded={isMenuOpen}
             onClick={toggleMenu}
           >
-            <span className="sr-only">Open main menu</span>
+            <Span className="sr-only">Open main menu</Span>
             <Icon name="HamburgerMenu" />
           </button>
         </div>
@@ -54,22 +72,14 @@ const Header = ({ themeToggle }) => {
           } w-full md:block md:w-auto`}
           id="navbar-dropdown"
         >
-          <ul className="flex flex-col text-lg p-4 md:p-0 mt-4 md:mt-0 md:flex-row">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 md:flex-row">
             {NAV_ITEMS.map((item, index) => (
               <li key={index}>
-                <Link
-                  href={item.path}
-                  className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${
-                    activePage === item.path
-                      ? 'text-primary-light-700 dark:text-primary-dark-700'
-                      : 'text-gray-950 dark:text-gray-50'
-                  }`}
-                  aria-current={activePage === item.path ? 'page' : undefined}
-                  onClick={() => handleNavItemClick(item)}
-                  target={item.target}
-                >
-                  {item.name}
-                </Link>
+                <NavItem
+                  item={item}
+                  activePage={activePage}
+                  handleNavItemClick={handleNavItemClick}
+                />
               </li>
             ))}
             <li className="hidden md:flex">{themeToggle}</li>

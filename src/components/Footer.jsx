@@ -22,7 +22,7 @@ const Footer = () => {
           ariaLabel: ASSETS.monumentsSketchAlt,
         }}
       ></div>
-      <div className="bg-gradient-to-r from-secondary-light-700 to-secondary-light-800 p-4">
+      <div className="bg-gradient-to-r from-secondary-700 to-secondary-800 p-4">
         <div className="sm:w-4/6 flex flex-row flex-wrap justify-between mx-auto gap-3">
           <div className="flex flex-col flex-wrap mt-2">
             <div className="font-medium text-gray-50">Contact Us On</div>
@@ -73,7 +73,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <hr className="h-px mt-2 text-gray-50" />
+        <hr className="h-px mt-4 text-gray-50" />
         <div className="text-center mt-4 text-gray-100">
           {CONFERENCE.copyrightTitle}
         </div>
