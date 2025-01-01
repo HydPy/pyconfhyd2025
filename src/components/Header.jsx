@@ -13,7 +13,7 @@ const NavItem = ({ item, activePage, handleNavItemClick }) => {
       href={item.path}
       className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${
         activePage === item.path
-          ? 'text-primary-700 dark:text-primary-700'
+          ? 'text-primary-700 dark:text-primary-600'
           : 'text-gray-950 dark:text-gray-50'
       }`}
       aria-current={activePage === item.path ? 'page' : undefined}
