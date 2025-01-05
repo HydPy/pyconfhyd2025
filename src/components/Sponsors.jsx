@@ -49,7 +49,7 @@ const SponsorsSection = () => {
         {SPONSORS_INFO.title}
       </Heading>
       <div className="flex flex-col items-center">
-        <Paragraph className="text-gray-600 dark:text-gray-400 lg:w-11/12 text-center">
+        <Paragraph className="text-gray-600 dark:text-gray-400 lg:w-11/12">
           {SPONSORS_INFO.description}
         </Paragraph>
         <div className="flex flex-col sm:flex-row justify-center my-2">
