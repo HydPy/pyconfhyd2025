@@ -5,7 +5,8 @@ import React, { useState } from 'react';
 import Icon from '@/components/Icon';
 
 import { Span } from '@/components/Typography';
-import { NAV_ITEMS, ASSETS } from '@/details';
+import { ASSETS } from '@/conference';
+import { NAV_ITEMS } from '@/navItems';
 
 const NavItem = ({ item, activePage, handleNavItemClick }) => {
   return (

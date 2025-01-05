@@ -29,7 +29,9 @@ export const Paragraph = ({ level = 3, children, className = '' }) => {
     {
       1: 'text-xl md:text-2xl lg:text-3xl',
       2: 'text-lg md:text-xl lg:text-2xl',
-      3: 'md:text-lg lg:text-xl',
+      3: 'text-base md:text-lg lg:text-xl',
+      4: 'text-sm md:text-base lg:text-lg',
+      5: 'text-xs md:text-sm lg:text-base',
     }[level] || '';
   return (
     <p className={`${baseStyle} ${responsiveStyle} ${className}`}>{children}</p>
@@ -42,7 +44,9 @@ export const Span = ({ level = 3, children, className = '' }) => {
     {
       1: 'text-xl md:text-2xl lg:text-3xl',
       2: 'text-lg md:text-xl lg:text-2xl',
-      3: 'md:text-lg lg:text-xl',
+      3: 'text-base md:text-lg lg:text-xl',
+      4: 'text-sm md:text-base lg:text-lg',
+      5: 'text-xs md:text-sm lg:text-base',
     }[level] || '';
   return (
     <span className={`${baseStyle} ${responsiveStyle} ${className}`}>

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { CONFERENCE, KEY_LINKS, ASSETS } from '@/details';
-import Icon from '@/components/Icon';
 
 import { Heading, Paragraph, Span } from '@/components/Typography';
+import Icon from '@/components/Icon';
+import { CONFERENCE, KEY_LINKS, ASSETS } from '@/conference';
 
 const Hero = () => {
   return (
@@ -29,23 +29,28 @@ const Hero = () => {
           href={KEY_LINKS.volunteerFormUrl}
           target="_blank"
           className="flex justify-center"
+          rel="noopener noreferrer"
         >
           <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
             <Icon name="VolunteerActivism" size={20} />
-            <Span className="ml-2">BECOME A VOLUNTEER</Span>
+            <Span className="ml-2">{KEY_LINKS.volunteerFormLabel}</Span>
           </button>
         </Link>
-        <Link href={KEY_LINKS.cfpUrl} target="_blank">
+        <Link href={KEY_LINKS.cfpUrl} target="_blank" rel="noopener noreferrer">
           <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
             <Icon name="MdCampaign" size={20} />
-            <Span className="ml-2">SUBMIT YOUR PROPOSAL</Span>
+            <Span className="ml-2">{KEY_LINKS.cfpLabel}</Span>
           </button>
         </Link>
       </div>
-      <Link href={KEY_LINKS.interestedInSponsoringUrl} target="_blank">
+      <Link
+        href={KEY_LINKS.interestedInSponsoringUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
           <Icon name="HandHoldingHeart" size={20} />
-          <Span className="ml-2">INTERESTED IN SPONSORING</Span>
+          <Span className="ml-2">{KEY_LINKS.interestedInSponsoringLabel}</Span>
         </button>
       </Link>
     </section>

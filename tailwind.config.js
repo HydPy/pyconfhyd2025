@@ -32,6 +32,10 @@ module.exports = {
           900: '#001817',
           950: '#000c0c',
         },
+        background: {
+          light: '#FFF8F3',
+          dark: '#1A202C',
+        },
       },
     },
   },

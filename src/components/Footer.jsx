@@ -2,13 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 
 import Icon from '@/components/Icon';
-import {
-  CONFERENCE,
-  SOCIALS,
-  PAST_EDITIONS,
-  PYCON_INDIA_HYDPY_PAST_EDITIONS,
-  ASSETS,
-} from '@/details';
+import { CONFERENCE, SOCIALS, ASSETS } from '@/conference';
+import { PAST_EDITIONS, PYCON_INDIA_HYDPY_PAST_EDITIONS } from '@/pastEditions';
 
 const Footer = () => {
   return (
@@ -34,6 +29,7 @@ const Footer = () => {
                   href={item.url}
                   target="_blank"
                   aria-label={item.ariaLabel}
+                  rel="noopener noreferrer"
                 >
                   <Icon name={item.name} />
                 </Link>

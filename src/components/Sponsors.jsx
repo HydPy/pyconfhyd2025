@@ -1,62 +1,99 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
-import SponsorCard from './SponsorCard';
-import {SPONSORS} from '@/sponsors';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { Heading, Paragraph, Span } from '@/components/Typography';
+import { SPONSORS, SPONSORS_INFO } from '@/sponsors';
+import { KEY_LINKS } from '@/conference';
+
+const SponsorCard = ({ name, description, hyperLink, logoUrl }) => {
+  return (
+    <Link
+      href={hyperLink}
+      className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+        <Image
+          src={logoUrl}
+          alt={`${name} logo`}
+          className="object-contain p-2"
+          priority={true}
+          width={200}
+          height={200}
+        />
+        <Heading
+          tagLevel={4}
+          level={6}
+          className="my-2 text-gray-950 dark:text-gray-50"
+        >
+          {name}
+        </Heading>
+        <Paragraph level={4} className="text-gray-600 dark:text-gray-400">
+          {description}
+        </Paragraph>
+      </div>
+    </Link>
+  );
+};
 
 const SponsorsSection = () => {
-  const {
-    platinumSponsors,
-    goldSponsors,
-    silverSponsors,
-  } = SPONSORS;
-
   return (
-    <section className="py-4 sm:py-8 lg:py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-      <h2 className="text-4xl font-bold text-primary dark:text-gray-50 mb-4 text-center">
-        Sponsors
-      </h2>
-      <div className="container mx-auto px-3 sm:px-6 lg:px-8 max-w-4xl">
-        {/* Platinum Sponsors */}
-        {platinumSponsors.length > 0 && (
-          <div className="mb-12 sm:mb-20">
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#00857C] text-center mb-8 sm:mb-12 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-[#FF8C00] after:transform after:-translate-x-1/2">
-              Platinum Sponsors
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 mx-auto max-w-3xl">
-              {platinumSponsors.map((sponsor) => (
-                <SponsorCard key={sponsor.id} {...sponsor} />
-              ))}
+    <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
+      <Heading
+        tagLevel={2}
+        level={1}
+        className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+      >
+        {SPONSORS_INFO.title}
+      </Heading>
+      <div className="flex flex-col items-center">
+        <Paragraph className="text-gray-600 dark:text-gray-400 lg:w-11/12 text-center">
+          {SPONSORS_INFO.description}
+        </Paragraph>
+        <div className="flex flex-col sm:flex-row justify-center my-2">
+          <Link
+            href={KEY_LINKS.interestedInSponsoringUrl}
+            target="_blank"
+            className="flex justify-center items-center"
+            rel="noopener noreferrer"
+          >
+            <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
+              <Span className="ml-2">
+                {KEY_LINKS.interestedInSponsoringLabel}
+              </Span>
+            </button>
+          </Link>
+          <Link
+            href={KEY_LINKS.interestedInSponsoringUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
+              <Span className="ml-2">
+                {KEY_LINKS.interestedInSponsoringLabel}
+              </Span>
+            </button>
+          </Link>
+        </div>
+        {SPONSORS &&
+          Object.keys(SPONSORS).map((type) => (
+            <div key={type} className="my-8">
+              <Heading
+                tagLevel={3}
+                level={3}
+                className="text-center mb-8 text-secondary-600 dark:text-secondary-400 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-primary-500 after:transform after:-translate-x-1/2"
+              >
+                {type}
+              </Heading>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 md:gap-x-6 ld:gap-x-8 gap-y-6 md:gap-y-8 lg:gap-y-10">
+                {SPONSORS[type].map((sponsor) => (
+                  <SponsorCard key={sponsor.id} {...sponsor} />
+                ))}
+              </div>
             </div>
-          </div>
-        )}
-
-        {/* Gold Sponsors */}
-        {goldSponsors.length > 0 && (
-          <div className="mb-12 sm:mb-16">
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#00857C] text-center mb-6 sm:mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-[#FF8C00] after:transform after:-translate-x-1/2">
-              Gold Sponsors
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-              {goldSponsors.map((sponsor) => (
-                <SponsorCard key={sponsor.id} {...sponsor} />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Silver Sponsors */}
-        {silverSponsors.length > 0 && (
-          <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#00857C] text-center mb-6 sm:mb-8 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:w-16 after:h-1 after:bg-[#FF8C00] after:transform after:-translate-x-1/2">
-              Silver Sponsors
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-              {silverSponsors.map((sponsor) => (
-                <SponsorCard key={sponsor.id} {...sponsor} />
-              ))}
-            </div>
-          </div>
-        )}
+          ))}
       </div>
     </section>
   );
