@@ -25,6 +25,9 @@ export const KEY_LINKS = {
   cfpUrl: 'https://www.papercall.io/pyconfhyd2025',
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
   interestedInSponsoringUrl: 'https://forms.gle/d5cg5WpayP9mEfAm9',
+  sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
+  sponsorshipProspectusUrl:
+    'https://drive.google.com/file/d/1wtTf5smvyfs26dNy2gVYPW0b9QK9NvwJ/view?usp=sharing',
 };
 
 export const SOCIALS = [

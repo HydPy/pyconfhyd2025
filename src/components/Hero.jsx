@@ -43,16 +43,6 @@ const Hero = () => {
           </button>
         </Link>
       </div>
-      <Link
-        href={KEY_LINKS.interestedInSponsoringUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
-          <Icon name="HandHoldingHeart" size={20} />
-          <Span className="ml-2">{KEY_LINKS.interestedInSponsoringLabel}</Span>
-        </button>
-      </Link>
     </section>
   );
 };

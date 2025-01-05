@@ -5,13 +5,13 @@ export const SPONSORS_INFO = {
 };
 
 export const SPONSORS = {
-  Platinum: [
-    {
-      id: 1,
-      name: 'Python Software Foundation',
-      description: 'The organization behind Python programming language',
-      hyperLink: 'https://www.python.org/psf/',
-      logoUrl: '/images/logo.svg',
-    },
-  ],
+  // Platinum: [
+  //   {
+  //     id: 1,
+  //     name: 'Python Software Foundation',
+  //     description: 'The organization behind Python programming language',
+  //     hyperLink: 'https://www.python.org/psf/',
+  //     logoUrl: '/images/logo.svg',
+  //   },
+  // ],
 };

@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <MeetOrganizers />
-      {/* <SponsorsSection /> */}
+      <SponsorsSection />
     </>
   );
 }
