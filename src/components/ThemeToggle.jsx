@@ -1,33 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
-import Icon from './Icon';
+import { useTheme } from '@/components/ThemeContext';
+import Icon from '@/components/Icon';
 
 export const ThemeToggle = () => {
-  const [theme, setTheme] = useState(null); // Start with `null` to indicate the theme is loading
-
-  useEffect(() => {
-    // Check initial theme preference
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches;
-
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    setTheme(initialTheme);
-    document.documentElement.classList.toggle('dark', initialTheme === 'dark');
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
-
-  if (theme === null) {
-    // Prevent rendering until theme is determined
-    return null;
-  }
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button

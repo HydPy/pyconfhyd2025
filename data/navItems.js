@@ -5,6 +5,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Tickets',
+    path: '/#tickets',
+    target: '_self',
+  },
+  {
     name: 'Sponsors',
     path: '/#sponsors',
     target: '_self',
