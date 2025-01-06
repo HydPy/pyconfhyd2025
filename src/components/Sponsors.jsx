@@ -40,7 +40,10 @@ const SponsorCard = ({ name, description, hyperLink, logoUrl }) => {
 
 const SponsorsSection = () => {
   return (
-    <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
+    <section
+      id="sponsors"
+      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+    >
       <Heading
         tagLevel={2}
         level={1}

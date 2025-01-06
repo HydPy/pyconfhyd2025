@@ -6,7 +6,10 @@ import { ABOUT_HYDPY } from '@/hydPy';
 
 export default function MeetOrganizers() {
   return (
-    <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
+    <section
+      id="organizers"
+      className="scroll-mt-20 flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto"
+    >
       <Heading
         level={1}
         className="text-center my-8 text-secondary-600 dark:text-secondary-400"

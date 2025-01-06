@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <MeetOrganizers />
       <SponsorsSection />
+      <MeetOrganizers />
     </>
   );
 }
