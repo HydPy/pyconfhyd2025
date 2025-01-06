@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="flex flex-col py-6 items-center w-11/12 lg:w-5/6 mx-auto">
       {/*  For SEO */}
-      <Heading tagLevel={2} level={1} className="hidden">
+      <Heading tagLevel={1} level={1} className="hidden">
         {CONFERENCE.title}
       </Heading>
       <div className="relative w-full sm:w-3/4 md:w-1/2 aspect-[2/1]">
@@ -25,17 +25,6 @@ const Hero = () => {
         {CONFERENCE.announcement}
       </Paragraph>
       <div className="flex flex-col sm:flex-row">
-        <Link
-          href={KEY_LINKS.volunteerFormUrl}
-          target="_blank"
-          className="flex justify-center"
-          rel="noopener noreferrer"
-        >
-          <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
-            <Icon name="VolunteerActivism" size={20} />
-            <Span className="ml-2">{KEY_LINKS.volunteerFormLabel}</Span>
-          </button>
-        </Link>
         <Link href={KEY_LINKS.cfpUrl} target="_blank" rel="noopener noreferrer">
           <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
             <Icon name="MdCampaign" size={20} />
