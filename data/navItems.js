@@ -20,6 +20,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'FAQ',
+    path: '/faq',
+    target: '_self',
+  },
+  {
     name: 'Code Of Conduct',
     path: 'https://docs.google.com/document/d/1yjPaVdsQCbowelwI1LlGco3CFGG3vZKhGiMYXDOOKrY',
     target: '_blank',
