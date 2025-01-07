@@ -14,7 +14,8 @@ export const ThemeProvider = ({ children }) => {
       '(prefers-color-scheme: dark)'
     ).matches;
 
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    // const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    const initialTheme = 'light';
     setTheme(initialTheme);
     document.documentElement.classList.toggle('dark', initialTheme === 'dark');
   }, []);

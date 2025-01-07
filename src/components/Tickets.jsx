@@ -19,7 +19,7 @@ export default function Tickets() {
       >
         Tickets
       </Heading>
-      <Paragraph level={3}>
+      <Paragraph level={3} className='mb-2'>
         You can book your tickets directly on the
         <Link
           className="text-gray-950 dark:text-gray-50 underline mx-1"
