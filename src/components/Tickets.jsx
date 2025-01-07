@@ -1,6 +1,8 @@
 'use client';
+import Link from 'next/link';
 import { useTheme } from '@/components/ThemeContext';
-import { Heading } from '@/components/Typography';
+import { Heading, Paragraph, Span } from '@/components/Typography';
+import { KEY_LINKS } from '@/conference';
 
 export default function Tickets() {
   const { theme } = useTheme();
@@ -17,6 +19,17 @@ export default function Tickets() {
       >
         Tickets
       </Heading>
+      <Paragraph level={3}>
+        You can book your tickets directly on the
+        <Link
+          className="text-gray-950 dark:text-gray-50 underline mx-1"
+          href={KEY_LINKS.konfHubEventPage}
+          target="_blank"
+        >
+          <Span>{KEY_LINKS.konfHubEventPageLabel}</Span>
+        </Link>
+        or through the embedded view here.
+      </Paragraph>
       {theme === 'light' ? (
         <iframe
           src="https://konfhub.com/widget/pyconf-hyderabad-2025?desc=false&secondaryBg=fff8f3&ticketBg=fff8f3&borderCl=fff8f3&bg=f9fafb&fontColor=016e6b&ticketCl=016e6b&btnColor=fa8624&fontFamily=Nunito&borderRadius=10"

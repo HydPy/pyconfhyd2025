@@ -28,6 +28,8 @@ export const KEY_LINKS = {
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
   sponsorshipProspectusUrl:
     'https://drive.google.com/file/d/15gfdVu8FyVP9-zohx_y56jmW1v-2DUid/view?usp=sharing',
+    konfHubEventPageLabel: 'KonfHub event page',
+    konfHubEventPage: 'https://konfhub.com/pyconf-hyderabad-2025'
 };
 
 export const SOCIALS = [
