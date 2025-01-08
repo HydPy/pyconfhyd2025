@@ -44,29 +44,41 @@ export function KeynoteSpeaker() {
             </div>
 
             {/* Speaker Name */}
-            <h1 className="text-gray-600 dark:text-gray-400 text-4xl font-bold text-center">
+            <Heading
+              tagLevel={2}
+              level={2}
+              className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+            >
               {name}
-            </h1>
+            </Heading>
           </div>
 
           {/* Right Section */}
-          <div className="bg-primary p-8 text-white relative">
-            <div className="space-y-8 relative z-10">
+          <div className="bg-primary p-8 text-gray-50">
+            <div className="space-y-8">
               <Paragraph className="text-gray-600 dark:text-gray-400 lg:w-4xl w-3xl">
                 {description}
               </Paragraph>
               {/* Fellow Recognition */}
               <div className="text-gray-700 text-lg">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold mb-4">
+                  <Heading
+                    tagLevel={3}
+                    level={5}
+                    className="text-2xl font-bold mb-4"
+                  >
                     {contributionsLabel}:
-                  </h3>
-                  <p className="ml-6">{contributions}</p>
+                  </Heading>
+                  <Paragraph className="ml-6">{contributions}</Paragraph>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold mt-6 mb-4">
+                  <Heading
+                    tagLevel={3}
+                    level={5}
+                    className="text-2xl font-bold mt-6 mb-4"
+                  >
                     {recognitionsLabel}:
-                  </h3>
+                  </Heading>
                   <ul className="list-disc ml-10">
                     {recognitions.map((value, index) => (
                       <li key={index}>{value}</li>
@@ -74,8 +86,14 @@ export function KeynoteSpeaker() {
                   </ul>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold mt-6">{authorLabel}:</h3>
-                  <p className="ml-6">{author}</p>
+                  <Heading
+                    tagLevel={3}
+                    level={5}
+                    className="text-2xl font-bold mt-6"
+                  >
+                    {authorLabel}:
+                  </Heading>
+                  <Paragraph className="ml-6">{author}</Paragraph>
                 </div>
               </div>
             </div>
