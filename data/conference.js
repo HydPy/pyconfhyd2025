@@ -26,8 +26,7 @@ export const KEY_LINKS = {
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
   interestedInSponsoringUrl: 'https://forms.gle/d5cg5WpayP9mEfAm9',
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
-  sponsorshipProspectusUrl:
-    'https://drive.google.com/file/d/15gfdVu8FyVP9-zohx_y56jmW1v-2DUid/view?usp=sharing',
+  sponsorshipProspectusUrl: 'https://drive.google.com/file/d/16mi1It0ZqSUQzaFtSdQks6RsQm-Cs23d/view?usp=drive_link',
   konfHubEventPageLabel: 'KonfHub event page',
   konfHubEventPage: 'https://konfhub.com/pyconf-hyderabad-2025',
 };
