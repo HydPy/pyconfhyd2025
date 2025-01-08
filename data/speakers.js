@@ -3,7 +3,7 @@ export const KEYNOTE_SPEAKER = {
   title: 'Keynote Speaker',
   description:
     'Anthony Shaw is an active contributor to open source projects and has been recognized as a fellow by the Python Software Foundation, Apache Software Foundation, and Macquarie University. He is the author of the book CPython Internals.',
-  speakerImgUrl: '/images/speakers/anthony-shaw.png',
+  speakerImgUrl: '/images/speakers/anthony-shaw.svg',
   speakerImgAlt: 'Anthony Shaw',
   designation: 'Keynote Speaker',
   recognitionsLabel: 'Fellow Recognition',
