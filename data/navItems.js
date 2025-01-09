@@ -10,6 +10,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Keynote Speaker',
+    path: '/#keynote-speaker',
+    target: '_self',
+  },
+  {
     name: 'Sponsors',
     path: '/#sponsors',
     target: '_self',
