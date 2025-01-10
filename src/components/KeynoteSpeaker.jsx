@@ -37,7 +37,7 @@ export function KeynoteSpeaker() {
             </div>
           </div>
           {/* Right Section */}
-          <div className="bg-primary dark:bg-secondary md:mt-8 text-gray-50 md:w-2/5">
+          <div className="bg-primary dark:bg-secondary md:mt-2 text-gray-50 md:w-2/5">
             <Heading
               tagLevel={3}
               level={2}
