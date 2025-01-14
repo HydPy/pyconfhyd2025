@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ASSETS } from '@/conference';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function NotFound() {
     useEffect(() => {
@@ -55,12 +55,12 @@ export default function NotFound() {
                 <h1 className="text-6xl lg:text-8xl font-bold text-orange-600 mb-6" aria-label="404 - Page not found">
                     4<span className="inline-block">0</span>4
                 </h1>
-                <p className="text-xl lg:text-2xl text-orange-800 mb-8">Oops! The page you're looking for has vanished.</p>
-                <a href="/"
-                    className="inline-block py-3 px-6 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition duration-300 mb-12 focus:outline-none focus:ring-2 focus:ring-orange-300"
-                    aria-label="Go back to home page">
-                    Take Me Home.
-                </a>
+                <p className="text-xl lg:text-2xl text-orange-800 mb-8">Oops! The page you&apos;re looking for has vanished.</p>
+                <Link href="/">
+                    <a className="inline-block py-3 px-6 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition duration-300 mb-12 focus:outline-none focus:ring-2 focus:ring-orange-300" aria-label="Go back to home page">
+                        Take Me Home.
+                    </a>
+                </Link>
                 <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto" aria-hidden="true">
                     {/* Grid of animated squares with images */}
                 </div>
