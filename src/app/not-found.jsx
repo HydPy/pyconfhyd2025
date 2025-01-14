@@ -56,10 +56,8 @@ export default function NotFound() {
                     4<span className="inline-block">0</span>4
                 </h1>
                 <p className="text-xl lg:text-2xl text-orange-800 mb-8">Oops! The page you&apos;re looking for has vanished.</p>
-                <Link href="/">
-                    <a className="inline-block py-3 px-6 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition duration-300 mb-12 focus:outline-none focus:ring-2 focus:ring-orange-300" aria-label="Go back to home page">
-                        Take Me Home.
-                    </a>
+                <Link href="/" className="inline-block py-3 px-6 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition duration-300 mb-12 focus:outline-none focus:ring-2 focus:ring-orange-300" aria-label="Go back to home page">
+                    Take Me Home.
                 </Link>
                 <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto" aria-hidden="true">
                     {/* Grid of animated squares with images */}
