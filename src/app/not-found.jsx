@@ -2,22 +2,39 @@
 
 import { useEffect } from 'react';
 import gsap from 'gsap';
+import { ASSETS } from '@/conference';
+import Image from 'next/image';
 
 export default function NotFound() {
     useEffect(() => {
         const grid = document.querySelector('.grid');
-        for (let i = 0; i < 3; i++) {
-            const square = document.createElement('div');
-            square.className = 'bg-orange-200 rounded-lg aspect-square';
-            grid.appendChild(square);
+        const rows = 2;
+        const cols = 2;
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+                const square = document.createElement('div');
+                square.className = 'bg-orange-200 rounded-lg overflow-hidden';
+                square.style.width = '300px'; // Width is twice the height
+                square.style.height = '150px'; // Height
+                const img = document.createElement('img');
+                img.src = ASSETS.logoUrl;
+                img.className = 'h-full w-full object-cover';
+                img.alt = 'Logo';
+                square.appendChild(img);
+                grid.appendChild(square);
+            }
         }
 
         gsap.from('.grid div', {
             scale: 0,
             opacity: 0,
             duration: 1,
-            stagger: 0.2,
-            ease: 'back.out(1.7)',
+            stagger: {
+                each: 0.2,
+                grid: [cols, rows], // 2 columns, 2 rows
+                from: 'start' // Start from the first row
+            },
+            ease: 'back.out(1.2)',
             yoyo: true,
             repeat: -1,
             repeatDelay: 1
@@ -44,9 +61,8 @@ export default function NotFound() {
                     aria-label="Go back to home page">
                     Take Me Home.
                 </a>
-                <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto" aria-hidden="true">
-                    
-                    {/* Grid of animated squares */}
+                <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto" aria-hidden="true">
+                    {/* Grid of animated squares with images */}
                 </div>
             </main>
         </div>
