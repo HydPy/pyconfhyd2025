@@ -30,6 +30,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Community Partners',
+    path: '/#community-partners',
+    target: '_self',
+  },
+  {
     name: 'FAQ',
     path: '/faq',
     target: '_self',

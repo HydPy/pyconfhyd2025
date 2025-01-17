@@ -3,6 +3,7 @@ import { KeynoteSpeaker } from '@/components/KeynoteSpeaker';
 import MeetOrganizers from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
 import Tickets from '@/components/Tickets';
+import CommunityPartners from '@/components/CommunityPartners';
 import InfoAlert from '@/components/InfoAlert';
 import { CONFERENCE } from '@/conference';
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Tickets />
       <KeynoteSpeaker />
       <SponsorsSection />
+      <CommunityPartners />
       <MeetOrganizers />
     </>
   );
