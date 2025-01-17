@@ -14,11 +14,11 @@ export default function NotFound() {
             for (let col = 0; col < cols; col++) {
                 const square = document.createElement('div');
                 square.className = 'bg-orange-200 rounded-lg overflow-hidden transform transition-transform duration-500 ease-out hover:scale-110';
-                square.style.width = '100%'; // Make width responsive
-                square.style.height = '200px'; // Adjust height for better aspect ratio
+                square.style.width = '100%'; 
+                square.style.height = '200px'; 
                 const img = document.createElement('img');
                 img.src = ASSETS.logoUrl;
-                img.className = 'h-full w-full object-contain'; // Use object-contain to fit image within the card
+                img.className = 'h-full w-full object-contain'; 
                 img.alt = 'Logo';
                 square.appendChild(img);
                 grid.appendChild(square);
@@ -33,7 +33,7 @@ export default function NotFound() {
                     4<span className="inline-block">0</span>4
                 </Heading>
                 <Paragraph className="text-xl lg:text-2xl text-secondary-600 mb-8">
-                    Sorry, the page you are looking for cannot be found. Let's get you back on track!
+                    Sorry, the page you are looking for cannot be found. Let&apos;s get you back on track!
                 </Paragraph>
                 <Link href="/" className="inline-block py-3 px-6 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition duration-300 mb-12 focus:outline-none focus:ring-2 focus:ring-orange-300" aria-label="Go back to home page">
                     Take Me Home.
