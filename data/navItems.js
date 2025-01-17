@@ -25,6 +25,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Speakers',
+    path: '/speaker',
+    target: '_self',
+  },
+  {
     name: 'FAQ',
     path: '/faq',
     target: '_self',
