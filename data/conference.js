@@ -7,7 +7,8 @@ export const CONFERENCE = {
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
   dates: '22 Feb - 23 Feb',
   conferenceDate: '22 Feb',
-  workshopDate: '23 Feb'
+  workshopDate: '23 Feb',
+  infoText: 'The schedule will be released by the end of January after the CFP review process is completed.',
 };
 
 export const ASSETS = {

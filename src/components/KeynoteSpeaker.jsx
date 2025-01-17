@@ -41,7 +41,7 @@ export function KeynoteSpeaker() {
             <Heading
               tagLevel={3}
               level={2}
-              className="my-4 text-secondary-600 dark:text-secondary-400"
+              className="text-center md:text-start my-4 text-secondary-600 dark:text-secondary-400"
             >
               {name}
             </Heading>
