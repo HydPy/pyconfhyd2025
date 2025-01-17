@@ -15,23 +15,29 @@ const Hero = () => {
       <div className="relative w-full sm:w-3/4 md:w-1/2 aspect-[2/1]">
         <Image src={ASSETS.logoUrl} alt={ASSETS.logoAlt} priority={true} fill />
       </div>
+      <div className="flex items-center">
+        <Icon
+          name="Calendar"
+          size={26}
+          className="text-secondary-600 dark:text-secondary-400"
+        />
+        <Span
+          level={1}
+          className="text-center font-semibold ml-2 text-secondary-600 dark:text-secondary-400"
+        >
+          {CONFERENCE.dates}
+        </Span>
+      </div>
       <Span
-        level={1}
-        className="text-center font-semibold text-secondary-600 dark:text-secondary-400"
+        level={3}
+        className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
       >
-        {CONFERENCE.dates}
+        Conference: {CONFERENCE.conferenceDate} | Workshop:{' '}
+        {CONFERENCE.workshopDate}
       </Span>
       <Paragraph className="mt-3 mb-6 text-center text-gray-600 dark:text-gray-400">
         {CONFERENCE.announcement}
       </Paragraph>
-      <div className="flex flex-col sm:flex-row">
-        <Link href={KEY_LINKS.cfpUrl} target="_blank" rel="noopener noreferrer">
-          <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
-            <Icon name="MdCampaign" size={20} />
-            <Span className="ml-2">{KEY_LINKS.cfpLabel}</Span>
-          </button>
-        </Link>
-      </div>
     </section>
   );
 };

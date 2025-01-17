@@ -7,7 +7,8 @@ import Icon from '@/components/Icon';
 import Link from 'next/link';
 
 export function KeynoteSpeaker() {
-  const { name, title, speakerImgUrl, speakerImgAlt, socials } = KEYNOTE_SPEAKER;
+  const { name, title, speakerImgUrl, speakerImgAlt, socials } =
+    KEYNOTE_SPEAKER;
   return (
     <section
       id="keynote-speaker"
@@ -34,23 +35,22 @@ export function KeynoteSpeaker() {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Speaker Name */}
+          </div>
+          {/* Right Section */}
+          <div className="bg-primary dark:bg-secondary md:mt-2 text-gray-50 md:w-2/5">
             <Heading
               tagLevel={3}
               level={2}
-              className="text-center my-4 text-secondary-600 dark:text-secondary-400"
+              className="text-center md:text-start my-4 text-secondary-600 dark:text-secondary-400"
             >
               {name}
             </Heading>
-          </div>
-          {/* Right Section */}
-          <div className="bg-primary dark:bg-secondary md:mt-8 text-gray-50 md:w-2/5">
             <div className="">
               <MdxLayout className="text-gray-600 dark:text-gray-400">
                 <AnthonyShawDescription />
               </MdxLayout>
             </div>
-            <div className="flex flex-row flex-wrap mt-8 justify-center">
+            <div className="flex flex-row flex-wrap mt-8">
               {socials.map((item, index) => (
                 <Link
                   key={index}

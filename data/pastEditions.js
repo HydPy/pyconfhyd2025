@@ -6,6 +6,11 @@ export const PYCON_INDIA_HYDPY_PAST_EDITIONS = {
       url: 'https://in.pycon.org/2023/',
       ariaLabel: 'PyCon India 2023 website',
     },
+    {
+      year: 2018,
+      url: 'https://in.pycon.org/2018/',
+      ariaLabel: 'PyCon India 2018 website',
+    },
   ],
 };
 
