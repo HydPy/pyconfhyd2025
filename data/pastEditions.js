@@ -10,7 +10,7 @@ export const PYCON_INDIA_HYDPY_PAST_EDITIONS = {
       year: 2018,
       url: 'https://in.pycon.org/2018/',
       ariaLabel: 'PyCon India 2018 website',
-    }
+    },
   ],
 };
 

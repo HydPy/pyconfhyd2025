@@ -24,5 +24,5 @@ export const KEYNOTE_SPEAKER = {
       url: 'https://x.com/anthonypjshaw',
       ariaLabel: "Hyperlink to Anthony Shaw's X page.",
     },
-  ]
+  ],
 };

@@ -9,7 +9,7 @@ import { CONFERENCE } from '@/conference';
 export default function Home() {
   return (
     <>
-      <InfoAlert text={CONFERENCE.infoText}/>
+      <InfoAlert text={CONFERENCE.infoText} />
       <Hero />
       <Tickets />
       <KeynoteSpeaker />
