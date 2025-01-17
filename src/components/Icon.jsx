@@ -7,7 +7,8 @@ import {
   FaEnvelope,
   FaHandHoldingHeart,
   FaDiscord,
-  FaBlog
+  FaBlog,
+  FaCalendar,
 } from 'react-icons/fa6';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -28,6 +29,7 @@ const icons = {
   HandHoldingHeart: FaHandHoldingHeart,
   Discord: FaDiscord,
   Blog: FaBlog,
+  Calendar: FaCalendar,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {
