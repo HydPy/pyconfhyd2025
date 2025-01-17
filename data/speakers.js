@@ -29,7 +29,7 @@ export const KEYNOTE_SPEAKER = {
 
 export const ALL_SPEAKERS = [
   {
-    name: 'SASIDHAR DONAPARTHI',
+    name: 'Sasidhar Donaparthi',
     title: 'Data Scientist 25+ years in IT & Python Enthusiast', 
     imgUrl: "/images/speakers/sasidhar-donaparthi.svg",
     imgAlt: "Sasidhar Donaparthi's picture",
@@ -53,7 +53,7 @@ export const ALL_SPEAKERS = [
     ],
   },
   {
-    name: 'AKSHIT TYAGI',
+    name: 'Akshit Tyagi',
     title: 'Undergrad at JIIT Noida OSDC Open Source Contributor', 
     imgUrl: '/images/speakers/akshit-tyagi.svg',
     imgAlt: "Akshit Tyagi's picture",
@@ -77,35 +77,35 @@ export const ALL_SPEAKERS = [
     ],
   },
   {
-    name: 'PREETHI SRINIVASAN',
+    name: 'Preethi Srinivasan',
     title: 'MS(by Research) from IIT Mandi DL Enthusiast', 
     imgUrl: '/images/speakers/preethi-srinivasan.svg',
-    imgAlt: "PREETHI SRINIVASAN's picture",
+    imgAlt: "Preethi Srinivasan's picture",
     about:"Experienced in DL for medical imaging, video analysis (summarisation and captioning), QA systems using RAG/LLM fine-tuning and quantisation. Published at IEEE-CBMS, ACCV, NIPS-Workshop.",
     socials: [
       {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/preethi-srinivasan-3a221915/',
-        ariaLabel: "Hyperlink to PREETHI SRINIVASAN's LinkedIn page.",
+        ariaLabel: "Hyperlink to Preethi Srinivasan's LinkedIn page.",
       },
     ],
   },
   {
-    name: 'SHRUTI DHAVALIKAR',
+    name: 'Shruti Dhavalikar',
     title: 'Data Science Enthusiast Translating Data into Business Insights', 
     imgUrl: '/images/speakers/shruti-dhavalikar.svg',
-    imgAlt: "SHRUTI DHAVALIKAR's picture",
+    imgAlt: "Shruti Dhavalikar's picture",
     about:"A data science enthusiast, keen to understand data and build models that translate data points into business insights.",
     socials: [
       {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/shruti-dhavalikar-83514615a/',
-        ariaLabel: "Hyperlink to SHRUTI DHAVALIKAR's LinkedIn page.",
+        ariaLabel: "Hyperlink to Shruti Dhavalikar's LinkedIn page.",
       },
     ],
   },
   {
-    name: 'VIJAY KUMAR B',
+    name: 'Vijay Kumar B',
     title: 'Head of Engineering at Zilogic Co-organizer of Chennaipy', 
     imgUrl: '/images/speakers/vijay-kumar-b.svg',
     imgAlt: "Vijay Kumar B's picture",
@@ -123,6 +123,61 @@ export const ALL_SPEAKERS = [
       },
     ],
   },
- 
-  
+  {
+    name: 'Agriya Khetarpal',
+    title: 'Software Engineer at Quansight Packaging Scientific Python Libraries', 
+    imgUrl: '/images/speakers/agriya-khetarpal.svg',
+    imgAlt: "Agriya Khetarpal's picture",
+    about:"Agriya Khetarpal is a software engineer at Quansight, where he works on the packaging and distribution of software in the Scientific Python and PyData ecosystems.",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://linkedin.com/in/agriyakhetarpal',
+        ariaLabel: "Hyperlink to Agriya Khetarpal's LinkedIn page.",
+      },
+      {
+        name: 'X',
+        url: 'https://twitter.com/agriyakhetarpal',
+        ariaLabel: "Hyperlink to Agriya Khetarpal's X page.",
+      },
+    ],
+  },
+  {
+    name: 'Anand S',
+    title: 'LLM Psychologist at Straive Calvin & Hobbes Fan', 
+    imgUrl: '/images/speakers/anand-s.svg',
+    imgAlt: "Anand S's picture",
+    about:"Anand is an LLM Psychologist at Straive. He is a regular PyCon speaker. More importantly, he has hand-transcribed every Calvin & Hobbes strip ever, is addicted to manga, and dreams of watching every film on the IMDb Top 250.",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/sanand0',
+        ariaLabel: "Hyperlink to Anand S's LinkedIn page.",
+      },
+      {
+        name: 'X',
+        url: 'https://twitter.com/sanand0',
+        ariaLabel: "Hyperlink to Anand S's X page.",
+      },
+    ],
+  },
+  {
+    name: 'Gautam Jajoo',
+    title: 'Researcher at Microsoft Research Al & Open Source Enthusiast', 
+    imgUrl: '/images/speakers/gautam-jajoo.svg',
+    imgAlt: "Gautam Jajoo's picture",
+    about:"Gautam Jajoo, a BITS Pilani undergrad, is an open source and AI enthusiast researching on federated learning, distributed learning, and causal inference. He is involved with Microsoft Research, Atlassian, MIT Media Lab, and Nantes Université.",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/gautamjajoo/',
+        ariaLabel: "Hyperlink to Gautam Jajoo's LinkedIn page.",
+      },
+      {
+        name: 'X',
+        url: 'https://x.com/gautam_jajoo',
+        ariaLabel: "Hyperlink to Gautam Jajoo's X page.",
+      },
+    ],
+  },
 ];
