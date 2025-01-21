@@ -9,20 +9,56 @@ import { ASSETS } from '@/conference';
 import { NAV_ITEMS } from '@/navItems';
 
 const NavItem = ({ item, activePage, handleNavItemClick }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
-    <Link
-      href={item.path}
-      className={`block py-2 px-4 mb-1 md:mb-0 rounded  ${
-        activePage === item.path
-          ? 'text-primary-700 dark:text-primary-600'
-          : 'text-gray-950 dark:text-gray-50'
-      }`}
-      aria-current={activePage === item.path ? 'page' : undefined}
-      onClick={() => handleNavItemClick(item)}
-      target={item.target}
-    >
-      <Span>{item.name}</Span>
-    </Link>
+    <div className="flex flex-row py-2 px-4 mb-1 md:mb-0 rounded">
+      <Link
+        href={item.path}
+        className={`${
+          activePage === item.path
+            ? 'text-primary-700 dark:text-primary-600'
+            : 'text-gray-950 dark:text-gray-50'
+        }`}
+        aria-current={activePage === item.path ? 'page' : undefined}
+        onClick={() => handleNavItemClick(item)}
+        target={item.target}
+      >
+        <Span>{item.name}</Span>
+      </Link>
+      {item.children && (
+        <>
+          <button
+            onClick={toggleDropdown}
+            className="ml-2 text-gray-950 dark:text-gray-50 focus:outline-none"
+          >
+            <Icon name="ChevronDown" size={16} />
+          </button>
+          {isDropdownOpen &&
+          <ul
+            className={'flex flex-col'}
+          >
+            {item.children.map((child, index) => (
+              <li key={index} className="md:inline-block">
+                <Link
+                  href={child.path}
+                  className="block py-2 px-4 rounded hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-950 dark:text-gray-50"
+                  onClick={() => handleNavItemClick(child)}
+                  target={child.target}
+                >
+                  <Span>{child.name}</Span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          }
+        </>
+      )}
+    </div>
   );
 };
 
