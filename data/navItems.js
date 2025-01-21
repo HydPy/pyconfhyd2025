@@ -31,7 +31,7 @@ export const NAV_ITEMS = [
   },
   {
     name: 'Speakers',
-    path: '/speaker',
+    path: '/speakers',
     target: '_self',
   },
   {

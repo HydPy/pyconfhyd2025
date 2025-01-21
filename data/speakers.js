@@ -29,154 +29,157 @@ export const KEYNOTE_SPEAKER = {
 
 export const ALL_SPEAKERS = [
   {
-    name: 'Sasidhar Donaparthi',
-    title: 'Data Scientist 25+ years in IT & Python Enthusiast', 
-    imgUrl: "/images/speakers/sasidhar-donaparthi.svg",
-    imgAlt: "Sasidhar Donaparthi's picture",
-    about:"Innovative and dynamic hands-on technology leader with 25+ years of IT experience in manufacturing and financial services domains. Passionate Python programmer for a decade. Currently working as a Data Scientist at Fidelity Investments.",
+    name: 'Alice Johnson',
+    title: 'Full-Stack Developer & Tech Speaker',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Alice Johnson's picture",
+    about: "Alice is a passionate full-stack developer with expertise in building scalable web applications.",
     socials: [
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/sasidonaparthi/',
-        ariaLabel: "Hyperlink to Sasidhar Donaparthi's LinkedIn page.",
+        url: 'https://linkedin.com/in/alicejohnson',
+        ariaLabel: "Hyperlink to Alice Johnson's LinkedIn page.",
       },
+      {
+        name: 'X',
+        url: 'https://x.com/alicejohnson',
+        ariaLabel: "Hyperlink to Alice Johnson's X page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/alicejohnson',
+        ariaLabel: "Hyperlink to Alice Johnson's GitHub page.",
+      },
+    ],
+  },
+  {
+    name: 'Bob Smith',
+    title: 'Cybersecurity Specialist & Ethical Hacker',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Bob Smith's picture",
+    about: "Bob is an ethical hacker helping organizations secure their infrastructure against cyber threats.",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://twitter.com/bobsmith',
+        ariaLabel: "Hyperlink to Bob Smith's Twitter page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://linkedin.com/in/bobsmith',
+        ariaLabel: "Hyperlink to Bob Smith's Linkedin page.",
+      },
+    ],
+  },
+  {
+    name: 'Charlie Davis',
+    title: 'Machine Learning Engineer',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Charlie Davis's picture",
+    about: "Charlie works on cutting-edge AI solutions and enjoys sharing his knowledge through blogs and talks.",
+    socials: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/charliedavis',
+        ariaLabel: "Hyperlink to Charlie Davis's GitHub page.",
+      },
+    ],
+  },
+  {
+    name: 'Diana Lee',
+    title: 'UI/UX Designer & Design Thinker',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Diana Lee's picture",
+    about: "Diana is a UX designer creating user-centric designs that enhance digital experiences.",
+    socials: [
       {
         name: 'Instagram',
-        url: 'https://www.instagram.com/sdonapar/',
-        ariaLabel: "Hyperlink to Sasidhar Donaparthi's Instagram page.",
+        url: 'https://instagram.com/dianalee',
+        ariaLabel: "Hyperlink to Diana Lee's Instagram page.",
       },
+    ],
+  },
+  {
+    name: 'Edward Kim',
+    title: 'Cloud Architect & DevOps Engineer',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Edward Kim's picture",
+    about: "Edward specializes in cloud solutions, helping businesses scale efficiently and securely.",
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://linkedin.com/in/edwardkim',
+        ariaLabel: "Hyperlink to Edward Kim's LinkedIn page.",
+      },
+    ],
+  },
+  {
+    name: 'Fiona Patel',
+    title: 'Product Manager & Agile Coach',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Fiona Patel's picture",
+    about: "Fiona drives product success by balancing user needs with business goals using agile methodologies.",
+    socials: [
       {
         name: 'X',
-        url: 'https://x.com/sdonapar',
-        ariaLabel: "Hyperlink to Sasidhar Donaparthi's X page.",
+        url: 'https://twitter.com/fionapatel',
+        ariaLabel: "Hyperlink to Fiona Patel's Twitter page.",
       },
     ],
   },
   {
-    name: 'Akshit Tyagi',
-    title: 'Undergrad at JIIT Noida OSDC Open Source Contributor', 
-    imgUrl: '/images/speakers/akshit-tyagi.svg',
-    imgAlt: "Akshit Tyagi's picture",
-    about:"Undergraduate student at JIIT Noida with a vast array of interests including the Python programming language and the Scientific Python ecosystem, pursuing which he contributes to and helps maintain Open-Source projects in the Space",
+    name: 'George Brown',
+    title: 'Blockchain Developer & Smart Contract Auditor',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "George Brown's picture",
+    about: "George is passionate about blockchain technology and works on secure smart contract development.",
+    socials: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/georgebrown',
+        ariaLabel: "Hyperlink to George Brown's GitHub page.",
+      },
+    ],
+  },
+  {
+    name: 'Hannah Wilson',
+    title: 'Data Analyst & Visualization Expert',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Hannah Wilson's picture",
+    about: "Hannah transforms complex datasets into meaningful insights with stunning visualizations.",
     socials: [
       {
         name: 'LinkedIn',
-        url: 'https://in.pycon.org/2024/image/speakers/akshit-tyagi.jpg',
-        ariaLabel: "Hyperlink to Akshit Tyagi's LinkedIn page.",
+        url: 'https://linkedin.com/in/hannahwilson',
+        ariaLabel: "Hyperlink to Hannah Wilson's LinkedIn page.",
       },
-      {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/akshit_tyagi42/',
-        ariaLabel: "Hyperlink to Akshit Tyagi's Instagram page.",
-      },
+    ],
+  },
+  {
+    name: 'Ian Roberts',
+    title: 'Embedded Systems Engineer',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Ian Roberts's picture",
+    about: "Ian designs and optimizes embedded systems for IoT devices and automation.",
+    socials: [
       {
         name: 'X',
-        url: 'https://www.instagram.com/akshit_tyagi42/',
-        ariaLabel: "Hyperlink to Akshit Tyagi's X page.",
+        url: 'https://twitter.com/ianroberts',
+        ariaLabel: "Hyperlink to Ian Roberts's Twitter page.",
       },
     ],
   },
   {
-    name: 'Preethi Srinivasan',
-    title: 'MS(by Research) from IIT Mandi DL Enthusiast', 
-    imgUrl: '/images/speakers/preethi-srinivasan.svg',
-    imgAlt: "Preethi Srinivasan's picture",
-    about:"Experienced in DL for medical imaging, video analysis (summarisation and captioning), QA systems using RAG/LLM fine-tuning and quantisation. Published at IEEE-CBMS, ACCV, NIPS-Workshop.",
+    name: 'Jessica Miller',
+    title: 'Tech Evangelist & Conference Speaker',
+    imgUrl: '/images/speakers/placeholder.svg',
+    imgAlt: "Jessica Miller's picture",
+    about: "Jessica advocates for technology adoption and speaks at major conferences worldwide.",
     socials: [
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/preethi-srinivasan-3a221915/',
-        ariaLabel: "Hyperlink to Preethi Srinivasan's LinkedIn page.",
-      },
-    ],
-  },
-  {
-    name: 'Shruti Dhavalikar',
-    title: 'Data Science Enthusiast Translating Data into Business Insights', 
-    imgUrl: '/images/speakers/shruti-dhavalikar.svg',
-    imgAlt: "Shruti Dhavalikar's picture",
-    about:"A data science enthusiast, keen to understand data and build models that translate data points into business insights.",
-    socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/shruti-dhavalikar-83514615a/',
-        ariaLabel: "Hyperlink to Shruti Dhavalikar's LinkedIn page.",
-      },
-    ],
-  },
-  {
-    name: 'Vijay Kumar B',
-    title: 'Head of Engineering at Zilogic Co-organizer of Chennaipy', 
-    imgUrl: '/images/speakers/vijay-kumar-b.svg',
-    imgAlt: "Vijay Kumar B's picture",
-    about:"I help build, integrate and test embedded systems primarily in automotive domain. As part of my community work, I help co-organize the Chennaipy meetup group, and helped organizing PySangamam 2018 and PyCon India 2019.",
-    socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/bravegnu/',
-        ariaLabel: "Hyperlink to Vijay Kumar B's LinkedIn page.",
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/bravegnu/',
-        ariaLabel: "Hyperlink to Vijay Kumar B's X page.",
-      },
-    ],
-  },
-  {
-    name: 'Agriya Khetarpal',
-    title: 'Software Engineer at Quansight Packaging Scientific Python Libraries', 
-    imgUrl: '/images/speakers/agriya-khetarpal.svg',
-    imgAlt: "Agriya Khetarpal's picture",
-    about:"Agriya Khetarpal is a software engineer at Quansight, where he works on the packaging and distribution of software in the Scientific Python and PyData ecosystems.",
-    socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://linkedin.com/in/agriyakhetarpal',
-        ariaLabel: "Hyperlink to Agriya Khetarpal's LinkedIn page.",
-      },
-      {
-        name: 'X',
-        url: 'https://twitter.com/agriyakhetarpal',
-        ariaLabel: "Hyperlink to Agriya Khetarpal's X page.",
-      },
-    ],
-  },
-  {
-    name: 'Anand S',
-    title: 'LLM Psychologist at Straive Calvin & Hobbes Fan', 
-    imgUrl: '/images/speakers/anand-s.svg',
-    imgAlt: "Anand S's picture",
-    about:"Anand is an LLM Psychologist at Straive. He is a regular PyCon speaker. More importantly, he has hand-transcribed every Calvin & Hobbes strip ever, is addicted to manga, and dreams of watching every film on the IMDb Top 250.",
-    socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/sanand0',
-        ariaLabel: "Hyperlink to Anand S's LinkedIn page.",
-      },
-      {
-        name: 'X',
-        url: 'https://twitter.com/sanand0',
-        ariaLabel: "Hyperlink to Anand S's X page.",
-      },
-    ],
-  },
-  {
-    name: 'Gautam Jajoo',
-    title: 'Researcher at Microsoft Research Al & Open Source Enthusiast', 
-    imgUrl: '/images/speakers/gautam-jajoo.svg',
-    imgAlt: "Gautam Jajoo's picture",
-    about:"Gautam Jajoo, a BITS Pilani undergrad, is an open source and AI enthusiast researching on federated learning, distributed learning, and causal inference. He is involved with Microsoft Research, Atlassian, MIT Media Lab, and Nantes Université.",
-    socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/gautamjajoo/',
-        ariaLabel: "Hyperlink to Gautam Jajoo's LinkedIn page.",
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/gautam_jajoo',
-        ariaLabel: "Hyperlink to Gautam Jajoo's X page.",
+        url: 'https://linkedin.com/in/jessicamiller',
+        ariaLabel: "Hyperlink to Jessica Miller's LinkedIn page.",
       },
     ],
   },
