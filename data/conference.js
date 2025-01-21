@@ -9,7 +9,7 @@ export const CONFERENCE = {
   conferenceDate: '22 Feb',
   workshopDate: '23 Feb',
   infoText:
-    'The schedule will be released by the end of January after the CFP review process is completed.',
+    'We have communicated the results to the speakers, and the schedule will be released by the end of January after receiving their confirmations.',
 };
 
 export const ASSETS = {
