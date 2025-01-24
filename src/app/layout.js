@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { ThemeProvider } from '@/components/ThemeContext';
+import InfoAlert from '@/components/InfoAlert';
 
 export const metadata = {
   title: CONFERENCE.title,
@@ -25,7 +26,9 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           {/* <Header themeToggle={<ThemeToggle />} /> */}
           <Header themeToggle={<></>} />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow">
+            <InfoAlert text={CONFERENCE.infoText} />
+            {children}</main>
           <Footer />
         </ThemeProvider>
       </body>

@@ -1,36 +1,42 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname, useSearchParams } from 'next/navigation';
 import React, { useState } from 'react';
 import Icon from '@/components/Icon';
 import { Span } from '@/components/Typography';
 import { ASSETS } from '@/conference';
 import { NAV_ITEMS } from '@/navItems';
 
-const NavItem = ({ item, activePage, handleNavItemClick }) => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  console.log(activePage, item.pageUrl);
+const NavItem = ({
+  item,
+  activePath,
+  handleNavItemClick,
+  dropDownPath,
+  setDropDownPath,
+}) => {
+  const isDropdownOpen = dropDownPath === item.name;
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+    setDropDownPath(isDropdownOpen ? null : item.name);
   };
 
   const handleItemClick = (navItem) => {
     handleNavItemClick(navItem);
-    setIsDropdownOpen(false); // Close dropdown after click
+    setDropDownPath(null); // Close dropdown after click
   };
 
   return (
     <div className="flex flex-col md:flex-row py-2 px-4 mb-1 md:mb-0 rounded">
-      {item.path ? (
+      {!item.children ? (
         <Link
           href={item.path}
           className={`${
-            activePage === item.path
+            activePath === item.path
               ? 'text-primary-700 dark:text-primary-600'
               : 'text-gray-950 dark:text-gray-50'
           }`}
-          aria-current={activePage === item.path ? 'page' : undefined}
+          aria-current={activePath === item.path ? 'page' : undefined}
           onClick={() => handleItemClick(item)}
           target={item.target}
         >
@@ -39,44 +45,44 @@ const NavItem = ({ item, activePage, handleNavItemClick }) => {
       ) : (
         <div
           className={`${
-            activePage === item.pageUrl
+            activePath === item.path || activePath.split("#")[0] === item.path
               ? 'text-primary-700 dark:text-primary-600'
               : 'text-gray-950 dark:text-gray-50'
           }`}
         >
           <Span>{item.name}</Span>
-        </div>
-      )}
-      {item.children && (
-        <>
           <button
             onClick={toggleDropdown}
             className="ml-3 text-gray-950 dark:text-gray-50 focus:outline-none"
             aria-expanded={isDropdownOpen}
           >
-            <Icon name="ChevronDown" size={16} />
+            <Icon
+              name={isDropdownOpen ? 'ChevronUp' : 'ChevronDown'}
+              size={16}
+            />
+            <Span className='hidden'>ChevronUp</Span>
           </button>
-          {isDropdownOpen && (
-            <ul className="flex flex-col mt-2 ml-4 md:ml-0">
-              {item.children.map((child, index) => (
-                <li key={index} className="mb-1 md:mb-0">
-                  <Link
-                    href={child.path}
-                    className={`block py-2 px-4 rounded hover:bg-gray-200 dark:hover:bg-gray-700 ${
-                      activePage === child.path
-                        ? 'bg-gray-200 dark:bg-gray-700'
-                        : 'text-gray-950 dark:text-gray-50'
-                    }`}
-                    onClick={() => handleItemClick(child)}
-                    target={child.target}
-                  >
-                    <Span>{child.name}</Span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </>
+        </div>
+      )}
+      {item.children && isDropdownOpen && (
+        <ul className="relative md:absolute top-full bg-gray-50 dark:bg-gray-900 mt-2">
+          {item.children.map((child, index) => (
+            <li key={index} className="mb-1 md:mb-0">
+              <Link
+                href={child.path}
+                className={`block py-2 px-4 rounded hover:bg-gray-200 dark:hover:bg-gray-700 ${
+                  activePath === child.path
+                    ? 'text-primary-700 dark:text-primary-600'
+                    : 'text-gray-950 dark:text-gray-50'
+                }`}
+                onClick={() => handleItemClick(child)}
+                target={child.target}
+              >
+                <Span>{child.name}</Span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
@@ -84,7 +90,12 @@ const NavItem = ({ item, activePage, handleNavItemClick }) => {
 
 const Header = ({ themeToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activePage, setActivePage] = useState('/');
+  const [dropDownPath, setDropDownPath] = useState(null);
+
+  const pathname = usePathname(); // Extracts the current path
+  const searchParams = useSearchParams(); // Extracts the query parameters
+  const fullPath = `${pathname}${searchParams ? `${searchParams.toString()}` : ''}`;
+  const [activePath, setActivePath] = useState(fullPath);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -92,7 +103,7 @@ const Header = ({ themeToggle }) => {
 
   const handleNavItemClick = (item) => {
     if (item.target === '_blank') return;
-    setActivePage(item.path.split('#')[0]);
+    setActivePath(item.path || '/'); // Update active path
     setIsMenuOpen(false); // Close mobile menu on item click
   };
 
@@ -135,8 +146,10 @@ const Header = ({ themeToggle }) => {
               <li key={index}>
                 <NavItem
                   item={item}
-                  activePage={activePage}
+                  activePath={activePath}
                   handleNavItemClick={handleNavItemClick}
+                  dropDownPath={dropDownPath}
+                  setDropDownPath={setDropDownPath}
                 />
               </li>
             ))}
