@@ -5,7 +5,6 @@ import { Heading, Paragraph, Span } from '@/components/Typography';
 import { COMMUNITY_PARTNERS_INFO } from '@/communityPartners';
 import { KEY_LINKS } from '@/conference';
 
-
 const CommunityPartners = () => {
   return (
     <section
@@ -31,9 +30,7 @@ const CommunityPartners = () => {
             rel="noopener noreferrer"
           >
             <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
-              <Span>
-                {KEY_LINKS.CommunityPartnersProspectusLabel}
-              </Span>
+              <Span>{KEY_LINKS.CommunityPartnersProspectusLabel}</Span>
             </button>
           </Link>
           <Link

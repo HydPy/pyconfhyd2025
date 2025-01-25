@@ -28,7 +28,8 @@ export default function RootLayout({ children }) {
           <Header themeToggle={<></>} />
           <main className="flex-grow">
             <InfoAlert text={CONFERENCE.infoText} />
-            {children}</main>
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

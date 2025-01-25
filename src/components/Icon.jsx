@@ -10,7 +10,7 @@ import {
   FaBlog,
   FaCalendar,
   FaChevronDown,
-  FaChevronUp
+  FaChevronUp,
 } from 'react-icons/fa6';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';

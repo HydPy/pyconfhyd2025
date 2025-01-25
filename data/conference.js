@@ -30,13 +30,13 @@ export const KEY_LINKS = {
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
   interestedInSponsoringUrl: 'https://forms.gle/d5cg5WpayP9mEfAm9',
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
-  sponsorshipProspectusUrl:
-    '/docs/sponsorship-prospectus.pdf',
+  sponsorshipProspectusUrl: '/docs/sponsorship-prospectus.pdf',
   konfHubEventPageLabel: 'KonfHub event page',
   konfHubEventPage: 'https://konfhub.com/pyconf-hyderabad-2025',
   CommunityPartnersProspectusUrl: '/docs/community-partners-prospectus.pdf',
   CommunityPartnersProspectusLabel: 'PROSPECTUS',
-  CommunityPartnersProspectusRegisterFormUrl: 'https://forms.gle/FzjQa9ufDchpe9Va7',
+  CommunityPartnersProspectusRegisterFormUrl:
+    'https://forms.gle/FzjQa9ufDchpe9Va7',
   CommunityPartnersProspectusRegisterFormLabel: 'REGISTER',
 };
 

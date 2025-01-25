@@ -45,7 +45,7 @@ const NavItem = ({
       ) : (
         <div
           className={`${
-            activePath === item.path || activePath.split("#")[0] === item.path
+            activePath === item.path || activePath.split('#')[0] === item.path
               ? 'text-primary-700 dark:text-primary-600'
               : 'text-gray-950 dark:text-gray-50'
           }`}
@@ -60,7 +60,7 @@ const NavItem = ({
               name={isDropdownOpen ? 'ChevronUp' : 'ChevronDown'}
               size={16}
             />
-            <Span className='hidden'>ChevronUp</Span>
+            <Span className="hidden">ChevronUp</Span>
           </button>
         </div>
       )}
