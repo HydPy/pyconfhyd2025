@@ -7,7 +7,9 @@ export const CONFERENCE = {
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
   dates: '22 Feb - 23 Feb',
   conferenceDate: '22 Feb',
+  conferenceVenue: 'T-Hub',
   workshopDate: '23 Feb',
+  workshopVenue: 'TBD',
   infoText:
     'We have communicated the results to the speakers, and the schedule will be released by the end of January after receiving their confirmations.',
 };
@@ -17,6 +19,8 @@ export const ASSETS = {
   navbarLogoAlt: 'PyConf Hyderabad 2025 Python Logo',
   logoUrl: '/images/logo.svg',
   logoAlt: 'PyConf Hyderabad 2025 Logo',
+  heroBannerUrl: '/images/hero-banner-bg.svg',
+  heroBannerAlt: 'Background image of colorful kites soaring in the sky on the hero banner',
   monumentsSketchUrl: '/images/monumentsSketch.svg',
   monumentsSketchAlt:
     'Illustration showcasing various iconic monuments of Hyderabad.',

@@ -3,18 +3,18 @@ import Link from 'next/link';
 
 import { Heading, Paragraph, Span } from '@/components/Typography';
 import Icon from '@/components/Icon';
-import { CONFERENCE, KEY_LINKS, ASSETS } from '@/conference';
+import { CONFERENCE, ASSETS } from '@/conference';
 
 const Hero = () => {
   return (
     <section
       className="w-full"
       style={{
-        backgroundImage: `url(/images/hero-banner-bg.svg)`,
+        backgroundImage: `url(${ASSETS.heroBannerUrl})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        ariaLabel: ASSETS.monumentsSketchAlt,
+        ariaLabel: ASSETS.heroBannerAlt,
       }}
     >
       <div className="flex flex-col py-6 items-center w-11/12 lg:w-5/6 mx-auto">
@@ -47,8 +47,13 @@ const Hero = () => {
           level={3}
           className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
         >
-          Conference: {CONFERENCE.conferenceDate} | Workshop:{' '}
-          {CONFERENCE.workshopDate}
+          Conference: {CONFERENCE.conferenceDate} | Venue: {CONFERENCE.conferenceVenue}
+        </Span>
+        <Span
+          level={3}
+          className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
+        >
+          Workshop: {CONFERENCE.workshopDate} | Venue: {CONFERENCE.workshopVenue}
         </Span>
         <Paragraph className="mt-3 mb-6 text-center text-gray-600 dark:text-gray-400">
           {CONFERENCE.announcement}
