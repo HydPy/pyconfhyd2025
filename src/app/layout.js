@@ -1,5 +1,6 @@
 import './globals.css';
 import { metadata } from '@/metadata';
+import { CONFERENCE } from '@/conference';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ThemeToggle } from '@/components/ThemeToggle';
