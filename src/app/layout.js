@@ -1,5 +1,4 @@
 import './globals.css';
-import { CONFERENCE, ASSETS } from '@/conference';
 import { metadata } from '@/metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';

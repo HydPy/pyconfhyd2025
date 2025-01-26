@@ -5,6 +5,10 @@ import { Heading } from '@/components/Typography';
 export const metadata = {
   title: 'Code Of Conduct',
   description: 'Code of Conduct for PyConf Hyderabad 2025',
+  openGraph: {
+    title: 'Code Of Conduct',
+    description: 'Code of Conduct for PyConf Hyderabad 2025',
+  },
 }
 
 export default function Page() {
