@@ -2,6 +2,11 @@ import COCMdx from '@/coc.mdx';
 import MdxLayout from '@/components/MdxLayout';
 import { Heading } from '@/components/Typography';
 
+export const metadata = {
+  title: 'Code Of Conduct',
+  description: 'Code of Conduct for PyConf Hyderabad 2025',
+}
+
 export default function Page() {
   return (
     <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">

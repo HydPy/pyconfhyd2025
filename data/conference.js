@@ -4,14 +4,32 @@ export const CONFERENCE = {
     'PyConf Hyderabad 2025 is the regional gathering of Pythonistas and the largest Python Conference in Hyderabad.',
   announcement:
     'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',
+  siteURL: 'http://2025.pyconfhyd.org',
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
-  dates: '22 Feb - 23 Feb',
   conferenceDate: '22 Feb',
   conferenceVenue: 'T-Hub',
   workshopDate: '23 Feb',
   workshopVenue: 'TBD',
   infoText:
     'We have communicated the results to the speakers, and the schedule will be released by the end of January after receiving their confirmations.',
+  creator: 'HydPy',
+  dates: '22 Feb - 23 Feb',
+  generator: 'Next.js',
+  infoText:
+    'The schedule will be released by the end of January after the CFP review process is completed.',
+  keywords: [
+    'Python',
+    'Conference',
+    'Hyderabad',
+    '2025',
+    'PyConf',
+    'Pythonistas',
+    'Python Programmers',
+    'Python Developers',
+    'Python Community',
+    'Python Conference',
+  ],
+  robots: 'index, follow',
 };
 
 export const ASSETS = {
