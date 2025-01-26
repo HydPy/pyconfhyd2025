@@ -15,8 +15,6 @@ export const CONFERENCE = {
   creator: 'HydPy',
   dates: '22 Feb - 23 Feb',
   generator: 'Next.js',
-  infoText:
-    'The schedule will be released by the end of January after the CFP review process is completed.',
   keywords: [
     'Python',
     'Conference',
@@ -38,7 +36,8 @@ export const ASSETS = {
   logoUrl: '/images/logo.svg',
   logoAlt: 'PyConf Hyderabad 2025 Logo',
   heroBannerUrl: '/images/hero-banner-bg.svg',
-  heroBannerAlt: 'Background image of colorful kites soaring in the sky on the hero banner',
+  heroBannerAlt:
+    'Background image of colorful kites soaring in the sky on the hero banner',
   monumentsSketchUrl: '/images/monumentsSketch.svg',
   monumentsSketchAlt:
     'Illustration showcasing various iconic monuments of Hyderabad.',

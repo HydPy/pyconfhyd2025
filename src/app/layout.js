@@ -7,7 +7,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { ThemeProvider } from '@/components/ThemeContext';
 import InfoAlert from '@/components/InfoAlert';
 
-export {metadata};
+export { metadata };
 
 export default function RootLayout({ children }) {
   return (
