@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { CONFERENCE } from './conference';
+import { ASSETS, CONFERENCE } from './conference';
 
 export const metadata: Metadata = {
   title: { default: CONFERENCE.title, template: `%s | ${CONFERENCE.title}` },
@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   robots: CONFERENCE.robots,
   verification: { google: 'SDiASvij4kTElFGJgQPndWo3eYgk5yHmr417E_6wu7A' },
   metadataBase: new URL(CONFERENCE.siteURL),
+  icons: {
+    icon: [
+      { url: ASSETS.navbarLogoUrl },
+      { url: ASSETS.navbarLogoUrl, sizes: '16x16', type: 'image/svg+xml' },
+      { url: ASSETS.navbarLogoUrl, sizes: '32x32', type: 'image/svg+xml' },
+    ],
+    apple: { url: ASSETS.navbarLogoUrl },
+  },
   openGraph: {
     title: { default: CONFERENCE.title, template: `%s | ${CONFERENCE.title}` },
     description: CONFERENCE.description,
