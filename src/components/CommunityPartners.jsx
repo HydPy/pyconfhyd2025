@@ -22,7 +22,7 @@ const CommunityPartners = () => {
         <Paragraph className="lg:text-center text-gray-600 dark:text-gray-400 lg:w-11/12">
           {COMMUNITY_PARTNERS_INFO.description}
         </Paragraph>
-        <div className="flex flex-col sm:flex-row justify-center my-2">
+        <div className="flex flex-col sm:flex-row justify-center items-center my-2">
           <Link
             href={KEY_LINKS.CommunityPartnersProspectusUrl}
             target="_blank"

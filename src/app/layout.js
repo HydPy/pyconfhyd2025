@@ -24,8 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100">
         <ThemeProvider>
-          {/* <Header themeToggle={<ThemeToggle />} /> */}
-          <Header themeToggle={<></>} />
+          <Header themeToggle={<ThemeToggle />} />
           <main className="flex-grow">
             <InfoAlert text={CONFERENCE.infoText} />
             {children}

@@ -1,3 +1,5 @@
+import { Paragraph } from "./Typography";
+
 export const Construction = () => {
   return (
     <div className="flex items-center justify-center">
@@ -7,9 +9,9 @@ export const Construction = () => {
           <div className="w-4 h-4 bg-yellow-500 rounded-full animate-bounce delay-200"></div>
           <div className="w-4 h-4 bg-red-500 rounded-full animate-bounce delay-400"></div>
         </div>
-        <p className="mt-4 text-gray-700 text-sm font-medium">
+        <Paragraph className="mt-4 text-gray-600 dark:text-gray-400">
           Construction in Progress...
-        </p>
+        </Paragraph>
       </div>
     </div>
   );
