@@ -9,6 +9,8 @@ import {
   FaDiscord,
   FaBlog,
   FaCalendar,
+  FaChevronDown,
+  FaChevronUp,
 } from 'react-icons/fa6';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -30,6 +32,8 @@ const icons = {
   Discord: FaDiscord,
   Blog: FaBlog,
   Calendar: FaCalendar,
+  ChevronDown: FaChevronDown,
+  ChevronUp: FaChevronUp,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {

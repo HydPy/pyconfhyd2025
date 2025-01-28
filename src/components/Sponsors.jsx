@@ -52,7 +52,7 @@ const SponsorsSection = () => {
         {SPONSORS_INFO.title}
       </Heading>
       <div className="flex flex-col items-center">
-        <Paragraph className="text-gray-600 dark:text-gray-400 lg:w-11/12">
+        <Paragraph className="lg:text-center text-gray-600 dark:text-gray-400 lg:w-11/12">
           {SPONSORS_INFO.description}
         </Paragraph>
         <div className="flex flex-col sm:flex-row justify-center my-2">
@@ -63,9 +63,7 @@ const SponsorsSection = () => {
             rel="noopener noreferrer"
           >
             <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
-              <Span className="ml-2">
-                {KEY_LINKS.sponsorshipProspectusLabel}
-              </Span>
+              <Span>{KEY_LINKS.sponsorshipProspectusLabel}</Span>
             </button>
           </Link>
           <Link
@@ -74,9 +72,7 @@ const SponsorsSection = () => {
             rel="noopener noreferrer"
           >
             <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
-              <Span className="ml-2">
-                {KEY_LINKS.interestedInSponsoringLabel}
-              </Span>
+              <Span>{KEY_LINKS.interestedInSponsoringLabel}</Span>
             </button>
           </Link>
         </div>

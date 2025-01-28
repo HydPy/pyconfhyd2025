@@ -7,9 +7,11 @@ export const CONFERENCE = {
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
   dates: '22 Feb - 23 Feb',
   conferenceDate: '22 Feb',
+  conferenceVenue: 'T-Hub',
   workshopDate: '23 Feb',
+  workshopVenue: 'TBD',
   infoText:
-    'The schedule will be released by the end of January after the CFP review process is completed.',
+    'We have communicated the results to the speakers, and the schedule will be released by the end of January after receiving their confirmations.',
 };
 
 export const ASSETS = {
@@ -17,6 +19,8 @@ export const ASSETS = {
   navbarLogoAlt: 'PyConf Hyderabad 2025 Python Logo',
   logoUrl: '/images/logo.svg',
   logoAlt: 'PyConf Hyderabad 2025 Logo',
+  heroBannerUrl: '/images/hero-banner-bg.svg',
+  heroBannerAlt: 'Background image of colorful kites soaring in the sky on the hero banner',
   monumentsSketchUrl: '/images/monumentsSketch.svg',
   monumentsSketchAlt:
     'Illustration showcasing various iconic monuments of Hyderabad.',
@@ -30,10 +34,14 @@ export const KEY_LINKS = {
   interestedInSponsoringLabel: 'INTERESTED IN SPONSORING',
   interestedInSponsoringUrl: 'https://forms.gle/d5cg5WpayP9mEfAm9',
   sponsorshipProspectusLabel: 'SPONSORSHIP PROSPECTUS',
-  sponsorshipProspectusUrl:
-    'https://drive.google.com/file/d/16mi1It0ZqSUQzaFtSdQks6RsQm-Cs23d/view?usp=drive_link',
+  sponsorshipProspectusUrl: '/docs/sponsorship-prospectus.pdf',
   konfHubEventPageLabel: 'KonfHub event page',
   konfHubEventPage: 'https://konfhub.com/pyconf-hyderabad-2025',
+  CommunityPartnersProspectusUrl: '/docs/community-partners-prospectus.pdf',
+  CommunityPartnersProspectusLabel: 'PROSPECTUS',
+  CommunityPartnersProspectusRegisterFormUrl:
+    'https://forms.gle/FzjQa9ufDchpe9Va7',
+  CommunityPartnersProspectusRegisterFormLabel: 'REGISTER',
 };
 
 export const SOCIALS = [

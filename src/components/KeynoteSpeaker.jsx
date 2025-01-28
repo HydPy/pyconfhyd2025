@@ -2,12 +2,11 @@ import Image from 'next/image';
 import { KEYNOTE_SPEAKER } from '@/speakers';
 import { Heading } from './Typography';
 import MdxLayout from '@/components/MdxLayout';
-import AnthonyShawDescription from '@/keynotes/anthonyShaw.mdx';
 import Icon from '@/components/Icon';
 import Link from 'next/link';
 
 export function KeynoteSpeaker() {
-  const { name, title, speakerImgUrl, speakerImgAlt, socials } =
+  const { name, title, description, speakerImgUrl, speakerImgAlt, socials } =
     KEYNOTE_SPEAKER;
   return (
     <section
@@ -47,7 +46,7 @@ export function KeynoteSpeaker() {
             </Heading>
             <div className="">
               <MdxLayout className="text-gray-600 dark:text-gray-400">
-                <AnthonyShawDescription />
+                {description}
               </MdxLayout>
             </div>
             <div className="flex flex-row flex-wrap mt-8">
