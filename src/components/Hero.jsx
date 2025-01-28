@@ -47,13 +47,15 @@ const Hero = () => {
           level={3}
           className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
         >
-          Conference: {CONFERENCE.conferenceDate} | Venue: {CONFERENCE.conferenceVenue}
+          Conference: {CONFERENCE.conferenceDate} | Venue:{' '}
+          {CONFERENCE.conferenceVenue}
         </Span>
         <Span
           level={3}
           className="text-center font-semibold ml-2 mt-2 text-secondary-600 dark:text-secondary-400"
         >
-          Workshop: {CONFERENCE.workshopDate} | Venue: {CONFERENCE.workshopVenue}
+          Workshop: {CONFERENCE.workshopDate} | Venue:{' '}
+          {CONFERENCE.workshopVenue}
         </Span>
         <Paragraph className="mt-3 mb-6 text-center text-gray-600 dark:text-gray-400">
           {CONFERENCE.announcement}
