@@ -6,9 +6,9 @@ export const SCHEDULE = {
     sessions: [
       [
         {
-          title: 'Registrations/ Breakfast',
+          title: 'Registrations',
           time: '08:00 - 09:00 AM',
-          location: 'Registration Desk/ Cafeteria',
+          location: 'Registration Desk',
         },
       ],
       [
@@ -197,6 +197,13 @@ export const SCHEDULE = {
     date: '23 Feb',
     day: 'Sunday',
     sessions: [
+      [
+        {
+          title: 'Registrations',
+          time: '09:00 - 10:00 AM',
+          location: 'Registration Desk',
+        },
+      ],
       [
         {
           time: '10:00 - 11:30 AM',
