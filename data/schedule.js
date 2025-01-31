@@ -38,7 +38,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Keynote by Anthony Shaw',
-          time: '09:25 - 10:25 AM',
+          time: '09:25 - 10:15 AM',
           speaker: {
             name: 'Anthony Shaw',
             imgUrl: '/images/speakers/placeholder-1.svg',
@@ -50,7 +50,7 @@ export const SCHEDULE = {
         {
           title:
             'Python in IoT and Robotics: Backend Solutions for Connected Systems',
-          time: '10:25 - 10:55 AM',
+          time: '10:15 - 10:45 AM',
           speaker: {
             name: 'Harsh Mittal',
             imgUrl: '/images/speakers/placeholder-1.svg',
@@ -62,7 +62,7 @@ export const SCHEDULE = {
         {
           title:
             'From Raw to Reliable: Automated Data Validation with Great Expectations',
-          time: '10:55 - 11:25 AM',
+          time: '10:45 - 11:15 AM',
           speaker: {
             name: 'Vivek Keshore',
             imgUrl: '/images/speakers/placeholder-2.svg',
@@ -73,14 +73,14 @@ export const SCHEDULE = {
       [
         {
           title: 'Break',
-          time: '11:25 - 11:40 AM',
+          time: '11:15 - 11:30 AM',
           location: 'Main Hall',
         },
       ],
       [
         {
           title: 'Spicing Up Automation: A Taste of Python and SaltStack',
-          time: '11:40 - 12:10 PM',
+          time: '11:30 - 12:00 PM',
           speaker: {
             name: 'Ria Bhatia',
             imgUrl: '/images/speakers/placeholder-1.svg',
@@ -91,7 +91,7 @@ export const SCHEDULE = {
       [
         {
           title: "Let's enhance our technical writing by reading PEPs",
-          time: '12:10 - 12:40 PM',
+          time: '12:00 - 12:30 PM',
           speaker: {
             name: 'Sai Rahul Poruri',
             imgUrl: '/images/speakers/placeholder-1.svg',
@@ -102,14 +102,14 @@ export const SCHEDULE = {
       [
         {
           title: 'Lunch Break',
-          time: '12:40 - 01:40 PM',
+          time: '12:30 - 01:30 PM',
           location: 'Cafeteria',
         },
       ],
       [
         {
           title: 'Lightning Talks',
-          time: '01:40 - 02:35 PM',
+          time: '01:30 - 02:25 PM',
           location: 'Main Hall',
         },
       ],
@@ -117,7 +117,7 @@ export const SCHEDULE = {
         {
           title:
             'Organized Chaos: Demystifying Memory Management & Garbage Collection in Python',
-          time: '02:35 - 03:05 PM',
+          time: '02:25 - 02:55 PM',
           speaker: {
             name: 'Sejal Gupta',
             imgUrl: '/images/speakers/placeholder-2.svg',
@@ -128,7 +128,7 @@ export const SCHEDULE = {
       [
         {
           title: 'uv - MEGA: Make Environments Great Again',
-          time: '03:05 - 03:35 PM',
+          time: '02:55 - 03:25 PM',
           speaker: {
             name: 'S Anand',
             imgUrl: '/images/speakers/placeholder-1.svg',
@@ -139,7 +139,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Understanding API dispatching',
-          time: '03:35 - 04:05 PM',
+          time: '03:25 - 03:55 PM',
           speaker: {
             name: 'Aditi Juneja',
             imgUrl: '/images/speakers/placeholder-1.svg',
@@ -150,7 +150,7 @@ export const SCHEDULE = {
       [
         {
           title: 'Multimodal Agents RAG Workflow',
-          time: '04:05 - 04:35 PM',
+          time: '03:55 - 04:25 PM',
           speaker: {
             name: 'Tarun Jain',
             imgUrl: '/images/speakers/placeholder-2.svg',
@@ -160,8 +160,15 @@ export const SCHEDULE = {
       ],
       [
         {
+          title: 'Coffee Break',
+          time: '04:25 - 04:40 PM',
+          location: 'Main Hall',
+        },
+      ],
+      [
+        {
           title: 'Turn your old laptop to a home server',
-          time: '04:35 - 05:10 PM',
+          time: '04:40 - 05:10  PM',
           speaker: {
             name: 'Akhil Teja',
             imgUrl: '/images/speakers/placeholder-2.svg',
@@ -171,22 +178,15 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Coffee Break',
-          time: '05:05 - 05:20 PM',
-          location: 'Main Hall',
-        },
-      ],
-      [
-        {
           title: 'TBD',
-          time: '05:20 - 06:20 PM',
+          time: '05:10 - 06:00 PM',
           location: 'Cafeteria',
         },
       ],
       [
         {
           title: 'Closing Note',
-          time: '06:20 - 06:30 PM',
+          time: '06:00 - 06:10 PM',
           location: 'Main Hall',
         },
       ],
