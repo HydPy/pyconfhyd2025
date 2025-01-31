@@ -3,7 +3,7 @@ export const CONFERENCE = {
   description:
     'PyConf Hyderabad 2025 is the regional gathering of Pythonistas and the largest Python Conference in Hyderabad.',
   openGraph: {
-    title: 'PyConf Hyderabad 2025 - Largest Python Conference in Hyderabad'
+    title: 'PyConf Hyderabad 2025 - Largest Python Conference in Hyderabad',
   },
   announcement:
     'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',

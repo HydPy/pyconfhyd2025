@@ -18,7 +18,10 @@ export const metadata: Metadata = {
     apple: { url: ASSETS.navbarLogoUrl },
   },
   openGraph: {
-    title: { default: CONFERENCE.openGraph.title, template: `%s | ${CONFERENCE.openGraph.title}` },
+    title: {
+      default: CONFERENCE.openGraph.title,
+      template: `%s | ${CONFERENCE.openGraph.title}`,
+    },
     description: CONFERENCE.description,
     url: CONFERENCE.siteURL,
     siteName: CONFERENCE.title,
