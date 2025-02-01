@@ -272,7 +272,7 @@ export const SCHEDULE = {
           title: 'Debugging Python applications like a Pro',
           speaker: {
             name: 'Satyam Soni',
-            imgUrl: '/images/speakers/satyam-soni.jpg.jpg',
+            imgUrl: '/images/speakers/satyam-soni.jpg',
           },
           location: 'Track 1',
         },

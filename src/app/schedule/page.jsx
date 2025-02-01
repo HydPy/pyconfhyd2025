@@ -22,7 +22,7 @@ const TimeBadge = ({ time, className = '' }) => {
 const LocationBadge = ({ location, className = '' }) => {
   return (
     <div
-      className={`flex flex-row justify-center items-center px-2 py-1 rounded-md bg-gray-500 dark:bg-gray-600 text-gray-50 ${className}`}
+      className={`flex flex-row justify-center items-center px-2 py-1 rounded-md bg-secondary-600 dark:bg-secondary-700 text-gray-50 ${className}`}
     >
       <Icon name="LocationDot" size={16} />
       <Span className="ml-2" level={5}>
@@ -72,7 +72,7 @@ const Schedule = () => {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-2 md:px-10 py-2 border-2 border-solid border-gray-400 rounded ${
+            className={`flex flex-col items-center px-2 md:px-10 py-2 border-2 border-solid border-gray-400 dark:border-gray-600 rounded ${
               activeDay === day
                 ? 'bg-secondary-600 dark:bg-secondary-700 text-gray-50  dark:text-gray-50'
                 : 'text-gray-950 dark:text-gray-50'
@@ -96,16 +96,13 @@ const Schedule = () => {
             {session.map((parallelSession, subIndex) => (
               <div
                 key={subIndex}
-                className="flex-1 p-2 border border-solid border-gray-200 rounded-md shadow-sm"
+                className="flex-1 p-2 border-2 border-solid border-gray-400 dark:border-gray-600 rounded-md shadow-sm"
               >
-                <div className="flex flex-wrap">
-                  <TimeBadge className="my-0.5" time={parallelSession.time} />
-                </div>
                 <div className="flex flex-col items-center">
                   <Heading
                     tag={3}
                     level={5}
-                    className="my-0.5 text-center font-semibold text-gray-950 dark:text-gray-50 spacing-y-2"
+                    className="my-0.5 text-center font-normal text-gray-950 dark:text-gray-50 spacing-y-2"
                   >
                     {parallelSession.title}
                   </Heading>
@@ -115,6 +112,7 @@ const Schedule = () => {
                     </div>
                   )}
                   <div className="flex flex-wrap justify-center">
+                    <TimeBadge className="my-1" time={parallelSession.time} />
                     <LocationBadge
                       className="ml-2 my-1"
                       location={parallelSession.location}
