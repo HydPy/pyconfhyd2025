@@ -22,7 +22,7 @@ const TimeBadge = ({ time, className = '' }) => {
 const LocationBadge = ({ location, className = '' }) => {
   return (
     <div
-      className={`flex flex-row justify-center items-center px-2 py-1 rounded-md bg-secondary-600 dark:bg-secondary-700 text-gray-50 ${className}`}
+      className={`flex flex-row justify-center items-center px-2 py-1 rounded-md bg-gray-500 dark:bg-gray-600 text-gray-50 ${className}`}
     >
       <Icon name="LocationDot" size={16} />
       <Span className="ml-2" level={5}>
@@ -36,9 +36,9 @@ const SpeakerCard = ({ speaker }) => {
   return (
     <div className="flex flex-row items-center my-1">
       <div className="w-12 h-12 md:w-12 md:h-12">
-        <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-solid border-2 border-gray-700 dark:border-gray-300">
+        <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
           <Image
-            className="p-1 object-cover rounded-sm"
+            className="object-cover rounded-sm"
             src={speaker.imgUrl}
             alt={`Placeholder image of ${speaker.name}`}
             fill
@@ -78,15 +78,16 @@ const Schedule = () => {
                 : 'text-gray-950 dark:text-gray-50'
             }`}
           >
-            <Span level={3} className="font-semibold">
+            <Heading tag={2} level={5}>
               {SCHEDULE[day].title}
-            </Span>
+            </Heading>
             <Span level={4}>{SCHEDULE[day].date}</Span>
             <Span level={5}>{SCHEDULE[day].day}</Span>
           </button>
         ))}
       </div>
-      <div className="flex flex-col items-center space-y-4">
+      <div className="flex flex-col items-center space-y-5">
+         
         {sessions.map((session, index) => (
           <div
             key={index}
@@ -95,25 +96,25 @@ const Schedule = () => {
             {session.map((parallelSession, subIndex) => (
               <div
                 key={subIndex}
-                className="flex-1 p-2 border-2 border-solid border-gray-400 rounded-lg"
+                className="flex-1 p-2 border border-solid border-gray-200 rounded-md shadow-sm"
               >
+                <div className="flex flex-wrap">
+                  <TimeBadge className="my-0.5" time={parallelSession.time} />
+                </div>
                 <div className="flex flex-col items-center">
-                  <Span
-                    level={3}
-                    className="my-1 text-center font-semibold text-secondary-600 dark:text-secondary-400"
+                  <Heading
+                    tag={3}
+                    level={5}
+                    className="my-0.5 text-center font-semibold text-gray-950 dark:text-gray-50 spacing-y-2"
                   >
                     {parallelSession.title}
-                  </Span>
+                  </Heading>
                   {parallelSession.speaker && (
                     <div className="flex flex-col space-y-2">
                       <SpeakerCard speaker={parallelSession.speaker} />
                     </div>
                   )}
                   <div className="flex flex-wrap justify-center">
-                    <TimeBadge
-                      className="ml-2 my-1"
-                      time={parallelSession.time}
-                    />
                     <LocationBadge
                       className="ml-2 my-1"
                       location={parallelSession.location}

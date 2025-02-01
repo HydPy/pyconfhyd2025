@@ -65,7 +65,7 @@ export const SCHEDULE = {
           time: '10:45 - 11:15 AM',
           speaker: {
             name: 'Vivek Keshore',
-            imgUrl: '/images/speakers/placeholder-2.svg',
+            imgUrl: '/images/speakers/vivek-keshore.jpg',
           },
           location: 'Main Hall',
         },
@@ -272,7 +272,7 @@ export const SCHEDULE = {
           title: 'Debugging Python applications like a Pro',
           speaker: {
             name: 'Satyam Soni',
-            imgUrl: '/images/speakers/placeholder-2.svg',
+            imgUrl: '/images/speakers/satyam-soni.jpg.jpg',
           },
           location: 'Track 1',
         },
