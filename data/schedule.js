@@ -247,11 +247,11 @@ export const SCHEDULE = {
           location: 'Track 1',
         },
         {
-          time: '11:30 - 1:00 PM',
-          title: 'Debugging Python applications like a Pro',
+          time: '11:30 - 01:00 PM',
+          title: 'Building AI Agents',
           speaker: {
-            name: 'Satyam Soni',
-            imgUrl: '/images/speakers/placeholder-2.svg',
+            name: 'Anthony Shaw',
+            imgUrl: '/images/speakers/placeholder-1.svg',
           },
           location: 'Track 2',
         },
@@ -269,10 +269,10 @@ export const SCHEDULE = {
       [
         {
           time: '2:00 - 3:30 PM',
-          title: 'TBD',
+          title: 'Debugging Python applications like a Pro',
           speaker: {
-            name: 'Anthony Shaw',
-            imgUrl: '/images/speakers/placeholder-1.svg',
+            name: 'Satyam Soni',
+            imgUrl: '/images/speakers/placeholder-2.svg',
           },
           location: 'Track 1',
         },
