@@ -135,7 +135,7 @@ export const SCHEDULE = {
         {
           title: 'Keynote by Bowrna Prabhakaran',
           time: '03:55 - 04:45 PM',
-          speaker: 'bowrna-prabhakaran',
+          speaker: getSpeaker('bowrna-prabhakaran'),
           location: 'Main Hall',
         },
       ],

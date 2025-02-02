@@ -13,7 +13,7 @@ export function generateStaticParams() {
 
 const getTalkDetailsBySlug = (slug) => {
   // Find the speaker by slug
-  const speaker = SPEAKERS.find((s) => s.slug === slug);
+  const speaker = SPEAKERS.find((s) => s.slug === slug && s.activeSpeakerPage === true);
 
   // If speaker is not found, return null
   if (!speaker) {

@@ -10,8 +10,12 @@ import { SPEAKERS } from '@/speakers';
 const getKeynoteSpeakers = (SPEAKERS) => {
   const speakers = new Map();
   Object.values(SPEAKERS).forEach((speaker) => {
-    const { name, type } = speaker;
-    if (!speakers.has(name) && type == 'Keynote') {
+    const { name, type, activeSpeakerPage } = speaker;
+    if (
+      !speakers.has(name) &&
+      type == 'Keynote' &&
+      activeSpeakerPage === true
+    ) {
       speakers.set(name, speaker);
     }
   });

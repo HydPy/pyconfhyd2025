@@ -5,8 +5,8 @@ import { SPEAKERS } from '@/speakers';
 const getSessionSpeakers = (SPEAKERS) => {
   const speakers = new Map();
   Object.values(SPEAKERS).forEach((speaker) => {
-    const { name, type } = speaker;
-    if (!speakers.has(name) && type == 'Session') {
+    const { name, type, activeSpeakerPage } = speaker;
+    if (!speakers.has(name) && type == 'Session' && activeSpeakerPage === true) {
       speakers.set(name, speaker);
     }
   });
