@@ -23,27 +23,18 @@ const CommunityPartners = () => {
           {COMMUNITY_PARTNERS_INFO.description}
         </Paragraph>
         <div className="flex flex-col sm:flex-row justify-center items-center my-2">
-          <Link
-            href={KEY_LINKS.CommunityPartnersProspectusUrl}
-            target="_blank"
-            className="flex justify-center items-center"
-            rel="noopener noreferrer"
-          >
-            <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
-              <Span>{KEY_LINKS.CommunityPartnersProspectusLabel}</Span>
-            </button>
-          </Link>
-          <Link
-            href={KEY_LINKS.CommunityPartnersProspectusRegisterFormUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
-              <Span>
-                {KEY_LINKS.CommunityPartnersProspectusRegisterFormLabel}
-              </Span>
-            </button>
-          </Link>
+          <div className="flex flex-col sm:flex-row justify-center items-center my-2">
+            <Link
+              href={KEY_LINKS.CommunityPartnersProspectusUrl}
+              target="_blank"
+              className="mt-2 sm:mr-4 px-5 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg"
+              rel="noopener noreferrer"
+            >
+              <div className="inline-flex items-center font-medium text-gray-50">
+                <Span>{KEY_LINKS.CommunityPartnersProspectusLabel}</Span>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

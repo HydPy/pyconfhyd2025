@@ -53,7 +53,7 @@ const NavItem = ({
           <Span>{item.name}</Span>
           <button
             onClick={toggleDropdown}
-            className="ml-3 text-gray-950 dark:text-gray-50 focus:outline-none"
+            className="ml-3 text-gray-950 dark:text-gray-50"
             aria-expanded={isDropdownOpen}
           >
             <Icon

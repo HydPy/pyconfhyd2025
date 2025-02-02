@@ -32,14 +32,14 @@ export const NAV_ITEMS = [
       },
     ],
   },
-  // {
-  //   name: 'Speakers',
-  //   path: '/speakers',
-  //   target: '_self',
-  // },
   {
     name: 'Schedule',
     path: '/schedule',
+    target: '_self',
+  },
+  {
+    name: 'Speakers',
+    path: '/speakers',
     target: '_self',
   },
   {

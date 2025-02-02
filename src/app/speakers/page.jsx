@@ -1,10 +1,20 @@
-import { ALL_SPEAKERS } from '@/speakers';
-
 import Speaker from '@/components/Speaker';
 import { Heading } from '@/components/Typography';
-import Construction from '@/components/Construction';
+import { SPEAKERS } from '@/speakers';
+
+const getSessionSpeakers = (SPEAKERS) => {
+  const speakers = new Map();
+  Object.values(SPEAKERS).forEach((speaker) => {
+    const { name, type } = speaker;
+    if (!speakers.has(name) && type == 'Session') {
+      speakers.set(name, speaker);
+    }
+  });
+  return Array.from(speakers.values());
+};
 
 export default function Page() {
+  const ALL_SPEAKERS = getSessionSpeakers(SPEAKERS);
   return (
     <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
       <Heading
@@ -14,8 +24,7 @@ export default function Page() {
       >
         Speakers
       </Heading>
-      <Construction />
-      <div className="mt-8 grid cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 items-center justify-center">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         {ALL_SPEAKERS.map((speaker, index) => (
           <Speaker key={index} speaker={speaker} />
         ))}

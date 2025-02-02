@@ -59,21 +59,22 @@ const SponsorsSection = () => {
           <Link
             href={KEY_LINKS.sponsorshipProspectusUrl}
             target="_blank"
-            className="flex justify-center items-center"
+            className="mt-2 sm:mr-4 px-5 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg"
             rel="noopener noreferrer"
           >
-            <button className="inline-flex mt-2 sm:mr-4 items-center bg-secondary-600 px-5 py-3 font-medium hover:bg-secondary-700 text-gray-50 border rounded-lg">
+            <div className="inline-flex items-center font-medium text-gray-50">
               <Span>{KEY_LINKS.sponsorshipProspectusLabel}</Span>
-            </button>
+            </div>
           </Link>
           <Link
             href={KEY_LINKS.interestedInSponsoringUrl}
             target="_blank"
+            className="mt-2 sm:mr-4 px-5 py-3 bg-primary-700 hover:bg-primary-800 border rounded-lg"
             rel="noopener noreferrer"
           >
-            <button className="inline-flex mt-2 items-center bg-primary-700 px-5 py-3 font-medium hover:bg-primary-800 text-gray-50 border rounded-lg">
+            <div className="inline-flex items-center font-medium text-gray-50 ">
               <Span>{KEY_LINKS.interestedInSponsoringLabel}</Span>
-            </button>
+            </div>
           </Link>
         </div>
         {SPONSORS &&

@@ -13,6 +13,7 @@ import {
   FaChevronDown,
   FaChevronUp,
   FaLocationDot,
+  FaGlobe,
 } from 'react-icons/fa6';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -38,6 +39,7 @@ const icons = {
   ChevronUp: FaChevronUp,
   Clock: FaClock,
   LocationDot: FaLocationDot,
+  FaGlobe: FaGlobe,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {

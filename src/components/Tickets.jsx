@@ -30,7 +30,7 @@ export default function Tickets() {
           id="konfhub-widget"
           title="Register for PyConf Hyderabad 2025"
           width="100%"
-          height="500"
+          height="800"
         ></iframe>
       ) : (
         <iframe
@@ -38,7 +38,7 @@ export default function Tickets() {
           id="konfhub-widget"
           title="Register for PyConf Hyderabad 2025"
           width="100%"
-          height="500"
+          height="800"
         ></iframe>
       )}
     </section>

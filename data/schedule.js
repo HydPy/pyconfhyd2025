@@ -1,7 +1,13 @@
+import { SPEAKERS } from '@/speakers';
+
+export const getSpeaker = (slug) => {
+  return SPEAKERS.find((speaker) => speaker.slug === slug);
+};
+
 export const SCHEDULE = {
   day1: {
     title: 'Conference Day',
-    date: '22 Feb',
+    date: '22 Feb', 
     day: 'Saturday',
     sessions: [
       [
@@ -15,59 +21,47 @@ export const SCHEDULE = {
         {
           title: 'Opening Note',
           time: '09:00 - 09:10 AM',
-          speaker: {
-            name: 'PyConf Hyderabad Team',
-            title: 'Organizers',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('pyconf-hyderabad-team'),
         },
       ],
       [
         {
           title:
             'Think, Code, Innovate: Srivardhan’s Logical Leap from Beginner to Advanced Python',
+          type: 'Talk',
           time: '09:10 - 09:25 AM',
-          speaker: {
-            name: 'Srivardhan',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('srivardhan'),
         },
       ],
       [
         {
           title: 'Keynote by Anthony Shaw',
+          type: 'Talk',
           time: '09:25 - 10:15 AM',
-          speaker: {
-            name: 'Anthony Shaw',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('anthony-shaw'),
         },
       ],
       [
         {
           title:
             'Python in IoT and Robotics: Backend Solutions for Connected Systems',
-          time: '10:15 - 10:45 AM',
-          speaker: {
-            name: 'Harsh Mittal',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
+            type: 'Talk',
+            time: '10:15 - 10:45 AM',
           location: 'Main Hall',
+          speaker: getSpeaker('harsh-mittal'),
         },
       ],
       [
         {
           title:
             'From Raw to Reliable: Automated Data Validation with Great Expectations',
-          time: '10:45 - 11:15 AM',
-          speaker: {
-            name: 'Vivek Keshore',
-            imgUrl: '/images/speakers/vivek-keshore.jpg',
-          },
+            type: 'Talk',
+            time: '10:45 - 11:15 AM',
           location: 'Main Hall',
+          speaker: getSpeaker('vivek-keshore'),
         },
       ],
       [
@@ -80,23 +74,19 @@ export const SCHEDULE = {
       [
         {
           title: 'Spicing Up Automation: A Taste of Python and SaltStack',
+          type: 'Talk',
           time: '11:30 - 12:00 PM',
-          speaker: {
-            name: 'Ria Bhatia',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('ria-bhatia'),
         },
       ],
       [
         {
           title: "Let's enhance our technical writing by reading PEPs",
+          type: 'Talk',
           time: '12:00 - 12:30 PM',
-          speaker: {
-            name: 'Sai Rahul Poruri',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('sai-rahul-poruri'),
         },
       ],
       [
@@ -117,44 +107,35 @@ export const SCHEDULE = {
         {
           title:
             'Organized Chaos: Demystifying Memory Management & Garbage Collection in Python',
-          time: '02:25 - 02:55 PM',
-          speaker: {
-            name: 'Sejal Gupta',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
+            type: 'Talk',
+            time: '02:25 - 02:55 PM',
           location: 'Main Hall',
+          speaker: getSpeaker('sejal-gupta'),
         },
       ],
       [
         {
           title: 'uv - MEGA: Make Environments Great Again',
+          type: 'Talk',
           time: '02:55 - 03:25 PM',
-          speaker: {
-            name: 'S Anand',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('s-anand'),
         },
       ],
       [
         {
           title: 'Understanding API dispatching',
+          type: 'Talk',
           time: '03:25 - 03:55 PM',
-          speaker: {
-            name: 'Aditi Juneja',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('aditi-juneja'),
         },
       ],
       [
         {
           title: 'Keynote by Bowrna Prabhakaran',
           time: '03:55 - 04:45 PM',
-          speaker: {
-            name: 'Bowrna Prabhakaran',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
+          speaker: 'bowrna-prabhakaran',
           location: 'Main Hall',
         },
       ],
@@ -168,23 +149,19 @@ export const SCHEDULE = {
       [
         {
           title: 'Multimodal Agents RAG Workflow',
+          type: 'Talk',
           time: '05:00 - 05:30 PM',
-          speaker: {
-            name: 'Tarun Jain',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('tarun-jain'),
         },
       ],
       [
         {
           title: 'Turn your old laptop to a home server',
+          type: 'Talk',
           time: '05:30 - 06:00 PM',
-          speaker: {
-            name: 'Akhil Teja',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
           location: 'Main Hall',
+          speaker: getSpeaker('akhil-teja'),
         },
       ],
       [
@@ -211,88 +188,73 @@ export const SCHEDULE = {
       [
         {
           time: '10:00 - 11:30 AM',
+          type: 'Workshop',
           title:
             'Mastering Test Driven Development in Django: A Comprehensive Guide with factory_boy and faker',
-          speaker: {
-            name: 'Kuldeep Pisda',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Track 1',
+          speaker: getSpeaker('kuldeep-pisda'),
         },
         {
           time: '10:00 - 11:30 AM',
+          type: 'Workshop',
           title:
             'Causal Inference & Uplift Modeling in Python: Beyond Correlation',
-          speaker: {
-            name: 'Sonu Kumar',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
+          speaker: getSpeaker('sonu-kumar'),
           location: 'Track 2',
         },
         {
           time: '10:00 - 11:30 AM',
+          type: 'Workshop',
           title: 'Writing bug free python code with functional programming',
-          speaker: {
-            name: 'Siddharta Govindaraj',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
+          speaker: getSpeaker('siddharta-govindaraj'),
           location: 'Track 3',
         },
       ],
       [
         {
           time: '11:30 - 1:00 PM',
+          type: 'Workshop',
           title:
             'Duckdb: In-Process Analytics Database that saves you millions and makes you look smart',
-          speaker: {
-            name: 'Ankur Gupta',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
+          speaker: getSpeaker('ankur-gupta'),
           location: 'Track 1',
         },
         {
           time: '11:30 - 01:00 PM',
+          type: 'Workshop',
           title: 'Building AI Agents',
-          speaker: {
-            name: 'Anthony Shaw',
-            imgUrl: '/images/speakers/placeholder-1.svg',
-          },
           location: 'Track 2',
+          speaker: getSpeaker('anthony-shaw'),
         },
         {
           time: '11:30 - 1:00 PM',
+          type: 'Workshop',
           title:
             'Unveiling the lazy execution benefit of FireDucks - A Multithreaded DataFrame Library with JIT compiler',
-          speaker: {
-            name: 'Sourav Saha',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
           location: 'Track 3',
+          speaker: getSpeaker('sourav-saha'),
         },
       ],
       [
         {
           time: '2:00 - 3:30 PM',
+          type: 'Workshop',
           title: 'Debugging Python applications like a Pro',
-          speaker: {
-            name: 'Satyam Soni',
-            imgUrl: '/images/speakers/satyam-soni.jpg',
-          },
           location: 'Track 1',
+          speaker: getSpeaker('satyam-soni'),
         },
         {
           time: '2:00 - 3:30 PM',
+          type: 'Workshop',
           title: 'Snowflake Workshop',
           location: 'Track 2',
         },
         {
           time: '2:00 - 3:30 PM',
+          type: 'Workshop',
           title: 'Distributed Computing',
-          speaker: {
-            name: 'Bhagirathi Hegde',
-            imgUrl: '/images/speakers/placeholder-2.svg',
-          },
           location: 'Track 3',
+          speaker: getSpeaker('bhagirathi-hegde'),
         },
       ],
       [
