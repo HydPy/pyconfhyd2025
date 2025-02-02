@@ -11,7 +11,7 @@ export function generateStaticParams() {
   return SPEAKERS.map((speaker) => ({ slug: speaker.slug }));
 }
 
-export const getTalkDetailsBySlug = (slug) => {
+const getTalkDetailsBySlug = (slug) => {
   // Find the speaker by slug
   const speaker = SPEAKERS.find((s) => s.slug === slug);
 
