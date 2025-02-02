@@ -47,7 +47,7 @@ const getTalkDetailsBySlug = (slug) => {
 
 export default async function SpeakerPage({ params }) {
   const { slug } = await params;
-  const speaker = SPEAKERS.find((s) => s.slug === slug);
+  const speaker = SPEAKERS.find((s) => s.slug === slug && s.activeSpeakerPage === true);
   const talks = getTalkDetailsBySlug(slug);
 
   if (!speaker) return notFound(); // Redirect to 404 if speaker is not found

@@ -172,7 +172,6 @@ export const SPEAKERS = [
     slug: 'kuldeep-pisda',
     type: 'Session',
     activeSpeakerPage: true,
-    type: 'Session',
     description:
       'A full stack developer with expertise in AWS cloud infrastructure, PostgreSQL databases, Python/Django backend development, and modern frontend frameworks including React, Vue.js, and Next.js.',
     title: 'Senior Software at Astel Ventures',
@@ -243,7 +242,6 @@ export const SPEAKERS = [
     slug: 'satyam-soni',
     type: 'Session',
     activeSpeakerPage: true,
-    type: 'Session',
     description:
       'Python expert with 8+ yrs exp, Open-Source contributor (PyPI: lazy-alchemy, py-lambda-warmer). Tech Lead at SenecaGlobal, delivering Python full-stack solutions.',
     imgUrl: '/images/speakers/satyam-soni.jpg',
