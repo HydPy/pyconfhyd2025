@@ -4,16 +4,16 @@ import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { Heading, Paragraph } from '@/components/Typography';
 
-const Speaker = ({ speaker, className = '' }) => {
+const Speaker = ({ speaker }) => {
   return (
     <div
-      className={`flex flex-col px-4 items-center border rounded-3xl shadow-xl ${className}`}
+      className={`flex flex-col px-10 items-center border rounded-3xl shadow-xl`}
     >
       <Link
         className="flex flex-col items-center"
         href={`/speakers/${speaker.slug}`}
       >
-        <div className="w-48 h-48 md:w-64 md:h-64 ">
+        <div className="w-48 h-48 lg:w-64 lg:h-64 ">
           <div className="relative shadow-md top-[-10%] h-full w-full rounded-xl">
             <Image
               className="object-cover rounded-xl"

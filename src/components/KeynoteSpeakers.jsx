@@ -16,7 +16,7 @@ export default function KeynoteSpeakers({ speakers }) {
       </Heading>
       <div className="flex flex-wrap mt-10">
         {speakers.map((speaker, index) => (
-          <Speaker className="px-10" key={index} speaker={speaker} />
+          <Speaker key={index} speaker={speaker} />
         ))}
       </div>
     </section>
