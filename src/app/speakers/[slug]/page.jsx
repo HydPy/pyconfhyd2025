@@ -83,7 +83,7 @@ export default async function SpeakerPage({ params }) {
           )}
           {speaker.description && (
             <Paragraph
-              className="mb-4 text-justify text-gray-600 dark:text-gray-400"
+              className="mb-4 text-gray-600 dark:text-gray-400"
               dangerouslySetInnerHTML={{ __html: speaker.description }}
             ></Paragraph>
           )}
