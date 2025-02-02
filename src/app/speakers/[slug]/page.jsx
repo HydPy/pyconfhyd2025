@@ -97,7 +97,9 @@ export default async function SpeakerPage({ params }) {
           )}
           {talks.map((talk, index) => (
             <div key={index} className="my-2 text-gray-600 dark:text-gray-400">
-              <Paragraph>{talk.type} - {talk.sessionTitle}</Paragraph>
+              <Paragraph>
+                {talk.type} - {talk.sessionTitle}
+              </Paragraph>
               <ul className="list-disc ml-4">
                 <li>
                   <Paragraph>Date: {talk.date}</Paragraph>

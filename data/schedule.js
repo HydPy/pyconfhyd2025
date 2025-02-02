@@ -7,7 +7,7 @@ export const getSpeaker = (slug) => {
 export const SCHEDULE = {
   day1: {
     title: 'Conference Day',
-    date: '22 Feb', 
+    date: '22 Feb',
     day: 'Saturday',
     sessions: [
       [
@@ -48,8 +48,8 @@ export const SCHEDULE = {
         {
           title:
             'Python in IoT and Robotics: Backend Solutions for Connected Systems',
-            type: 'Talk',
-            time: '10:15 - 10:45 AM',
+          type: 'Talk',
+          time: '10:15 - 10:45 AM',
           location: 'Main Hall',
           speaker: getSpeaker('harsh-mittal'),
         },
@@ -58,8 +58,8 @@ export const SCHEDULE = {
         {
           title:
             'From Raw to Reliable: Automated Data Validation with Great Expectations',
-            type: 'Talk',
-            time: '10:45 - 11:15 AM',
+          type: 'Talk',
+          time: '10:45 - 11:15 AM',
           location: 'Main Hall',
           speaker: getSpeaker('vivek-keshore'),
         },
@@ -107,8 +107,8 @@ export const SCHEDULE = {
         {
           title:
             'Organized Chaos: Demystifying Memory Management & Garbage Collection in Python',
-            type: 'Talk',
-            time: '02:25 - 02:55 PM',
+          type: 'Talk',
+          time: '02:25 - 02:55 PM',
           location: 'Main Hall',
           speaker: getSpeaker('sejal-gupta'),
         },

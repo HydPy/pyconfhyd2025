@@ -23,7 +23,12 @@ export const Heading = ({
   );
 };
 
-export const Paragraph = ({ level = 3, children, className = '', dangerouslySetInnerHTML=null }) => {
+export const Paragraph = ({
+  level = 3,
+  children,
+  className = '',
+  dangerouslySetInnerHTML = null,
+}) => {
   const baseStyle = 'text-base';
   const responsiveStyle =
     {
@@ -38,7 +43,8 @@ export const Paragraph = ({ level = 3, children, className = '', dangerouslySetI
       className={`${baseStyle} ${responsiveStyle} ${className}`}
       dangerouslySetInnerHTML={dangerouslySetInnerHTML}
     >
-      {children}</p>
+      {children}
+    </p>
   );
 };
 
