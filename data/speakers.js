@@ -90,6 +90,7 @@ export const SPEAKERS = [
     slug: 'vivek-keshore',
     type: 'Session',
     activeSpeakerPage: true,
+    title: 'Software Architect at EPAM Systems',
     type: 'Session',
     description:
       'Vivek is a Python developer, speaker, and open-source enthusiast having 12+ years of experience. He focuses on app development, software architecture & developer productivity. He enjoys exploring innovative challenges, sharing insights and learning.',
@@ -242,6 +243,7 @@ export const SPEAKERS = [
     slug: 'satyam-soni',
     type: 'Session',
     activeSpeakerPage: true,
+    title: 'Technical Manager at SenecaGlobal Pvt. Ltd.',
     description:
       'Python expert with 8+ yrs exp, Open-Source contributor (PyPI: lazy-alchemy, py-lambda-warmer). Tech Lead at SenecaGlobal, delivering Python full-stack solutions.',
     imgUrl: '/images/speakers/satyam-soni.jpg',
