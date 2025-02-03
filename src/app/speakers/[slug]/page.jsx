@@ -94,7 +94,7 @@ export default async function SpeakerPage({ params }) {
                 About
               </Paragraph>
               <Paragraph
-                className="my-2 text-gray-600 dark:text-gray-400"
+                className="mb-2 text-gray-600 dark:text-gray-400"
                 dangerouslySetInnerHTML={{ __html: speaker.description }}
               ></Paragraph>
             </>
