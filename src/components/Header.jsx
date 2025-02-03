@@ -50,14 +50,15 @@ const NavItem = ({
               : 'text-gray-950 dark:text-gray-50'
           }`}
         >
-          <Span>{item.name}</Span>
           <button
             onClick={toggleDropdown}
-            className="ml-3 text-gray-950 dark:text-gray-50"
+            className="flex items-center text-gray-950 dark:text-gray-50"
             aria-expanded={isDropdownOpen}
           >
+            <Span level={3}>{item.name}</Span>
             <Icon
               name={isDropdownOpen ? 'ChevronUp' : 'ChevronDown'}
+              className="ml-2"
               size={16}
             />
             <Span className="hidden">ChevronUp</Span>
@@ -65,7 +66,7 @@ const NavItem = ({
         </div>
       )}
       {item.children && isDropdownOpen && (
-        <ul className="relative md:absolute top-full bg-gray-50 dark:bg-gray-900 mt-2">
+        <ul className="relative md:absolute top-full bg-gray-50 dark:bg-gray-900">
           {item.children.map((child, index) => (
             <li key={index} className="mb-1 md:mb-0">
               <Link

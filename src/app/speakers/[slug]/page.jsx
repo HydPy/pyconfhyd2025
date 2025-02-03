@@ -13,7 +13,9 @@ export function generateStaticParams() {
 
 const getTalkDetailsBySlug = (slug) => {
   // Find the speaker by slug
-  const speaker = SPEAKERS.find((s) => s.slug === slug && s.activeSpeakerPage === true);
+  const speaker = SPEAKERS.find(
+    (s) => s.slug === slug && s.activeSpeakerPage === true
+  );
 
   // If speaker is not found, return null
   if (!speaker) {
@@ -47,7 +49,9 @@ const getTalkDetailsBySlug = (slug) => {
 
 export default async function SpeakerPage({ params }) {
   const { slug } = await params;
-  const speaker = SPEAKERS.find((s) => s.slug === slug && s.activeSpeakerPage === true);
+  const speaker = SPEAKERS.find(
+    (s) => s.slug === slug && s.activeSpeakerPage === true
+  );
   const talks = getTalkDetailsBySlug(slug);
 
   if (!speaker) return notFound(); // Redirect to 404 if speaker is not found
@@ -69,34 +73,42 @@ export default async function SpeakerPage({ params }) {
           <Heading
             level={2}
             tagLevel={1}
-            className="mt-6 mb-4 text-center text-secondary-600 dark:text-secondary-400"
+            className="mt-6 mb-2 text-center text-secondary-600 dark:text-secondary-400"
           >
             {speaker.name}
           </Heading>
           {speaker.title && (
             <Span
               level={3}
-              className="mb-4 text-center text-gray-950 dark:text-gray-50"
+              className="text-center text-gray-950 dark:text-gray-50"
             >
               {speaker.title}
             </Span>
           )}
           {speaker.description && (
-            <Paragraph
-              className="mb-4 text-gray-600 dark:text-gray-400"
-              dangerouslySetInnerHTML={{ __html: speaker.description }}
-            ></Paragraph>
+            <>
+              <Paragraph
+                level={3}
+                className="text-left my-2 font-semibold text-gray-950 dark:text-gray-50"
+              >
+                About
+              </Paragraph>
+              <Paragraph
+                className="my-2 text-gray-600 dark:text-gray-400"
+                dangerouslySetInnerHTML={{ __html: speaker.description }}
+              ></Paragraph>
+            </>
           )}
           {talks && (
             <Paragraph
               level={3}
-              className="text-left text-gray-600 dark:text-gray-400"
+              className="text-left my-2 font-semibold text-gray-950 dark:text-gray-50"
             >
-              Session Details:
+              Session Details
             </Paragraph>
           )}
           {talks.map((talk, index) => (
-            <div key={index} className="my-2 text-gray-600 dark:text-gray-400">
+            <div key={index} className="mb-2 text-gray-600 dark:text-gray-400">
               <Paragraph>
                 {talk.type} - {talk.sessionTitle}
               </Paragraph>
