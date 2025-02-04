@@ -108,9 +108,24 @@ export const SPEAKERS = [
     name: 'Ria Bhatia',
     slug: 'ria-bhatia',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-1.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    title: 'Software Engineer',
+    description:
+      'Ria Bhatia is a software engineer passionate about databases, automation, and system efficiency. An enthusiastic speaker, she enjoys sharing her learnings at tech conferences and mentors aspiring engineers while advocating for diversity in tech.',
+    imgUrl: '/images/speakers/ria-bhatia.jpg',
+    imgAlt: 'Picture ofRia Bhatia',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/RiaBhatia24/',
+        ariaLabel: "Hyperlink to Ria Bhatia's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/riabhatia24/',
+        ariaLabel: "Hyperlink to Ria Bhatia's LinkedIn page.",
+      },
+    ],
   },
   {
     name: 'Sai Rahul Poruri',
@@ -161,12 +176,19 @@ export const SPEAKERS = [
     imgAlt: 'Placeholder image',
   },
   {
-    name: 'Akhil Teja',
-    slug: 'akhil-teja',
+    name: 'G R Akhil Teja',
+    slug: 'g-r-akhil-teja',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    imgUrl: '/images/speakers/g-r-akhil-teja.jpg',
+    imgAlt: 'Picture of G R Akhil Teja',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/akhildevelops',
+        ariaLabel: "Hyperlink to G R Akhil Teja's X page.",
+      },
+    ],
   },
   {
     name: 'Kuldeep Pisda',
@@ -210,17 +232,52 @@ export const SPEAKERS = [
     name: 'Sonu Kumar',
     slug: 'sonu-kumar',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    title: 'Co-founder and CTO at Sporo Health',
+    description:
+      'Sonu Kumar, AI Engineer & Co-Founder & CTO of Sporo Health, leads AI-driven healthcare solutions. He runs AI Anytime, a YouTube channel simplifying AI. With expertise in AI/ML, he builds cutting-edge clinical tools and advocates open-source AI.',
+    imgUrl: '/images/speakers/sonu-kumar.jpg',
+    imgAlt: 'Picture of Sonu Kumar',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/sonukr0/',
+        ariaLabel: "Hyperlink to Sonu Kumar's LinkedIn page.",
+      },
+      {
+        name: 'Youtube',
+        url: 'https://www.youtube.com/@AIAnytime',
+        ariaLabel: "Hyperlink to Sonu Kumar's youtube page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/AIAnytime',
+        ariaLabel: "Hyperlink to Sonu Kumar's GitHub page.",
+      },
+    ],
   },
   {
     name: 'Siddharta Govindaraj',
     slug: 'siddharta-govindaraj',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    title: 'Consultant at Silver Stripe Software Pvt Ltd',
+    description:
+      'I\'m Siddharta, a Python developer and trainer. I have been a speaker at PyCon India 2009, 2011 & 2023 and author of the book "Test-Driven Python Development". Today I run the site playfulpython.com where I write on python topics.',
+    imgUrl: '/images/speakers/siddharta-govindaraj.jpg',
+    imgAlt: 'Picture of Siddharta Govindaraj',
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/playfulpython',
+        ariaLabel: "Hyperlink to Siddharta Govindaraj's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/siddharta/',
+        ariaLabel: "Hyperlink to Siddharta Govindaraj's LinkedIn page.",
+      },
+    ],
   },
   {
     name: 'Ankur Gupta',
@@ -234,9 +291,19 @@ export const SPEAKERS = [
     name: 'Sourav Saha',
     slug: 'sourav-saha',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
-    imgAlt: 'Placeholder image',
+    activeSpeakerPage: true,
+    title: 'Senior Research Engineer at NEC Corporation',
+    description:
+      'Sourav has 11 years of professional experience at NEC Corporation, Japan in the diverse fields of High Performance Computing, Distributed Programming, and Data Science. He is mostly passionate about program optimization and public speaking.',
+    imgUrl: '/images/speakers/sourav-saha.jpg',
+    imgAlt: 'Picture of Sourav Saha',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/sourav-%E3%82%BD%E3%82%A6%E3%83%A9%E3%83%96-saha-%E3%82%B5%E3%83%8F-a5750259/',
+        ariaLabel: "Hyperlink to Sourav Saha's LinkedIn page.",
+      },
+    ],
   },
   {
     name: 'Satyam Soni',
