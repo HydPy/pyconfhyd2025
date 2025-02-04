@@ -161,7 +161,7 @@ export const SCHEDULE = {
           type: 'Talk',
           time: '05:30 - 06:00 PM',
           location: 'Main Hall',
-          speaker: getSpeaker('akhil-teja'),
+          speaker: getSpeaker('g-r-akhil-teja'),
         },
       ],
       [

@@ -113,7 +113,7 @@ export const SPEAKERS = [
     description:
       'Ria Bhatia is a software engineer passionate about databases, automation, and system efficiency. An enthusiastic speaker, she enjoys sharing her learnings at tech conferences and mentors aspiring engineers while advocating for diversity in tech.',
     imgUrl: '/images/speakers/ria-bhatia.jpg',
-    imgAlt: 'Picture ofRia Bhatia',
+    imgAlt: 'Picture of Ria Bhatia',
     socials: [
       {
         name: 'X',
