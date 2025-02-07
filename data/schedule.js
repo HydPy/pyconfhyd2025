@@ -264,6 +264,7 @@ export const SCHEDULE = {
         {
           time: '3:30 - 5:00 PM',
           title: 'Networking',
+          location: 'Workshop Venue',
         },
       ],
     ],
