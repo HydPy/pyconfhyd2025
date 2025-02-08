@@ -31,8 +31,8 @@ export default function Home() {
       <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
       <SponsorsSection />
       <CommunityPartners />
-      <MeetOrganizers />
       <Partners />
+      <MeetOrganizers />
     </>
   );
 }
