@@ -1,4 +1,4 @@
-import JobBoardRulesGuidelinesMdx from '@/job-board-rules-guidelines.md';
+import JobBoardRulesGuidelinesMdx from '@/job-board-rules-guidelines.mdx';
 import MdxLayout from '@/components/MdxLayout';
 import { Heading } from '@/components/Typography';
 

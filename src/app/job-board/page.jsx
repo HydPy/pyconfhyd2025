@@ -3,7 +3,7 @@ import Link from 'next/link';
 import MdxLayout from '@/components/MdxLayout';
 import { Heading, Span } from '@/components/Typography';
 import { KEY_LINKS } from '@/conference';
-import JobBoardMdx from '@/job-board.md';
+import JobBoardMdx from '@/job-board.mdx';
 
 export default function JobBoard() {
   return (
@@ -18,11 +18,14 @@ export default function JobBoard() {
       <MdxLayout>
         <JobBoardMdx />
       </MdxLayout>
-      <div className="flex flex-col sm:flex-row justify-center items-center my-2">
+      <div className="flex flex-col space-y-4 my-4 justify-center items-center">
+        <Link href="/job-board-rules-guidelines" target="_self">
+          <Span className="underline">Rules and Guidelines</Span>
+        </Link>
         <Link
           href={KEY_LINKS.jobBoardFormUrl}
           target="_blank"
-          className="mt-2 sm:mr-4 px-5 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg"
+          className="mt-2 px-10 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg"
           rel="noopener noreferrer"
         >
           <div className="inline-flex items-center font-medium text-gray-50">
