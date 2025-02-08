@@ -23,7 +23,7 @@ const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
           height={150}
         />
         <Heading
-          tagLevel={4}
+          tagLevel={3}
           level={6}
           className="my-2 text-gray-950 dark:text-gray-50"
         >
