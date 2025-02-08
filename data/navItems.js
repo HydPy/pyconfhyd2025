@@ -1,8 +1,6 @@
 export const NAV_ITEMS = [
   {
     name: 'Home',
-    target: '_self',
-    path: '/',
     children: [
       {
         name: 'Tickets',
@@ -23,6 +21,11 @@ export const NAV_ITEMS = [
       {
         name: 'Community Partners',
         path: '/#community-partners',
+        target: '_self',
+      },
+      {
+        name: 'Partners',
+        path: '/#partners',
         target: '_self',
       },
       {
@@ -48,14 +51,27 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Jobs',
+    children: [
+      {
+        name: 'Job Board',
+        path: '/job-board/',
+        target: '_self',
+      },
+      {
+        name: 'Job Board Rules and Guidelines',
+        path: '/job-board-rules-guidelines/',
+        target: '_self',
+      },
+    ],
+  },
+  {
     name: 'FAQ',
     path: '/faq',
     target: '_self',
   },
   {
     name: 'Code Of Conduct',
-    path: '/code-of-conduct',
-    target: '_self',
     children: [
       {
         name: 'Code Of Conduct Policy',
