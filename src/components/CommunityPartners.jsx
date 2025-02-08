@@ -1,41 +1,62 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { Heading, Span } from '@/components/Typography';
 import {
   COMMUNITY_PARTNERS_INFO,
   COMMUNITY_PARTNERS,
 } from '@/communityPartners';
-import { KEY_LINKS } from '@/conference';
-import Image from 'next/image';
 
-const PartnerCard = ({ name, title, logoUrl, logoAlt, hyperLink }) => {
+const PartnerLogo = ({ lightLogoUrl, darkLogoUrl, logoAlt, hyperLink }) => {
   return (
-    <Link
-      href={hyperLink}
-      className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 rounded-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
-        <Image
-          src={logoUrl}
-          alt={logoAlt}
-          className="object-contain p-2"
-          priority={true}
-          width={250}
-          height={150}
-        />
-        <Heading
-          tagLevel={3}
-          level={6}
-          className="my-2 text-gray-950 dark:text-gray-50"
-        >
-          {name}
-        </Heading>
-        <Span>{title}</Span>
+    <>
+      <div className="flex dark:hidden w-100 flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+        <div className="w-32 h-32 lg:w-48 lg:h-48 ">
+          <div className="relative h-full w-full">
+            <Image
+              className="object-contain"
+              src={lightLogoUrl}
+              alt={logoAlt}
+              fill
+            />
+          </div>
+        </div>
       </div>
-    </Link>
+      <div className="hidden dark:flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+      <div className="w-32 h-32 lg:w-48 lg:h-48 ">
+          <div className="relative h-full w-full">
+            <Image
+              className="object-contain"
+              src={darkLogoUrl}
+              alt={logoAlt}
+              fill
+            />
+          </div>
+        </div>
+        </div>
+    </>
+  );
+};
+
+const PartnerCard = (details) => {
+  return (
+    <>
+      {details.hyperLink ? (
+        <Link
+          href={details.hyperLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md"
+        >
+          <PartnerLogo {...details} />
+        </Link>
+      ) : (
+        <div className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-lg shadow-md">
+          <PartnerLogo {...details} />
+        </div>
+      )}
+    </>
   );
 };
 
@@ -48,11 +69,11 @@ const CommunityPartners = () => {
       <Heading
         tagLevel={2}
         level={1}
-        className="text-center my-8 text-secondary-600 dark:text-secondary-400"
+        className="text-center mt-8 mb-10 text-secondary-600 dark:text-secondary-400"
       >
         {COMMUNITY_PARTNERS_INFO.title}
       </Heading>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-wrap items-center justify-center gap-3">
         {COMMUNITY_PARTNERS &&
           COMMUNITY_PARTNERS.map((partner, index) => (
             <PartnerCard key={index} {...partner} />
