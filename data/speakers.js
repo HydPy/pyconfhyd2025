@@ -181,7 +181,8 @@ export const SPEAKERS = [
     type: 'Session',
     activeSpeakerPage: true,
     title: 'Sr ML Engineer @DBS',
-    description: 'Sr ML Engineer at DBS and Pycon 2024 speaker. Loves to contribute to open source technology in python, rust and zig.',
+    description:
+      'Sr ML Engineer at DBS and Pycon 2024 speaker. Loves to contribute to open source technology in python, rust and zig.',
     imgUrl: '/images/speakers/g-r-akhil-teja.jpg',
     imgAlt: 'Picture of G R Akhil Teja',
     socials: [

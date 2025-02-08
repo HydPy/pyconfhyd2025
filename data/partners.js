@@ -1,16 +1,13 @@
 export const PARTNERS_INFO = {
   title: 'Partners',
-  description: '',
 };
 
-export const PARTNERS = {
-  // Platinum: [
-  //   {
-  //     id: 1,
-  //     name: 'Python Software Foundation',
-  //     description: 'The organization behind Python programming language',
-  //     hyperLink: 'https://www.python.org/psf/',
-  //     logoUrl: '/images/logo.svg',
-  //   },
-  // ],
-};
+export const PARTNERS = [
+  {
+    name: 'T-Hub',
+    title: 'Conference Venue Partner',
+    logoUrl: '/images/partners/t-hub.jpg',
+    logoAlt: 'T-Hub logo',
+    hyperLink: 'https://t-hub.co',
+  },
+];
