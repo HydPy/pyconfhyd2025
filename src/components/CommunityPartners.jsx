@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Heading, Span } from '@/components/Typography';
+import { Heading } from '@/components/Typography';
 import {
   COMMUNITY_PARTNERS_INFO,
   COMMUNITY_PARTNERS,
@@ -24,7 +24,7 @@ const PartnerLogo = ({ lightLogoUrl, darkLogoUrl, logoAlt, hyperLink }) => {
         </div>
       </div>
       <div className="hidden dark:flex flex-col p-4 items-center bg-gray-50 dark:bg-gray-950 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
-      <div className="w-32 h-32 lg:w-48 lg:h-48 ">
+        <div className="w-32 h-32 lg:w-48 lg:h-48 ">
           <div className="relative h-full w-full">
             <Image
               className="object-contain"
@@ -34,7 +34,7 @@ const PartnerLogo = ({ lightLogoUrl, darkLogoUrl, logoAlt, hyperLink }) => {
             />
           </div>
         </div>
-        </div>
+      </div>
     </>
   );
 };
