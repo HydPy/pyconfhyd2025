@@ -78,7 +78,7 @@ export const SPONSORS = {
       ],
     },
   ],
-  'Venue Sponsor': [
+  'Workshop Venue Sponsor': [
     {
       name: 'EPAM Systems',
       lightLogoUrl: '/images/sponsors/epam.svg',
