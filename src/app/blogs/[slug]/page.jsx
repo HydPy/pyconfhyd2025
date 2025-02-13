@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { SPONSORS } from '@/sponsors';
 
 // Create flattened array of all sponsors with their categories
-export const sponsorsList = Object.entries(SPONSORS).reduce(
+const sponsorsList = Object.entries(SPONSORS).reduce(
   (acc, [category, sponsors]) => {
     const sponsorsWithCategory = sponsors.map((sponsor) => ({
       ...sponsor,
