@@ -61,9 +61,11 @@ export default async function Page({ params }) {
         </figure>
       </div>
       {/* #TODO: use better approaach to render MDX here instead html */}
-      {sponsor?.description && <MdxLayout>
-
-      <div dangerouslySetInnerHTML={{ __html: sponsor.description }}></div> </MdxLayout>}
+      {sponsor?.description && (
+        <MdxLayout>
+          <div dangerouslySetInnerHTML={{ __html: sponsor.description }}></div>{' '}
+        </MdxLayout>
+      )}
       <div className="flex mt-8 mb-4 gap-4">
         {sponsor.socials?.map((social, index) => (
           <Link
