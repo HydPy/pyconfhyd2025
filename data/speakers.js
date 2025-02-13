@@ -44,8 +44,8 @@ export const SPEAKERS = [
         name: 'GitHub',
         url: 'https://github.com/Bowrna',
         ariaLabel: "Hyperlink to Bowrna Prabhakaran's GitHub page.",
-      }
-    ]
+      },
+    ],
   },
   // Session speakers
   {
