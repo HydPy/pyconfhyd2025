@@ -258,7 +258,7 @@ export const SPONSORS = {
       ],
     },
   ],
-  'Workshop Venue Sponsor': [
+  'Workshop Venue': [
     {
       slug: 'epam-workshop-venue-sponsor',
       name: 'EPAM Systems',
