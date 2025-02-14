@@ -14,7 +14,6 @@ export const getSponsor = (name) => {
   return null;
 };
 
-
 export const SPONSORS = {
   Platinum: [
     {

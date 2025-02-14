@@ -26,7 +26,7 @@ export default async function Page({ params }) {
       >
         {blog.title}
       </Heading>
-      <div className='flex flex-col items-end w-full gap-1 mb-5'>
+      <div className="flex flex-col items-end w-full gap-1 mb-5">
         <Span level={3}>Author: {blog.author}</Span>
         <Span level={3}>Published: {blog.publishedAt}</Span>
       </div>
