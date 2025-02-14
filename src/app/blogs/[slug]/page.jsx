@@ -1,5 +1,5 @@
 import MdxLayout from '@/components/MdxLayout';
-import { Heading } from '@/components/Typography';
+import { Heading, Paragraph, Span } from '@/components/Typography';
 import { BLOGS } from '@/blogs';
 import Icon from '@/components/Icon';
 import Link from 'next/link';
@@ -26,6 +26,10 @@ export default async function Page({ params }) {
       >
         {blog.title}
       </Heading>
+      <div className='flex flex-col items-end w-full gap-1 mb-5'>
+        <Span level={3}>Author: {blog.author}</Span>
+        <Span level={3}>Published: {blog.publishedAt}</Span>
+      </div>
       <MdxLayout>{blog.markdownComponent}</MdxLayout>
       <div className="flex mt-8 mb-4 gap-4">
         {blog.socials?.map((social) => (
