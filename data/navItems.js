@@ -73,8 +73,8 @@ export const NAV_ITEMS = [
         target: '_self',
       },
       {
-        name: 'Volunteers',
-        path: '/volunteers',
+        name: 'Our Team',
+        path: '/our-team',
         target: '_self',
       },
       {

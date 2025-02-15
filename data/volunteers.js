@@ -1,7 +1,6 @@
 export const VOLUNTEERS = [
   {
     name: 'Saketh Reddy Bejadi',
-    slug: 'saketh-reddy-bejadi',
     role: 'Volunteer',
     imgUrl: '/images/volunteers/saketh-reddy-bejadi.jpg',
     imgAlt: "Saketh Reddy Bejadi's picture",
@@ -25,7 +24,6 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Vamsi Krishna Kolli',
-    slug: 'vamsi-krishna-kolli',
     role: 'Technology WG Volunteer',
     imgUrl: 'https://avatars.githubusercontent.com/u/11007620',
     imgAlt: "Vamsi Krishna Kolli's picture",
@@ -59,7 +57,6 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Karuna Solanki',
-    slug: 'karuna-solanki',
     role: 'Design Volunteer',
     imgUrl: '/images/volunteers/karuna-solanki.jpeg',
     imgAlt: "Karuna Solanki's picture",
@@ -117,7 +114,6 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Arthi Murali',
-    slug: 'arthi-murali',
     role: 'Content Volunteer ',
     imgUrl: '/images/volunteers/arthi-murali.jpg',
     imgAlt: "Arthi Murali's picture",
@@ -141,7 +137,6 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Bhushan Kapkar',
-    slug: 'bhushan-kapkar',
     role: 'Community Partner WG Lead',
     imgUrl: '/images/volunteers/bhushan-kapkar.jpg',
     imgAlt: "Bhushan Kapkar's picture",
@@ -175,7 +170,6 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Koti Vellanki',
-    slug: 'koti-vellanki',
     role: 'Platform WG Lead',
     imgUrl: '/images/volunteers/koti-vellanki.jpg',
     imgAlt: "Koti Vellanki's picture",
