@@ -32,6 +32,11 @@ export const SPONSORS = {
           url: 'https://www.instagram.com/_snowflake_inc/?hl=en',
           ariaLabel: 'Hyperlink to Snowflake Instagram page.',
         },
+        {
+          name: 'Globe',
+          url: 'https://snowflake.com/',
+          ariaLabel: 'Hyperlink to Snowflake website.',
+        },
       ],
     },
   ],
@@ -51,6 +56,11 @@ export const SPONSORS = {
           name: 'LinkedIn',
           url: 'https://www.linkedin.com/company/langdb/',
           ariaLabel: 'Hyperlink to LangDB.ai LinkedIn page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://langdb.ai/',
+          ariaLabel: 'Hyperlink to LangDB.ai website.',
         },
       ],
     },
@@ -74,6 +84,62 @@ export const SPONSORS = {
           name: 'Instagram',
           url: 'https://www.instagram.com/cognidainc/',
           ariaLabel: 'Hyperlink to Cognida.ai Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.cognida.ai/',
+          ariaLabel: 'Hyperlink to Cognida.ai website',
+        },
+      ],
+    },
+    {
+      name: 'Storable India',
+      hyperLink: '/blogs/storable-india-gold-sponsor/',
+      lightLogoUrl: '/images/sponsors/storable.jpg',
+      logoAlt: 'Storable India logo',
+      socials: [
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/storable-india/',
+          ariaLabel: 'Hyperlink to Storable India LinkedIn page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.storable.com',
+          ariaLabel: 'Hyperlink to Storable India website.',
+        },
+      ],
+    },
+    {
+      name: 'Tiger Analytics',
+      hyperLink: '/blogs/tiger-analytics-gold-sponsor/',
+      lightLogoUrl: '/images/sponsors/tiger-analytics-black.png',
+      logoAlt: 'Tiger Analytics logo',
+      socials: [
+        {
+          name: 'X',
+          url: 'https://twitter.com/tigeranalytics',
+          ariaLabel: 'Hyperlink to Tiger Analytics X page.',
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/company/tiger-analytics/',
+          ariaLabel: 'Hyperlink to Tiger Analytics LinkedIn page.',
+        },
+        {
+          name: 'Facebook',
+          url: 'https://www.facebook.com/share/1H4etXYa6C/',
+          ariaLabel: 'Hyperlink to Tiger Analytics Facebook page.',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/tigeranalytics',
+          ariaLabel: 'Hyperlink to Tiger Analytics Instagram page.',
+        },
+        {
+          name: 'Globe',
+          url: 'https://www.tigeranalytics.com/',
+          ariaLabel: 'Hyperlink to Tiger Analytics website.',
         },
       ],
     },
