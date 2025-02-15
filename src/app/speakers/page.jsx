@@ -8,7 +8,7 @@ const getSessionSpeakers = (SPEAKERS) => {
     const { name, type, activeSpeakerPage } = speaker;
     if (
       !speakers.has(name) &&
-      type == 'Session' &&
+      type !== 'Keynote' &&
       activeSpeakerPage === true
     ) {
       speakers.set(name, speaker);

@@ -444,4 +444,21 @@ export const SPEAKERS = [
     imgUrl: '/images/speakers/sarath-srinivas.jpg',
     imgAlt: 'Picture of Sarath Srinivas',
   },
+  {
+    name: 'Dipankar Sonwane',
+    slug: 'dipankar-sonwane',
+    type: 'Lightning',
+    activeSpeakerPage: true,
+    title: 'Senior Technical Manager, Cognida.ai',
+    bio: 'Dipankar Sonwane is a Senior Technical Manager at Cognida.ai, specializing in building practical AI solutions that drive real business impact for enterprises. With a results-driven mindset and a passion for innovation, he has a proven track record of leading high-performance teams and delivering complex, large-scale AI projects. A recipient of multiple awards for customer excellence and strategic foresight, he excels in identifying opportunities and mitigating risks in dynamic environments. He has been instrumental in building Cognida.ai grounds up.',
+    imgUrl: '/images/speakers/dipankar-sonwane.jpg',
+    imgAlt: 'Picture of Dipankar Sonwane',
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/dipankarsonwane/',
+        ariaLabel: "Hyperlink to Dipankar Sonwane's LinkedIn page.",
+      },
+    ],
+  },
 ];
