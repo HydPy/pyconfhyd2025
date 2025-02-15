@@ -153,47 +153,6 @@ export const SPONSORS = {
         },
       ],
     },
-    {
-      name: 'Storable India',
-      hyperLink: 'https://www.storable.com',
-      lightLogoUrl: '/images/sponsors/storable.jpg',
-      logoAlt: 'Storable India logo',
-      socials: [
-        {
-          name: 'LinkedIn',
-          url: 'https://www.linkedin.com/company/storable-india/?viewAsMember=true',
-          ariaLabel: 'Hyperlink to Storable India LinkedIn page.',
-        },
-      ],
-    },
-    {
-      name: 'Tiger Analytics',
-      hyperLink: 'https://www.tigeranalytics.com/',
-      lightLogoUrl: '/images/sponsors/tiger-analytics-black.png',
-      logoAlt: 'Tiger Analytics logo',
-      socials: [
-        {
-          name: 'X',
-          url: 'https://twitter.com/tigeranalytics',
-          ariaLabel: 'Hyperlink to Tiger Analytics X page.',
-        },
-        {
-          name: 'LinkedIn',
-          url: 'https://www.linkedin.com/company/tiger-analytics/posts/?feedView=all',
-          ariaLabel: 'Hyperlink to Tiger Analytics LinkedIn page.',
-        },
-        {
-          name: 'Facebook',
-          url: 'https://www.facebook.com/share/1H4etXYa6C/',
-          ariaLabel: 'Hyperlink to Tiger Analytics Facebook page.',
-        },
-        {
-          name: 'Instagram',
-          url: 'https://www.instagram.com/tigeranalytics',
-          ariaLabel: 'Hyperlink to Tiger Analytics Instagram page.',
-        },
-      ],
-    },
   ],
   Silver: [
     {
