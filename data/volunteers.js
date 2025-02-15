@@ -1,7 +1,81 @@
 export const VOLUNTEERS = [
   {
+    name: 'Bhushan Kapkar',
+    role: 'Community Partner WG Lead',
+    imgUrl: '/images/volunteers/bhushan-kapkar.jpg',
+    imgAlt: "Bhushan Kapkar's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/bpkapkar',
+        ariaLabel: "Hyperlink to Bhushan Kapkar's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/bhushankapkar',
+        ariaLabel: "Hyperlink to Bhushan Kapkar's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/bpkapkar',
+        ariaLabel: "Hyperlink to Bhushan Kapkar's GitHub page.",
+      },
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/bhushankapkar5/',
+        ariaLabel: "Hyperlink to Bhushan Kapkar's Instagram page.",
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/bhushan.kapkar/',
+        ariaLabel: "Hyperlink to Bhushan Kapkar's Facebook page.",
+      },
+    ],
+  },
+  {
+    name: 'Koti Vellanki',
+    role: 'Platform WG Lead',
+    imgUrl: '/images/volunteers/koti-vellanki.jpg',
+    imgAlt: "Koti Vellanki's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/DevOpsCircuit',
+        ariaLabel: "Hyperlink to Koti Vellanki's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/vellankikoti',
+        ariaLabel: "Hyperlink to Koti Vellanki's LinkedIn page.",
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/vellankikoti',
+        ariaLabel: "Hyperlink to Koti Vellanki's GitHub page.",
+      },
+    ],
+  },
+  {
+    name: 'Aravind Sekar',
+    role: 'Platform WG Lead',
+    imgUrl: '/images/volunteers/aravind-sekar.jpg',
+    imgAlt: "Aravind Sekar's picture",
+    socials: [
+      {
+        name: 'X',
+        url: 'https://x.com/iamaravindsekar',
+        ariaLabel: "Hyperlink to Aravind Sekar's X page.",
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/meet-aravindsekar/',
+        ariaLabel: "Hyperlink to Aravind Sekar's LinkedIn page.",
+      },
+    ],
+  },
+  {
     name: 'Saketh Reddy Bejadi',
-    role: 'Volunteer',
+    role: 'Technology WG Volunteer',
     imgUrl: '/images/volunteers/saketh-reddy-bejadi.jpg',
     imgAlt: "Saketh Reddy Bejadi's picture",
     socials: [
@@ -57,7 +131,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Karuna Solanki',
-    role: 'Design Volunteer',
+    role: 'Design WG Volunteer',
     imgUrl: '/images/volunteers/karuna-solanki.jpeg',
     imgAlt: "Karuna Solanki's picture",
     socials: [
@@ -114,7 +188,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Arthi Murali',
-    role: 'Content Volunteer ',
+    role: 'Content WG Volunteer ',
     imgUrl: '/images/volunteers/arthi-murali.jpg',
     imgAlt: "Arthi Murali's picture",
     socials: [
@@ -136,59 +210,54 @@ export const VOLUNTEERS = [
     ],
   },
   {
-    name: 'Bhushan Kapkar',
-    role: 'Community Partner WG Lead',
-    imgUrl: '/images/volunteers/bhushan-kapkar.jpg',
-    imgAlt: "Bhushan Kapkar's picture",
+    name: 'Bharat Saraswat',
+    role: 'CFP/Technology WG Volunteer',
+    imgUrl: '/images/volunteers/bharat-saraswat.png',
+    imgAlt: "Bharat Saraswat's picture",
     socials: [
       {
         name: 'X',
-        url: 'https://x.com/bpkapkar',
-        ariaLabel: "Hyperlink to Bhushan Kapkar's X page.",
+        url: 'https://twitter.com/bsaraswat45',
+        ariaLabel: "Hyperlink to Bharat Saraswat's X page.",
       },
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/bhushankapkar',
-        ariaLabel: "Hyperlink to Bhushan Kapkar's LinkedIn page.",
+        url: 'https://www.linkedin.com/in/bharatsaraswat/',
+        ariaLabel: "Hyperlink to Bharat Saraswat's LinkedIn page.",
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/bpkapkar',
-        ariaLabel: "Hyperlink to Bhushan Kapkar's GitHub page.",
+        url: 'https://github.com/bhansa',
+        ariaLabel: "Hyperlink to Bharat Saraswat's GitHub page.",
       },
       {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/bhushankapkar5/',
-        ariaLabel: "Hyperlink to Bhushan Kapkar's Instagram page.",
-      },
-      {
-        name: 'Facebook',
-        url: 'https://www.facebook.com/bhushan.kapkar/',
-        ariaLabel: "Hyperlink to Bhushan Kapkar's Facebook page.",
+        name: 'Blog',
+        url: 'https://bharatsaraswat.com',
+        ariaLabel: "Hyperlink to Bharat Saraswat's Website.",
       },
     ],
   },
   {
-    name: 'Koti Vellanki',
-    role: 'Platform WG Lead',
-    imgUrl: '/images/volunteers/koti-vellanki.jpg',
-    imgAlt: "Koti Vellanki's picture",
+    name: 'Priyanka Saraswat',
+    role: 'Design WG Volunteer',
+    imgUrl: '/images/volunteers/priyanka-saraswat.jpg',
+    imgAlt: "Priyanka Saraswat's picture",
     socials: [
       {
         name: 'X',
-        url: 'https://x.com/DevOpsCircuit',
-        ariaLabel: "Hyperlink to Koti Vellanki's X page.",
+        url: 'https://x.com/psaraswat18',
+        ariaLabel: "Hyperlink to Priyanka Saraswat's X page.",
       },
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/vellankikoti',
-        ariaLabel: "Hyperlink to Koti Vellanki's LinkedIn page.",
+        url: 'https://www.linkedin.com/in/priyanka-saraswat18/',
+        ariaLabel: "Hyperlink to Priyanka Saraswat's LinkedIn page.",
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/vellankikoti',
-        ariaLabel: "Hyperlink to Koti Vellanki's GitHub page.",
+        url: 'https://priyabhansa.github.io/',
+        ariaLabel: "Hyperlink to Priyanka Saraswat's GitHub page.",
       },
     ],
-  },
+  }
 ];
