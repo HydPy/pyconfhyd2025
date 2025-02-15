@@ -57,7 +57,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Aravind Sekar',
-    role: 'Platform WG Lead',
+    role: 'Design WG Lead',
     imgUrl: '/images/volunteers/aravind-sekar.jpg',
     imgAlt: "Aravind Sekar's picture",
     socials: [
@@ -99,7 +99,7 @@ export const VOLUNTEERS = [
   {
     name: 'Vamsi Krishna Kolli',
     role: 'Technology WG Volunteer',
-    imgUrl: 'https://avatars.githubusercontent.com/u/11007620',
+    imgUrl: '/images/volunteers/vamsi-krishna.png',
     imgAlt: "Vamsi Krishna Kolli's picture",
     socials: [
       {
