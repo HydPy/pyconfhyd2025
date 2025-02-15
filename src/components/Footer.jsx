@@ -38,12 +38,12 @@ const Footer = () => (
           <ul className="list-disc text-gray-300  mt-1 ml-4">
             <li>
               <Span>T-Hub: </Span>
-              <a href="tel:040-66396639">
+              <Link href="tel:040-66396639">
                 <Span className="hover:text-gray-50">040-66396639, </Span>
-              </a>
-              <a href="tel:09581474545">
+              </Link>
+              <Link href="tel:09581474545">
                 <Span className="hover:text-gray-50">09581474545</Span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
