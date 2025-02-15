@@ -131,7 +131,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Karuna Solanki',
-    role: 'Design WG Volunteer',
+    role: 'Design WG Co-Lead',
     imgUrl: '/images/volunteers/karuna-solanki.jpeg',
     imgAlt: "Karuna Solanki's picture",
     socials: [
@@ -150,7 +150,7 @@ export const VOLUNTEERS = [
   {
     name: 'Ashok Tankala',
     slug: 'ashok-tankala',
-    role: 'Communications WG Volunteer',
+    role: 'Logistics Lead & Communications WG Co-Lead',
     imgUrl: '/images/volunteers/ashok-tankala.jpeg',
     imgAlt: "Ashok Tankala's picture",
     socials: [
@@ -211,7 +211,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Bharat Saraswat',
-    role: 'CFP/Technology WG Volunteer',
+    role: 'Technology WG Co-Lead & CFP Volunteer',
     imgUrl: '/images/volunteers/bharat-saraswat.png',
     imgAlt: "Bharat Saraswat's picture",
     socials: [
@@ -259,5 +259,5 @@ export const VOLUNTEERS = [
         ariaLabel: "Hyperlink to Priyanka Saraswat's GitHub page.",
       },
     ],
-  }
+  },
 ];

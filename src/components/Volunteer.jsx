@@ -1,16 +1,16 @@
-import Image from "next/image";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import { Heading, Paragraph } from "./Typography";
-import Link from "next/link";
-import Icon from "./Icon";
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { Heading, Paragraph } from './Typography';
+import Icon from '@/components/Icon';
 
 export default function Volunteer({ volunteer }) {
   const { name, imgUrl, imgAlt, role, socials } = volunteer;
-  
+
   return (
-    <div className="flex flex-row p-4 rounded-lg bg-white dark:bg-gray-800 shadow-md gap-4 shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
+    <div className="flex flex-col items-center p-3 rounded-lg bg-gray-50 dark:bg-gray-800 gap-4 shadow-xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2">
       {/* Avatar on left */}
-      <div className="relative w-[120px] h-[120px] rounded-full overflow-hidden flex-shrink-0">
+      <div className="relative w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden flex-shrink-0">
         <Image
           className="object-cover"
           src={imgUrl}
@@ -19,23 +19,21 @@ export default function Volunteer({ volunteer }) {
           priority
         />
       </div>
-
       {/* Content on right */}
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col items-center">
         <Heading
-          tagLevel={5}
+          tagLevel={2}
           level={5}
-          className="text-xl font-semibold text-secondary-600 dark:text-secondary-400"
+          className="font-semibold text-secondary-600 dark:text-secondary-400"
         >
           {name}
         </Heading>
-        <Paragraph className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+        <Paragraph className="text-center text-gray-600 dark:text-gray-300 mt-1">
           {role}
         </Paragraph>
-        
         {/* Social Icons */}
         {socials && (
-          <div className="py-4 flex flex-wrap gap-5">
+          <div className="py-4 flex flex-wrap gap-2">
             {socials.map((social, index) => (
               <Link
                 key={index}
@@ -45,7 +43,7 @@ export default function Volunteer({ volunteer }) {
                 aria-label={social.ariaLabel}
                 rel="noopener noreferrer"
               >
-                <Icon name={social.name} size={25} />
+                <Icon name={social.name} size={28} />
               </Link>
             ))}
           </div>
