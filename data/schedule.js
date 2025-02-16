@@ -93,7 +93,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Lunch Break',
+          title: '🍱 Lunch Break',
           break: true,
           time: '12:30 - 01:30 PM',
           location: 'Cafeteria',
@@ -145,7 +145,7 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Coffee Break',
+          title: '☕️ Tea/Coffee Break',
           break: true,
           time: '04:45 - 05:00 PM',
           location: 'Main Hall',
