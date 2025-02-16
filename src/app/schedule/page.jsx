@@ -12,7 +12,9 @@ import Script from 'next/script';
 const TimeBadge = ({ time }) => (
   <div className="inline-flex items-center px-3 py-1.5 bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-200 rounded-full">
     <Icon name="Clock" size={16} className="mr-2" />
-    <Span level={6} className="font-medium">{time}</Span>
+    <Span level={6} className="font-medium">
+      {time}
+    </Span>
   </div>
 );
 
@@ -58,7 +60,14 @@ const SpeakerCard = ({ speaker }) => {
   );
 };
 
-const ScheduleItem = ({ time, title, location, speakers, isKeynote, isBreak }) => {
+const ScheduleItem = ({
+  time,
+  title,
+  location,
+  speakers,
+  isKeynote,
+  isBreak,
+}) => {
   const getBGColor = () => {
     if (isKeynote) {
       return 'bg-primary-50 dark:bg-primary-800';
@@ -66,8 +75,7 @@ const ScheduleItem = ({ time, title, location, speakers, isKeynote, isBreak }) =
     if (isBreak) {
       return 'border-secondary-500 dark:border-secondary-500 dark:bg-gray-700';
     }
-
-  }
+  };
   return (
     <article
       tabIndex="0"
