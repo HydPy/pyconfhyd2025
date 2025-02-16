@@ -114,7 +114,7 @@ export default async function SpeakerPage({ params }) {
           {talks.map((talk, index) => (
             <div key={index} className="mb-2 text-gray-600 dark:text-gray-400">
               <Paragraph>
-                {talk.type} - {talk.sessionTitle}
+              {speaker.type !== 'Lightning' ? `${talk.type} - ${talk.sessionTitle}` : talk.type}
               </Paragraph>
               <ul className="list-disc ml-4">
                 <li>

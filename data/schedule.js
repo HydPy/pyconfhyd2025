@@ -37,8 +37,8 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Keynote: When will AI take my job and what can I do about it',
-          type: 'Talk',
+          title: 'When will AI take my job and what can I do about it',
+          type: 'Keynote',
           time: '09:25 - 10:15 AM',
           location: 'Main Hall',
           speakers: [getSpeaker('anthony-shaw')],
@@ -99,8 +99,10 @@ export const SCHEDULE = {
       [
         {
           title: 'Lightning Talks',
+          type: 'Lightning Talk',
           time: '01:30 - 02:25 PM',
           location: 'Main Hall',
+          speakers: [getSpeaker('dipankar-sonwane')],
         },
       ],
       [
@@ -133,7 +135,8 @@ export const SCHEDULE = {
       ],
       [
         {
-          title: 'Keynote: Open Source: One Idea, Many Journeys',
+          title: 'Open Source: One Idea, Many Journeys',
+          type: 'Keynote',
           time: '03:55 - 04:45 PM',
           speakers: [getSpeaker('bowrna-prabhakaran')],
           location: 'Main Hall',
