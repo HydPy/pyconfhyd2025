@@ -10,9 +10,9 @@ import { CONFERENCE } from '@/conference';
 import Script from 'next/script';
 
 const TimeBadge = ({ time }) => (
-  <div className="inline-flex items-center px-3 py-1.5 bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-200 rounded-full">
+  <div className="inline-flex items-center px-3 py-1.5 bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-200 rounded-full md:text-md text-xs">
     <Icon name="Clock" size={16} className="mr-2" />
-    <Span level={6} className="font-medium">
+    <Span level={6} className="font-medium md:text-md text-xs">
       {time}
     </Span>
   </div>
@@ -23,8 +23,8 @@ const LocationBadge = ({ location, className = '' }) => {
     <div
       className={`inline-flex items-center px-3 py-1.5 bg-primary-600 dark:bg-primary-700 text-white shadow-sm rounded-full ${className}`}
     >
-      <Icon name="LocationDot" className="w-4 h-4 mr-2" />
-      <Span level={6} className="font-medium">
+      {/* <Icon name="LocationDot" className="w-4 h-4 mr-2" /> */}
+      <Span level={6} className="font-medium md:text-md text-xs">
         {location}
       </Span>
     </div>
@@ -34,7 +34,7 @@ const LocationBadge = ({ location, className = '' }) => {
 const SpeakerCard = ({ speaker }) => {
   return (
     <div className="flex flex-row items-center my-1">
-      <div className="w-12 h-12 md:w-12 md:h-12">
+      <div className="w-12 h-12 md:w-16 md:h-16">
         <div className="relative shadow-md h-full w-full rounded-full overflow-hidden border-1">
           <Image
             className="object-cover rounded-sm"
@@ -48,9 +48,9 @@ const SpeakerCard = ({ speaker }) => {
       </div>
       <div className="flex flex-col ml-2">
         {speaker.name && (
-          <Span className="text-gray-950 dark:text-gray-50" level={4}>
+          <Heading className="text-gray-950 dark:text-gray-50" level={6} tagLevel={4}>
             {speaker.name}
-          </Span>
+          </Heading>
         )}
         {speaker.title && (
           <Span className="text-gray-700 dark:text-gray-200" level={5}>
@@ -81,7 +81,7 @@ const ScheduleItem = ({
   return (
     <article
       tabIndex="0"
-      className={`w-full focus:outline-none focus:ring-2 focus:ring-primary-600 flex flex-col p-6 mb-6 border-l-4 border-primary-600 dark:border-primary-400 dark:bg-gray-900 shadow-md transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
+      className={`w-full focus:outline-none focus:ring-2 focus:ring-primary-600 flex flex-col md:p-6 p-4 mb-6 border-l-4 border-primary-600 dark:border-primary-400 dark:bg-gray-900 shadow-md rounded-sm transition-transform transform hover:scale-[1.02] ${getBGColor()}`}
     >
       <header className="flex flex-row justify-between items-center mb-4">
         <TimeBadge time={time} />
@@ -127,7 +127,7 @@ const Schedule = () => {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`flex flex-col items-center px-2 md:px-12 py-2 border border-gray-800 rounded-full ${
+            className={`flex flex-col items-center px-6 md:px-12 py-2 border border-secondary-800 rounded-xl ${
               activeDay === day
                 ? 'bg-secondary-600 dark:bg-secondary-700 text-gray-50  dark:text-gray-50'
                 : 'text-gray-950 dark:text-gray-50'
@@ -178,7 +178,7 @@ export default function Page() {
         <Heading
           tagLevel={1}
           level={1}
-          className="text-center my-6 text-secondary-600 dark:text-secondary-400"
+          className="text-center md:my-6 my-0 text-secondary-600 dark:text-secondary-400"
         >
           Schedule
         </Heading>
