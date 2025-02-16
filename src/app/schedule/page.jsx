@@ -21,7 +21,7 @@ const TimeBadge = ({ time }) => (
 const LocationBadge = ({ location, className = '' }) => {
   return (
     <div
-      className={`inline-flex items-center px-3 py-1.5 bg-primary-600 dark:bg-primary-700 text-white shadow-sm rounded-full ${className}`}
+      className={`inline-flex items-center px-3 py-1.5 bg-primary-600 dark:bg-primary-700 text-gray-50 shadow-sm rounded-full ${className}`}
     >
       {/* <Icon name="LocationDot" className="w-4 h-4 mr-2" /> */}
       <Span level={6} className="font-medium md:text-md text-xs">
@@ -72,7 +72,7 @@ const ScheduleItem = ({
 }) => {
   const getBGColor = () => {
     if (isKeynote) {
-      return 'bg-primary-50 dark:bg-primary-800';
+      return 'bg-secondary-100 dark:bg-primary-800';
     }
     if (isBreak) {
       return 'border-secondary-500 dark:border-secondary-500 dark:bg-gray-700';
