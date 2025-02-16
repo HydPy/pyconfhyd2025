@@ -150,7 +150,7 @@ export const VOLUNTEERS = [
   {
     name: 'Ashok Tankala',
     slug: 'ashok-tankala',
-    role: 'Logistics Lead & Communications WG Co-Lead',
+    role: 'Communications WG Volunteer',
     imgUrl: '/images/volunteers/ashok-tankala.jpeg',
     imgAlt: "Ashok Tankala's picture",
     socials: [
