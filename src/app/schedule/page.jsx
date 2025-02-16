@@ -87,7 +87,7 @@ const ScheduleItem = ({
       </header>
       <Heading
         level={4}
-        tagLevel={4}
+        tagLevel={3}
         className="text-gray-800 dark:text-gray-200 mb-3 font-semibold"
       >
         {title}
@@ -130,7 +130,7 @@ const Schedule = () => {
                 : 'text-gray-950 dark:text-gray-50'
             }`}
           >
-            <Heading tag={2} level={5}>
+            <Heading tagLevel={2} level={5}>
               {SCHEDULE[day].title}
             </Heading>
             <Span level={4}>
