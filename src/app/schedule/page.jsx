@@ -40,6 +40,8 @@ const SpeakerCard = ({ speaker }) => {
             className="object-cover rounded-sm"
             src={speaker.imgUrl}
             alt={`Placeholder image of ${speaker.name}`}
+            title={`Image of ${speaker.name}`}
+            loading='lazy'
             fill
           />
         </div>
@@ -101,6 +103,7 @@ const ScheduleItem = ({
                 target="_self"
                 className="flex flex-col space-y-2 my-1"
                 key={index}
+                title={`Hyperlink to Speaker Details of ${speaker.name}`}
               >
                 <SpeakerCard key={index} speaker={speaker} />
               </Link>
