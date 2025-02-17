@@ -1,6 +1,7 @@
 import { Heading, Paragraph } from '@/components/Typography';
 import Image from 'next/image';
 import { ASSETS } from '@/conference';
+import Link from 'next/link';
 
 const NotFound = () => {
   return (
@@ -26,7 +27,9 @@ const NotFound = () => {
         This page slipped through our Pythonic loops — let’s get you back on
         track!
       </Paragraph>
+      <Link href={"/"}>
       <button className="mt-4 bg-[#FA8624] hover:bg-[#009EA8] duration-300 ease-in-out font-semibold text-xl text-white px-4 py-3 rounded-md">Home.py🐍</button>
+      </Link>
     </div>
   );
 };
