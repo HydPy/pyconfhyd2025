@@ -1,4 +1,4 @@
-import { Heading, Paragraph } from '@/components/Typography';
+import { Heading, Paragraph, Span } from '@/components/Typography';
 import Image from 'next/image';
 import { ASSETS } from '@/conference';
 import Link from 'next/link';
@@ -14,7 +14,6 @@ const NotFound = () => {
           width={100}
           height={100}
         />
-        
       </div>
       <Heading
         tagLevel={1}
@@ -23,12 +22,14 @@ const NotFound = () => {
       >
         404 - Page Not Found
       </Heading>
-      <Paragraph className="px-10 font-semibold text-center text-gray-950 dark:text-gray-50 ">
+      <Paragraph className="px-10 font-semibold text-center text-gray-900 dark:text-gray-100 ">
         This page slipped through our Pythonic loops — let’s get you back on
         track!
       </Paragraph>
-      <Link href={"/"}>
-      <button className="mt-4 bg-[#FA8624] hover:bg-[#009EA8] duration-300 ease-in-out font-semibold text-xl text-white px-4 py-3 rounded-md">Home.py🐍</button>
+      <Link href={'/'} className="mt-5   px-5 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg">
+        <div className="inline-flex items-center font-medium text-gray-50">
+          <Span>Home.py🐍</Span>
+        </div>
       </Link>
     </div>
   );
