@@ -26,6 +26,7 @@ const NotFound = () => {
         This page slipped through our Pythonic loops — let’s get you back on
         track!
       </Paragraph>
+      <button className="mt-4 bg-[#FA8624] hover:bg-[#009EA8] duration-300 ease-in-out font-semibold text-xl text-white px-4 py-3 rounded-md">Home.py🐍</button>
     </div>
   );
 };
