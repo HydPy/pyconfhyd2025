@@ -290,7 +290,7 @@ export const VOLUNTEERS = [
   {
     name: 'Mahendra Yadav',
     role: 'Logistics Volunteer',
-    bio: 'Passionate UI/UX designer skilled in Figma and Canva, pursuing an Executive PG Certification from IIT Roorkee. An active community volunteer eager to explore and contribute to design opportunities.',
+    bio: '',
     imgUrl: '/images/volunteers/mahendra-yadav.jpg',
     imgAlt: "Mahendra Yadav's picture",
     socials: [
