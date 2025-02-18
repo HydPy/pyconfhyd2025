@@ -1,11 +1,13 @@
-import { Heading, Paragraph, Span } from '@/components/Typography';
-import Image from 'next/image';
-import { ASSETS } from '@/conference';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import { ASSETS } from '@/conference';
+
+import { Heading, Paragraph, Span } from '@/components/Typography';
 
 const NotFound = () => {
   return (
-    <div className="w-full h-[70vh] flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center  justify-center py-6 w-11/12 lg:w-5/6 mx-auto h-[70vh]">
       <div className="relative">
         <Image
           className="animate-bounce"
@@ -22,16 +24,19 @@ const NotFound = () => {
       >
         404 - Page Not Found
       </Heading>
-      <Paragraph className="px-10 font-semibold text-center text-gray-900 dark:text-gray-100 ">
+      <Paragraph className="text-center text-gray-900 dark:text-gray-100 ">
         This page slipped through our Pythonic loops — let’s get you back on
         track!
       </Paragraph>
-      <Link href={'/'} className="mt-5   px-5 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg">
+      <Link
+        href={'/'}
+        className="mt-5 px-6 py-3 bg-secondary-600 hover:bg-secondary-700 border rounded-lg"
+      >
         <div className="inline-flex items-center font-medium text-gray-50">
-          <Span>Home.py🐍</Span>
+          <Span>main.py 🐍</Span>
         </div>
       </Link>
-    </div>
+    </section>
   );
 };
 export default NotFound;
