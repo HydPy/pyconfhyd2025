@@ -31,7 +31,7 @@ export default function Volunteer({ volunteer }) {
         <Paragraph className="text-center text-gray-600 dark:text-gray-300 mt-1">
           {role}
         </Paragraph>
-        <Paragraph className="text-secondary-600 dark:text-secondary-400 mt-1 p-4 line-clamp-5" level={5}>
+        <Paragraph className="text-gray-600 dark:text-gray-400 mt-1 p-4 line-clamp-5" level={5}>
           {bio}
         </Paragraph>
         {/* Social Icons */}
