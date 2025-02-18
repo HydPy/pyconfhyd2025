@@ -66,8 +66,10 @@ export const SPEAKERS = [
     name: 'Srivardhan',
     slug: 'srivardhan',
     type: 'Session',
-    activeSpeakerPage: false,
-    imgUrl: '/images/speakers/placeholder-2.svg',
+    activeSpeakerPage: true,
+    title: 'School: TheGaudium',
+    bio: 'My name is Srivardhan, a 14-year-old 9th grader from Gaudium School. I achieved World Rank 7 in Python Advanced (2024) and Rank 11 in Python Beginner (2023).My journey began with a love for coding and sports like Badminton and Basketball.',
+    imgUrl: '/images/speakers/srivardhan-sainath-talatm.jpg',
     imgAlt: 'Placeholder image',
   },
   {
