@@ -270,7 +270,7 @@ export const VOLUNTEERS = [
   },
   {
     name: 'Gurram Poorna Prudhvi',
-    role: 'CFP WG lead',
+    role: 'CFP WG Lead',
     bio: 'Prudhvi, a Lead Software Engineer at Epam, specializes in machine learning, NLP, and backend engineering. He enjoys standup comedy, reading, and traveling, fueling his creativity and perspective.',
     imgUrl: '/images/volunteers/gurram-poorna-prudhvi.jpg',
     imgAlt: "Gurram Poorna Prudhvi's picture",
