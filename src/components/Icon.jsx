@@ -46,7 +46,7 @@ const icons = {
   Youtube: FaYoutube,
   ExternalLink: FaExternalLinkAlt,
   ArrowCircleRight: FaArrowCircleRight,
-  Annoucement: FaVolumeLow,
+  Announcement: FaVolumeLow,
 };
 
 export const Icon = ({ name, size = 36, className = '', padding = 0 }) => {
