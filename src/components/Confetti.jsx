@@ -42,7 +42,7 @@ export const Confetti = ({
     if (trigger) {
       launchConfetti();
     }
-  });
+  }, [trigger]);
 
   return (
     <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
