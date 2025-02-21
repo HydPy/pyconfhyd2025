@@ -15,9 +15,9 @@ import {
   FaLocationDot,
   FaGlobe,
   FaYoutube,
-  FaVolumeLow
+  FaVolumeLow,
 } from 'react-icons/fa6';
-import {  FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdVolunteerActivism, MdCampaign } from 'react-icons/md';

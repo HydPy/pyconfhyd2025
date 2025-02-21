@@ -9,7 +9,7 @@ const BlogPostItem = ({ blog }) => {
           <Icon name="Annoucement" size={16} className="mr-2" />
           {blog.category || 'Annoucement'}
         </span>
-        <span className="text-sm">
+        <span className="text-sm text-gray-600 dark:text-gray-100">
           {new Date(blog.publishedAt)
             .toLocaleDateString('en-US', {
               month: 'short',

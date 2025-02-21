@@ -98,5 +98,5 @@ export const NAV_ITEMS = [
     name: 'Blog',
     path: '/blogs',
     target: '_self',
-},
+  },
 ];
