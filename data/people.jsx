@@ -83,4 +83,133 @@ export const PEOPLE_IMAGES = [
     imgUrl: '/images/speakers/sarath-srinivas.jpg',
     imgAlt: 'Picture of Sarath Srinivas',
   },
+  {
+    imgUrl: '/images/volunteers/bhushan-kapkar.jpg',
+    imgAlt: "Bhushan Kapkar's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/koti-vellanki.jpg',
+    imgAlt: "Koti Vellanki's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/aravind-sekar.jpg',
+    imgAlt: "Aravind Sekar's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/saketh-reddy-bejadi.jpg',
+    imgAlt: "Saketh Reddy Bejadi's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/vamsi-krishna.png',
+    imgAlt: "Vamsi Krishna Kolli's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/karuna-solanki.jpeg',
+    imgAlt: "Karuna Solanki's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/ashok-tankala.jpeg',
+    imgAlt: "Ashok Tankala's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/arthi-murali.jpg',
+    imgAlt: "Arthi Murali's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/bharat-saraswat.png',
+    imgAlt: "Bharat Saraswat's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/priyanka-saraswat.jpg',
+    imgAlt: "Priyanka Saraswat's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/gurram-poorna-prudhvi.jpg',
+    imgAlt: "Gurram Poorna Prudhvi's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/mahendra-yadav.jpg',
+    imgAlt: "Mahendra Yadav's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/rajat-rajdeep.jpg',
+    imgAlt: "Rajat Rajdeep's picture",
+  },
+  {
+    imgUrl: '/images/volunteers/madam-amritha.jpeg',
+    imgAlt: "Amritha Madam's picture",
+  },
+  {
+    imgUrl: '/images/people/sanchit-balchandani.jpg',
+    imgAlt: "Sanchit Balchandani's picture",
+  },
+  {
+    imgUrl: '/images/people/bhanu-k.jpg',
+    imgAlt: "Bhanu K's picture",
+  },
+  {
+    imgUrl: '/images/people/kalyan.jpg',
+    imgAlt: "Kalyan's picture",
+  },
+  {
+    imgUrl: '/images/people/anaya-maiti.jpg',
+    imgAlt: "Ananya Maiti's picture",
+  },
+  {
+    imgUrl: '/images/people/jai-prakash.jpg',
+    imgAlt: "Jai Prakash's picture",
+  },
+  {
+    imgUrl: 'images/people/dorai-thodla.jpg',
+    imgAlt: "Dorai Thodla's picture",
+  },
+  {
+    imgUrl: 'images/people/narendran.jpg',
+    imgAlt: "Narendran's picture",
+  },
+  {
+    imgUrl: 'images/people/sameer-mahabole.jpg',
+    imgAlt: "Sameer Mahabole's picture",
+  },
+  {
+    imgUrl: 'images/people/yves-hilpisch.jpg',
+    imgAlt: "Yves Hilpisch's picture",
+  },
+  {
+    imgUrl: 'images/people/anand-chitipothu.jpg',
+    imgAlt: "Anand Chitipothu's picture",
+  },
+  {
+    imgUrl: 'images/people/chandan-kumar.jpg',
+    imgAlt: "Chandan Kumar's picture",
+  },
+  {
+    imgUrl: 'images/people/dawid-ostrowski.jpg',
+    imgAlt: "Dawid Ostrowski's picture",
+  },
+  {
+    imgUrl: 'images/people/kushal-das.jpg',
+    imgAlt: "Kushal Das's picture",
+  },
+  {
+    imgUrl: 'images/people/prabhu-ramachandran.jpg',
+    imgAlt: "Prabhu Ramachandran's picture",
+  },
+  {
+    imgUrl: 'images/people/pradhvan-bisht.jpg',
+    imgAlt: "Pradhvan Bisht's picture",
+  },
+  {
+    imgUrl: 'images/people/ujjwal-gupta.jpg',
+    imgAlt: "Ujjwal Gupta's picture",
+  },
+  {
+    imgUrl: 'images/people/ValentynShybanov.jpg',
+    imgAlt: "Valentyn Shybanov's picture",
+  },
+  {
+    imgUrl: 'images/people/vijay-kumar.jpg',
+    imgAlt: "Vijay Kumar's picture",
+  },
+
 ];

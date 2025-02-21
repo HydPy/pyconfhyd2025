@@ -13,7 +13,7 @@ function PhotoFlicker({ images }) {
     const interval = setInterval(() => {
       setVisibleIndexes(
         images
-          .map((_, index) => (Math.random() > 0.5 ? index : -1))
+          .map((_, index) => (Math.random() > 0.25 ? index : -1))
           .filter((i) => i !== -1)
       );
     }, 2000); // Adjust flicker speed
@@ -50,7 +50,7 @@ export default function Page() {
         level={1}
         className="text-center my-8 text-secondary-600 dark:text-secondary-400"
       >
-        PyConf Hyderabad Turns 5: Powered by People
+        🎉 PyConf Hyderabad Turns Five
       </Heading>
       <Paragraph className="my-2 text-center">
         A heartfelt thank you to all our volunteers, speakers and sponsors who have been
