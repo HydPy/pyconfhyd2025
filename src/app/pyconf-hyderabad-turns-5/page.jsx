@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import { Heading } from '@/components/Typography';
+import { Heading, Paragraph } from '@/components/Typography';
 import { PEOPLE_IMAGES } from '@/people';
 
 function PhotoFlicker({ images }) {
@@ -52,6 +52,13 @@ export default function Page() {
       >
         PyConf Hyderabad Turns 5: Powered by People
       </Heading>
+      <Paragraph className="my-2 text-center">
+        A heartfelt thank you to all our volunteers, speakers and sponsors who have been
+        the driving force behind every edition of PyConf Hyderabad. Your
+        dedication, passion, and efforts have made all five editions possible,
+        shaping a thriving community for Python enthusiasts. We couldn’t have
+        done it without you!
+      </Paragraph>
       <PhotoFlicker images={PEOPLE_IMAGES} />
     </section>
   );
