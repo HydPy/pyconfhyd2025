@@ -211,5 +211,4 @@ export const PEOPLE_IMAGES = [
     imgUrl: 'images/people/vijay-kumar.jpg',
     imgAlt: "Vijay Kumar's picture",
   },
-
 ];
