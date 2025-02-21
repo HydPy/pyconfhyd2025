@@ -40,6 +40,11 @@ export const NAV_ITEMS = [
     target: '_self',
   },
   {
+    name: 'Blog',
+    path: '/blogs',
+    target: '_self',
+  },
+  {
     name: 'Jobs',
     children: [
       {
@@ -57,11 +62,6 @@ export const NAV_ITEMS = [
   {
     name: 'About',
     children: [
-      {
-        name: 'Blog',
-        path: '/blogs',
-        target: '_self',
-      },
       {
         name: 'Welcome Guide',
         path: '/welcome-guide',
@@ -93,10 +93,5 @@ export const NAV_ITEMS = [
         target: '_self',
       },
     ],
-  },
-  {
-    name: 'Blog',
-    path: '/blogs',
-    target: '_self',
   },
 ];

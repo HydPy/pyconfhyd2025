@@ -10,13 +10,16 @@ const BlogPostItem = ({ blog }) => {
           {blog.category || 'Annoucement'}
         </span>
         <span className="text-sm text-gray-600 dark:text-gray-100">
-          {new Date(blog.publishedAt)
-            .toLocaleDateString('en-US', {
-              month: 'short',
-              day: 'numeric',
-              year: 'numeric',
-            })
-            .replace(',', '')}
+          {new Date(blog.publishedAt).toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric',
+          })}
+        </span>
+      </div>
+      <div className="flex items-center space-x-4 text-sm">
+        <span className="font-medium dark:text-white">
+          Author: {blog.author}
         </span>
       </div>
       <h2 className="mb-2 text-2xl font-bold tracking-tight text-secondary-600 dark:text-secondary-400">
@@ -26,11 +29,6 @@ const BlogPostItem = ({ blog }) => {
         {blog.description}
       </p>
       <div className="flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <span className="font-medium dark:text-white">
-            Author: {blog.author}
-          </span>
-        </div>
         <p className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
           Read more
           <Icon name="ArrowCircleRight" size={16} className="ml-2" />

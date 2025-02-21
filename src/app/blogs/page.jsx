@@ -6,12 +6,9 @@ import { Heading } from '@/components/Typography';
 
 const BlogList = () => {
   return (
-    <section className=" container w-3/4 mx-auto">
+    <section className="flex flex-col items-center py-6 w-11/12 lg:w-5/6 mx-auto">
       <ul className="space-y-4">
         <div className="mx-auto text-center lg:mb-16 mb-8">
-          {/* <h2 className="my-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-50">
-            Blog
-          </h2> */}
           <Heading
             tagLevel={1}
             level={1}
