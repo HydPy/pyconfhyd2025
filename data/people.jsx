@@ -1,4 +1,4 @@
-export const PEOPLE_IMAGES = [
+export const ALL_SPEAKER_VOLUNTEER_IMAGES = [
   {
     imgUrl: '/images/speakers/anthony-shaw.jpg',
     imgAlt: "Anthony Shaw's picture",
@@ -211,4 +211,194 @@ export const PEOPLE_IMAGES = [
     imgUrl: 'images/people/vijay-kumar.jpg',
     imgAlt: "Vijay Kumar's picture",
   },
+  {
+    imgUrl: 'images/people/sarabjot-singh.png',
+    imgAlt: "Dr. Sarabjot Singh Anand's picture",
+  },
+  {
+    imgUrl: 'images/people/zainab.jpg',
+    imgAlt: "Zainab Bawa's picture",
+  },
+  {
+    imgUrl: 'images/people/jaidev-deshpande.jpg',
+    imgAlt: "Jaidev Deshpande's picture",
+  },
+  {
+    imgAlt: "Vijay Yellepeddi's picture",
+    imgUrl: '/images/people/vijay-yellepeddi.jpg',
+  },
+  { imgAlt: "Zainab's picture", imgUrl: '/images/people/zainab.jpg' },
+  {
+    imgAlt: "Abhishek Mishra's picture",
+    imgUrl: '/images/people/abhishek-mishra.jpg',
+  },
+  {
+    imgAlt: "Arun Chaudhary's picture",
+    imgUrl: '/images/people/arun-chaudhary.jpg',
+  },
+  { imgAlt: "Gokul's picture", imgUrl: '/images/people/gokul.jpg' },
+  {
+    imgAlt: "Parul Pandey's picture",
+    imgUrl: '/images/people/parul-pandey.jpeg',
+  },
+  {
+    imgAlt: "Purusharth Saxena's picture",
+    imgUrl: '/images/people/purusharth-saxena.jpg',
+  },
+  {
+    imgAlt: "Sarabjot Singh's picture",
+    imgUrl: '/images/people/sarabjot-singh.png',
+  },
+  {
+    imgAlt: "Venkata Pingali's picture",
+    imgUrl: '/images/people/venkata-pingali.jpg',
+  },
+  {
+    imgAlt: "Yogesh Kothiya's picture",
+    imgUrl: '/images/people/yogesh-kothiya.jpeg',
+  },
+  {
+    imgAlt: "Paul Ganssle's picture",
+    imgUrl: '/images/people/paul-ganssle.jpg',
+  },
+];
+
+export const ALL_SPONSORS = [
+  { imgUrl: '/images/sponsors/snowflake.svg', imgAlt: 'Snowflake logo' },
+  { imgUrl: '/images/sponsors/langdb.png', imgAlt: 'LangDB.ai logo' },
+  {
+    imgUrl: '/images/sponsors/cognidaaai.png',
+    imgAlt: 'Cognida.ai logo',
+  },
+  {
+    imgUrl: '/images/sponsors/storable.jpg',
+    imgAlt: 'Storable India logo',
+  },
+  {
+    imgUrl: '/images/sponsors/tiger-analytics-black.png',
+    imgAlt: 'Tiger Analytics logo',
+  },
+  { imgUrl: '/images/sponsors/gridlex.png', imgAlt: 'Gridlex logo' },
+  { imgUrl: '/images/sponsors/glueops.png', imgAlt: 'GlueOps logo' },
+  {
+    imgUrl: '/images/sponsors/sporo-health.png',
+    imgAlt: 'Sporo Health logo',
+  },
+  { imgUrl: '/images/sponsors/epam.svg', imgAlt: 'EPAM Systems logo' },
+  {
+    imgUrl: 'images/previous-sponsors/atlassian.png',
+    imgAlt: 'Atlassian logo',
+  },
+  { imgUrl: 'images/previous-sponsors/aws.png', imgAlt: 'AWS logo' },
+  { imgUrl: 'images/previous-sponsors/crelio.jpg', imgAlt: 'Crelio logo' },
+  {
+    imgUrl: 'images/previous-sponsors/deepsource.png',
+    imgAlt: 'DeepSource logo',
+  },
+  {
+    imgUrl: 'images/previous-sponsors/essenta-logo-portrait.png',
+    imgAlt: 'Essenta logo',
+  },
+  { imgUrl: 'images/previous-sponsors/fossee.jpg', imgAlt: 'FOSSEE logo' },
+  {
+    imgUrl: 'images/previous-sponsors/iiith.png',
+    imgAlt: 'IIIT Hyderabad logo',
+  },
+  {
+    imgUrl: 'images/previous-sponsors/innominds.webp',
+    imgAlt: 'Innominds logo',
+  },
+  {
+    imgUrl: 'images/previous-sponsors/ISB.png',
+    imgAlt: 'Indian School of Business (ISB) logo',
+  },
+  {
+    imgUrl: 'images/previous-sponsors/jetbrains.svg',
+    imgAlt: 'JetBrains logo',
+  },
+  {
+    imgUrl: 'images/previous-sponsors/manning.png',
+    imgAlt: 'Manning Publications logo',
+  },
+  { imgUrl: 'images/previous-sponsors/MongoDB.png', imgAlt: 'MongoDB logo' },
+  {
+    imgUrl: 'images/previous-sponsors/pipal.jpg',
+    imgAlt: 'Pipal Academy logo',
+  },
+  {
+    imgUrl: 'images/previous-sponsors/pramati.png',
+    imgAlt: 'Pramati Technologies logo',
+  },
+  { imgUrl: 'images/previous-sponsors/seneca.png', imgAlt: 'Seneca logo' },
+  {
+    imgUrl: 'images/previous-sponsors/weekly-python-exercise.svg',
+    imgAlt: 'Weekly Python Exercise logo',
+  },
+  {
+    imgUrl: 'images/previous-sponsors/zentropy.png',
+    imgAlt: 'Zentropy Technologies logo',
+  },
+];
+
+export const ALL_SPEAKER_VOLUNTEER_NAMES = [
+  { name: 'Shivam Chaurasia' },
+  { name: 'Aniket Maurya' },
+  { name: 'Pragnya' },
+  { name: 'Sasidhar Donaparthi' },
+  { name: 'Jayesh Sharma' },
+  { name: 'Revant M' },
+  { name: 'Naveen Manukonda' },
+  { name: 'Sebastian Ramirez' },
+  { name: 'Abdeali JK' },
+  { name: 'Kesia Mary Joies' },
+  { name: 'Jatin Goel' },
+  { name: 'AbdulMajedRaja RS' },
+  { name: 'Saurabh Nandedkar' },
+  { name: 'Sharmistha Chatterjee' },
+  { name: 'Nabarun Pal' },
+  { name: 'Usha Rengaraju' },
+  { name: 'Netali Agarwal' },
+  { name: 'Jayesh Bapu Ahire' },
+  { name: 'Ruslan Kyurri' },
+  { name: 'Ranjan Balappa' },
+  { name: 'Jason Ramchandani' },
+  { name: 'Arvind Putrevu' },
+  { name: 'Aniket Sinha' },
+  { name: 'Aditya Lohia' },
+  { name: 'Cheuk Ting Ho' },
+  { name: 'Piyush Makhija' },
+  { name: 'Pawel Piwosz' },
+  { name: 'Reuven Lerner' },
+  { name: "Dominic O'kane" },
+  { name: 'Tarun' },
+  { name: 'Subani' },
+  { name: 'Vishakha' },
+  { name: 'Madhu' },
+  { name: 'Hari' },
+  { name: 'Manan' },
+  { name: 'Pulkit' },
+  { name: 'Pranay' },
+  { name: 'Gokul' },
+  { name: 'Satish' },
+  { name: 'Anubhav' },
+  { name: 'Spoorty' },
+  { name: 'Srikanth' },
+  { name: 'Sagar' },
+  { name: 'Swaraj' },
+  { name: 'Shreyas' },
+  { name: 'Yogesh' },
+  { name: 'Zubair' },
+  { name: 'Abhinay' },
+  { name: 'Swati Singh' },
+  { name: 'Bobby' },
+  { name: 'Pavan' },
+  { name: 'Joinal' },
+  { name: 'Chirag' },
+  { name: 'Manivannan' },
+  { name: 'Ram' },
+  { name: 'Divya' },
+  { name: 'Nitin' },
+  { name: 'Gauri' },
+  { name: 'Murthy' },
+  { name: 'Praneet' },
 ];

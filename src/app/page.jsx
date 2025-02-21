@@ -2,12 +2,14 @@
 import { useEffect } from "react";
 
 import Hero from '@/components/Hero';
+import InfoAlert from '@/components/InfoAlert';
 import KeynoteSpeakers from '@/components/KeynoteSpeakers';
 import MeetOrganizers from '@/components/MeetOrganizers';
 import SponsorsSection from '@/components/Sponsors';
 import CommunityPartners from '@/components/CommunityPartners';
 
 import { SPEAKERS } from '@/speakers';
+import {CONFERENCE} from '@/conference';
 
 const getKeynoteSpeakers = (SPEAKERS) => {
   const speakers = new Map();
@@ -37,6 +39,7 @@ export default function Home() {
   
   return (
     <>
+      <InfoAlert text={CONFERENCE.infoText} />
       <Hero />
       <KeynoteSpeakers speakers={getKeynoteSpeakers(SPEAKERS)} />
       <SponsorsSection />
