@@ -1,5 +1,5 @@
-"use client";
-import { useEffect } from "react";
+'use client';
+import { useEffect } from 'react';
 
 import Hero from '@/components/Hero';
 import InfoAlert from '@/components/InfoAlert';
@@ -9,7 +9,7 @@ import SponsorsSection from '@/components/Sponsors';
 import CommunityPartners from '@/components/CommunityPartners';
 
 import { SPEAKERS } from '@/speakers';
-import {CONFERENCE} from '@/conference';
+import { CONFERENCE } from '@/conference';
 
 const getKeynoteSpeakers = (SPEAKERS) => {
   const speakers = new Map();
@@ -32,11 +32,11 @@ export default function Home() {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: 'smooth' });
       }
     }
   }, []);
-  
+
   return (
     <>
       <InfoAlert text={CONFERENCE.infoText} />

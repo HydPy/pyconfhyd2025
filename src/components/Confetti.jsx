@@ -24,12 +24,6 @@ export const Confetti = ({
 }) => {
   const [confettiPieces, setConfettiPieces] = useState([]);
 
-  useEffect(() => {
-    if (trigger) {
-      launchConfetti();
-    }
-  }, [trigger]);
-
   const launchConfetti = () => {
     const confettiArray = Array.from({ length: count }, (_, i) => ({
       id: i,
@@ -43,6 +37,12 @@ export const Confetti = ({
     }));
     setConfettiPieces(confettiArray);
   };
+
+  useEffect(() => {
+    if (trigger) {
+      launchConfetti();
+    }
+  });
 
   return (
     <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">

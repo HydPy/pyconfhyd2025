@@ -9,14 +9,9 @@ import {
 
 function TextFrame({ names, className }) {
   return (
-    <div
-      className={`relative flex flex-wrap justify-start my-4 ${className}`}
-    >
+    <div className={`relative flex flex-wrap justify-start my-4 ${className}`}>
       {names.map((text, index) => (
-        <Span
-          key={index}
-          className='mr-3'
-        >
+        <Span key={index} className="mr-3">
           • {text.name}
         </Span>
       ))}
@@ -40,7 +35,7 @@ function PeoplePhotoFrame({ images, className }) {
         {images.map((image, index) => (
           <figure className="relative w-20 h-20 lg:w-24 lg:h-24" key={index}>
             <Image
-              className='object-cover rounded-lg shadow-lg'
+              className="object-cover rounded-lg shadow-lg"
               src={image.imgUrl}
               alt={image.imgAlt}
               fill
@@ -73,7 +68,7 @@ function SponsorPhotoFrame({ images, className }) {
             key={index}
           >
             <Image
-              className='object-contain rounded-lg shadow-lg px-4'
+              className="object-contain rounded-lg shadow-lg px-4"
               src={image.imgUrl}
               alt={image.imgAlt}
               fill
@@ -105,7 +100,7 @@ export default function Page() {
         couldn’t have done it without you!
       </Paragraph>
       <PeoplePhotoFrame images={ALL_SPEAKER_VOLUNTEER_IMAGES} />
-      <TextFrame names={ALL_SPEAKER_VOLUNTEER_NAMES}/>
+      <TextFrame names={ALL_SPEAKER_VOLUNTEER_NAMES} />
       <SponsorPhotoFrame images={ALL_SPONSORS} />
     </section>
   );
