@@ -47,11 +47,15 @@ const Footer = () => (
             </li>
             <li>
               <Span>EPAM: </Span>
-              <Link href="tel:9166440031">
-                <Span className="hover:text-gray-50">Rajat (9166440031), </Span>
+              <Link href="mailto:rajat_rajdeep@epam.com">
+                <Span className="hover:text-gray-50">
+                  rajat_rajdeep@epam.com,{' '}
+                </Span>
               </Link>
-              <Link href="tel:9899838120">
-                <Span className="hover:text-gray-50">Sanchit (9899838120)</Span>
+              <Link href="mailto:sanchit_balchandani@epam.com">
+                <Span className="hover:text-gray-50">
+                  sanchit_balchandani@epam.com
+                </Span>
               </Link>
             </li>
           </ul>
