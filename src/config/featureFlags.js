@@ -7,19 +7,19 @@
 
 export const FEATURE_FLAGS = {
   KEYNOTE_SPEAKERS: false,
-  SPONSORS: true,
-  COMMUNITY_PARTNERS: true,
+  SPONSORS: false,
+  COMMUNITY_PARTNERS: false,
   MEET_ORGANIZERS: true,
-  SPEAKERS_PAGE: true,
-  TICKETS: true,
-  BLOG_POSTS: true,
-  JOB_BOARD: true,
-  SCHEDULE: true,
-  WELCOME_GUIDE: true,
-  OUR_TEAM: true,
-  TRAVEL: true,
+  SPEAKERS_PAGE: false,
+  TICKETS: false,
+  BLOG_POSTS: false,
+  JOB_BOARD: false,
+  SCHEDULE: false,
+  WELCOME_GUIDE: false,
+  OUR_TEAM: false,
+  TRAVEL: false,
   COC_REPORTING_GUIDE: true,
-  FAQ: true
+  FAQ: false
 };
 
 export const isFeatureEnabled = (flagName) => {

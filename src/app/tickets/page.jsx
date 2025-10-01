@@ -5,10 +5,10 @@ import Tickets from '@/components/Tickets';
 
 export const metadata = {
   title: 'Tickets',
-  description: 'Tickets for PyConf Hyderabad 2025',
+  description: 'Tickets for PyConf Hyderabad 2026',
   openGraph: {
     title: 'Tickets',
-    description: 'Tickets for PyConf Hyderabad 2025',
+    description: 'Tickets for PyConf Hyderabad 2026',
   },
 };
 
