@@ -5,19 +5,11 @@ import { createContext, useContext, useState, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(null); // Start with `null` to indicate the theme is loading
-
-  useEffect(() => {
-    // Check initial theme preference
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches;
-
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    setTheme(initialTheme);
-    document.documentElement.classList.toggle('dark', initialTheme === 'dark');
-  }, []);
+  const [theme, setTheme] = useState(
+    typeof window !== 'undefined'
+      ? (localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+      : 'light'
+  );
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -26,9 +18,13 @@ export const ThemeProvider = ({ children }) => {
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+  }, [theme]);
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {theme !== null && children}
+      {children}
     </ThemeContext.Provider>
   );
 };
