@@ -8,6 +8,7 @@ export const CONFERENCE = {
   announcement:
     'Hyderabad’s biggest Python conference is on the way! Get ready for an unforgettable experience and stay tuned for updates!',
   siteURL: 'http://2025.pyconfhyd.org',
+  latestYearSiteURL: 'https://pyconfhyd.org',
   copyrightTitle: 'Copyright @ 2025 PyConf Hyderabad',
   conferenceDate: '22 Feb',
   conferenceVenue: 'T-Hub',
