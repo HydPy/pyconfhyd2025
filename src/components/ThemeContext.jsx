@@ -2,41 +2,29 @@
 
 import { createContext, useContext, useState, useEffect } from 'react';
 
-const ThemeContext = createContext();
-
+// Wrap the next-themes provider so server `layout.js` can import and use it
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(null); // Start with `null` to indicate the theme is loading
-
-  useEffect(() => {
-    // Check initial theme preference
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches;
-
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    setTheme(initialTheme);
-    document.documentElement.classList.toggle('dark', initialTheme === 'dark');
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
-
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {theme !== null && children}
-    </ThemeContext.Provider>
+    <NextThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem={true}
+      enableColorScheme
+    >
+      {children}
+    </NextThemeProvider>
   );
 };
 
+// Small adapter hook to expose a simple { theme, toggleTheme } API
 export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
-  }
-  return context;
+  const { resolvedTheme, setTheme } = useNextTheme();
+
+  const theme = resolvedTheme || 'light';
+
+  const toggleTheme = useCallback(() => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  }, [setTheme, theme]);
+
+  return { theme, toggleTheme };
 };
